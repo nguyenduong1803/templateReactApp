@@ -1,0 +1,52 @@
+/* display */
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-grid {
+    display: grid;
+}
+/* display + prefix */
+.d-flex.center{
+    align-items: center;
+    justify-content: center;
+}
+/* position */
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+}
+.position-fixed{
+    position: fixed;
+}
+.position-sticky{
+    position: sticky;
+}
+
+/* position + prefix */
+.position-absolute.center,
+.position-fixed.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.position-fixed.full{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
