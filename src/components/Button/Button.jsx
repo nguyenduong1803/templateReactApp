@@ -16,6 +16,7 @@ function Button({ to, href, children, onClick, ...passProps }) {
       <span>{children}</span>
     </Comp>
   );
+  
 }
 Button.propTypes={
   to:propTypes.string,
