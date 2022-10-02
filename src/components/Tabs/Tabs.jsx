@@ -1,28 +1,57 @@
 import { useState } from 'react'
-import styles from "./Tabs.module.css"
-
+import styled from "styled-components"
+import PropTypes from "prop-types";
+const WrapTabs = styled.section`
+      height: 60px;
+    align-items: center;
+`
+const TabItemAccount = styled.div`
+    flex: 1;
+    text-align: center;
+    border-top: 3px solid #f0f4fa !important;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #f0f4fa;
+    color: #273044;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    border: 1px solid #f0f4fa;
+    &.active{
+    border-top-color: #385bce !important;
+    background-color: #fff;
+    color: #273044 !important;
+    }
+`
+const WrapComponent = styled.div`
+    margin: 48px 0;
+`
 function Tabs({ listTab }) {
     const [active, setActive] = useState(0)
     const Component = listTab[active].component
     return (
-        <div>
-            <div className={`${styles.wrapTabs} ${styles.wrapTabsAccount} d-flex `}>
+        <>
+            <WrapTabs className='d-flex'>
                 {listTab.map((tab, index) => {
-                    const Icon = tab.icon
                     return (
-                        <div
+                        <TabItemAccount
                             key={index} onClick={() => setActive(index)}
-                            className={active === index ? `${styles.tabItemAccount} ${styles.active}` : styles.tabItemAccount}
+                            className={active === index && 'active'}
                         >
-                            {/* <Icon className={styles.iconTabAccount}/> */}
-                          <p>  {tab.name}</p>
-                        </div>
+                          <p>{tab.name}</p>
+                        </TabItemAccount>
                     )
                 })}
-            </div>
-            <div className={styles.wrapComponent}> <Component /></div>
-        </div>
+            </WrapTabs>
+            <WrapComponent> <Component /> </WrapComponent>
+        </>
     )
 }
-
+Tabs.prototype={
+    listTab: PropTypes.object.isRequired,
+}
 export default Tabs
