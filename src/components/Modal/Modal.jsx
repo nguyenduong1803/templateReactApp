@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import propTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import styles from './Modal.module.css';
 import { CloseSvg } from '../../assets/svg';
 function Modal({ children, modalStyle, Button, wrapStyle }) {
@@ -30,9 +30,9 @@ function Modal({ children, modalStyle, Button, wrapStyle }) {
 // const Button = ({ onShouldModal }) => (<button onClick={() => onShouldModal(true)}>Show Modal</button>)
 
 Modal.propTypes = {
-   children: propTypes.func,
-   modalStyle:propTypes.object,
-   Button: propTypes.func,
-   wrapStyle:propTypes.object,
+   children: PropTypes.func,
+   modalStyle:PropTypes.object,
+   Button: PropTypes.func,
+   wrapStyle:PropTypes.object,
 };
 export default Modal;

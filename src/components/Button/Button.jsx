@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import propTypes from "prop-types";
+import PropTypes from "prop-types";
 function Button({ to, href, children, onClick, ...passProps }) {
   let Comp = "button";
   const props = { onClick, ...passProps };
@@ -19,9 +19,9 @@ function Button({ to, href, children, onClick, ...passProps }) {
   
 }
 Button.propTypes={
-  to:propTypes.string,
-  href:propTypes.string,
-  onClick:propTypes.func,
-  children:propTypes.string
+  to:PropTypes.string,
+  href:PropTypes.string,
+  onClick:PropTypes.func,
+  children:PropTypes.string
 }
 export default Button;
