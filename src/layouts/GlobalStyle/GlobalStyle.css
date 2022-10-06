@@ -1,0 +1,74 @@
+@import 'normalize.css';
+:root {
+  --primary:#007FFF;
+  --grayBlur:#f0f4fa;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* display */
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-grid {
+  display: grid;
+}
+/* display + prefix */
+.d-flex.center {
+  align-items: center;
+  justify-content: center;
+}
+/* position */
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+.position-fixed {
+  position: fixed;
+}
+.position-sticky {
+  position: sticky;
+}
+
+/* position + prefix */
+.position-absolute.center,
+.position-fixed.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.position-fixed.full {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* padding */
+.p-0 {
+  padding: 0;
+}
+/* margin */
+.m-0 {
+  margin: 0;
+}
