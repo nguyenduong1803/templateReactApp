@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
-import styled from "styled-components"
 
-function Progress({ inputColor = "#007fff", percent, scale = "200px", borderWidth ='0.02',fontText=0.25 }) {
+function Progress({ inputColor = "#007fff", percent, scale = "200px", borderWidth ='0.04',fontText=0.25 }) {
     const refCanva = useRef()
     useEffect(() => {
         let c = refCanva.current

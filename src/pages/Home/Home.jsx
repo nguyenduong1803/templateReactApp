@@ -14,20 +14,22 @@ const fakeData = [
 function Home() {
   return (
     <>
-      <Col>
-        <div className={styles.box}>
-          <Link to="/about">About page</Link>
-        </div>
-      </Col>
-      <Col>
-        <div className={styles.box}>1</div>
-      </Col>
-      <Col>
-        <div className={styles.box}>1</div>
-      </Col>
-      <Col>
-        <div className={styles.box}>1</div>
-      </Col>
+     <div className="row">
+        <Col>
+          <div className={styles.box}>
+            <Link to="/about">About page</Link>
+          </div>
+        </Col>
+        <Col>
+          <div className={styles.box}>1</div>
+        </Col>
+        <Col>
+          <div className={styles.box}>1</div>
+        </Col>
+        <Col>
+          <div className={styles.box}>1</div>
+        </Col>
+     </div>
       <Col>
         <Button to="/about">Button</Button>
         <Modal Button={ButtonShow} modalStyle={{ width: "500px" }} >

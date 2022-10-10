@@ -4,6 +4,8 @@ import styled from "styled-components"
 import Skeleton from '~/components/Skeleton/Skeleton';
 import Tippy from '~/components/Tippy/Tippy';
 import Progress from '~/components/Progress/Progress';
+import InputText from '~/components/Input/InputText';
+import InputPassword from '~/components/Input/InputPassword';
 const Button = styled.button`
 margin: 20px;
 `
@@ -26,7 +28,10 @@ function Product() {
                 <li>Hello</li>
                 <li>Hello</li>
             </Tippy>
-            <Progress percent={80} />
+            <Progress percent={80} scale='100px'/>
+            <InputText name="name"/>
+            <InputPassword name="name"/>
+
         </>
     )
 }
