@@ -26,7 +26,7 @@ function Product() {
                 <li>Hello</li>
                 <li>Hello</li>
             </Tippy>
-            <Progress />
+            <Progress percent={80} />
         </>
     )
 }
