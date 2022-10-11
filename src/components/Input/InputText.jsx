@@ -9,14 +9,14 @@ left: 28px;
 transform: translateY(-50%);
 user-select: none;
 pointer-events: none;
-transition: all 0.3s;
+transition: all 0.2s;
 
 `
 const Input = styled.input`
 height: 40px;
 width: 100%;
 padding:0 18px;
-transition: all 0.3s;
+transition: all 0.25s;
 border:1px solid #eee;
 border-radius: 4px;
 color:var(--text-color);

@@ -1,5 +1,5 @@
 import  { useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link,NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { BarIcon } from '~/assets/svg'
 import Image from '~/components/Image/Image'
@@ -21,9 +21,16 @@ const menu = [
 const Wrap = styled.header`
 box-shadow: 0 8px 24px rgba(179, 179, 179, 0.4);
 `
-const LinkMenu = styled(Link)`
+const LinkMenu = styled(NavLink)`
 display:block;
 color:var(--text-color);
+font-size: 2rem;
+border-radius:4px;
+padding:4px 12px;
+&.active{
+background-color: var(--primary);
+color:#fff;
+}
 @media (max-width: 61.9375em) {
 padding:6px 0;
 border-bottom: 1px solid rgba(233, 233, 233,0.8);
