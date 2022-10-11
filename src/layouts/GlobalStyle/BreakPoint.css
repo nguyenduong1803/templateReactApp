@@ -1,0 +1,52 @@
+/* Small screen / phone sm: 576px*/
+@media (min-width:36em)and(max-width: 47.9375em) {}
+
+/* Medium screen / tablet md: 768px */
+@media (min-width:48em)and (max-width: 61.9375em) {
+
+}
+
+/* Large screen / desktop lg: 992px, */
+@media (min-width:62em)and (max-width: 74.9375em) {
+    .md-block {
+        display: block;
+    }
+
+    .md-hidden {
+        display: none;
+    }
+
+    .md-block {
+        display: block;
+    }
+
+    
+}
+
+/*  */
+@media (max-width: 74.9375em) {
+    .md-mb-12 {
+        margin-bottom: 1.2rem;
+    }
+
+    .md-mb-24 {
+        margin-bottom: 2.4rem;
+    }
+
+    .md-mt-12 {
+        margin-top: 1.2rem;
+    }
+
+    .md-mt-24 {
+        margin-top: 2.4rem;
+    }
+}
+
+/*
+từ 75 em trở lên 
+Extra large screen / wide desktop xl: 1200px */
+@media (min-width:75em) {
+    .lg-hidden {
+        display: none;
+    }
+}

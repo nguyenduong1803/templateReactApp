@@ -1,13 +1,13 @@
-import Footer from '../InnerComponents/Footer/Footer';
-import Header from '../InnerComponents/Header/Header';
+import Footer from '../Comp/Footer/Footer';
+import Header from '../Comp/Header/Header';
 
 function DefaultLayout({ children }) {
    return (
-      <div className="container">
+      <>
          <Header />
-         <main className="row"> {children}</main>
+         <main className="container">  {children}</main>
          <Footer />
-      </div>
+      </>
    );
 }
 
