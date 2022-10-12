@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from "styled-components";
-import {EyeHiddenIcon,EyeIcon} from "~/assets/svg"
+import {EyeOff,EyeIcon} from "~/assets/svg"
 const FormFeild = styled.div`
     
 `
@@ -41,8 +41,11 @@ const Eye = styled.div`
 position: absolute;
 right: 24px;
 top:50%;
+display:flex;
+justify-content: center;
 transform: translateY(-50%);
 cursor: pointer;
+user-select: none;
 `
 function InputPassword({ name, ...props }) {
     const [showPassword, setShowPassword] = useState(false);
@@ -52,7 +55,7 @@ function InputPassword({ name, ...props }) {
             <Input type={showPassword ? "text" : "password"} placeholder=' ' className='inputText_input' {...props} />
             <Label className='position-absolute inputText_label_name'>{name}</Label>
             <Eye onClick={()=>setShowPassword(prev => !prev)}>
-                {showPassword ? <EyeIcon /> : <EyeHiddenIcon />}
+                {showPassword ? <EyeIcon stroke="#999" /> : <EyeOff stroke="#999"/>}
             </Eye>
         </FormFeild>
     )
