@@ -93,7 +93,7 @@ function Progress({ inputColor = "#007fff", percent, scale = "200px", borderWidt
         let start, previousTimeStamp;
         let done = false;
         window.requestAnimationFrame(step);
-    }, [])
+    }, [inputColor,borderWidth,fontText])
     return (
         <canvas ref={refCanva} id="myProgress2"
             className="ProgressGauge "
