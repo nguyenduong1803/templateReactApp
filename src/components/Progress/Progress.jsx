@@ -17,7 +17,6 @@ function Progress({ inputColor = "#007fff", percent, scale = "200px", borderWidt
         }
         //Error if canvas does not have percentage defined
         let percentage;
-        console.log(refCanva.current)
         if (c?.hasAttribute('data-percentage')) {
             percentage = c.dataset.percentage;
             if (percentage < 0 || percentage > 100) {

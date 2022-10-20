@@ -1,0 +1,41 @@
+@import 'normalize.css';
+
+:root {
+  --primary: #007fff;
+  --grayBlur: #f0f4fa;
+  --text-color: #454545;
+  --text-danger: #dc3545;
+  --text-success: #28a745;
+  --text-waring: #ffc107;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
