@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { DefaultLayout } from './layouts';
-import GlobalStyle from '~/layouts/GlobalStyle';
+import GlobalStyle from '~/layouts/GlobalStyles';
 import { publicRouter } from '~/helpers/routes';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import reportWebVitals from '~/reportWebVitals';

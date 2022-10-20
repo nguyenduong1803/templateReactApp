@@ -3,21 +3,7 @@ import { Link,NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { BarIcon } from '~/assets/svg'
 import Image from '~/components/Image/Image'
-const menu = [
-  {
-    name: "Home",
-    path: "/"
-  }, {
-    name: "Product",
-    path: "/product"
-  }, {
-    name: "About",
-    path: "/about"
-  }, {
-    name: "Contacts",
-    path: "/contacts"
-  },
-]
+
 const Wrap = styled.header`
 box-shadow: 0 8px 24px rgba(179, 179, 179, 0.4);
 `
@@ -43,7 +29,7 @@ const Nav = styled.nav`
 flex:1;
 flex-grow: 1;
 background-color: #ffffff;
-transition: all 0.34s;
+transition: all 0.25s;
 @media (max-width: 61.9375em) {
   display: block;
   position: absolute;
@@ -72,8 +58,11 @@ cursor: pointer;
   display: none;
   padding:12px;
 }
+&:hover{
+  opacity:0.7;
+}
 `
-function Header() {
+function Header({header}) {
   const [menuShow,setMenuShow]=useState(false);
   const refNav = useRef()
   return (
@@ -88,7 +77,7 @@ function Header() {
         ref={refNav}
         >
           <Ul className="d-flex gap-12 center ">
-            {menu.map(item => {
+            {header.map(item => {
               return (
                 <li key={item.name}><LinkMenu to={item.path}>{item.name}</LinkMenu></li>)
             })}

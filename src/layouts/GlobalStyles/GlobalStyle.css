@@ -1,0 +1,247 @@
+/* ================================== Display ==================================== */
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-none {
+  display: none;
+}
+/* ================================== Display + prefix  ==================================== */
+.d-flex.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-around {
+  justify-content: space-around;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.a-start {
+  align-items: flex-start;
+}
+
+.a-end {
+  align-items: flex-end;
+}
+
+.a-baseline {
+  align-items: baseline;
+}
+
+/* ================================== gap  ==================================== */
+.gap-12 {
+  gap: 1.2rem;
+}
+
+.gap-24 {
+  gap: 2.4rem;
+}
+
+.gap-36 {
+  gap: 3.6rem;
+}
+
+/* ================================ Possition ================================= */
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: sticky;
+}
+/* ============================ position + prefix ============================ */
+
+.position-absolute.center,
+.position-fixed.center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.position-fixed.full {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* ================================== Padding ================================== */
+
+.p-0 {
+  padding: 0;
+}
+.pb-12 {
+  margin-bottom: 1.2rem;
+}
+
+.pb-24 {
+  margin-bottom: 2.4rem;
+}
+.pt-12 {
+  margin-top: 1.2rem;
+}
+
+.pt-24 {
+  margin-top: 2.4rem;
+}
+.p-12 {
+  margin: 1.2rem;
+}
+
+.p-24 {
+  margin: 2.4rem;
+}
+/* ================================== Margin ================================== */
+
+.m-0 {
+  margin: 0;
+}
+
+.mb-12 {
+  margin-bottom: 1.2rem;
+}
+
+.mb-24 {
+  margin-bottom: 2.4rem;
+}
+.mt-12 {
+  margin-top: 1.2rem;
+}
+
+.mt-24 {
+  margin-top: 2.4rem;
+}
+.m-12 {
+  margin: 1.2rem;
+}
+
+.m-24 {
+  margin: 2.4rem;
+}
+.m-0-auto {
+  margin: 0 auto;
+}
+/* ================================== Text ==================================== */
+.textOverflow-1 {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.textOverflow-2 {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.textOverflow-3 {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.text-color{
+  color: var(--text-color);
+}
+.text-danger {
+  color: var(--text-danger);
+}
+.text-success {
+  color: var(--text-success);
+}
+.text-waring {
+  color: var(--text-waring);
+}
+.fz-14 {
+  font-size: 1.4rem;
+}
+.fz-16 {
+  font-size: 1.6rem;
+}
+.fz-18 {
+  font-size: 1.8rem;
+}
+.fz-20 {
+  font-size: 2rem;
+}
+.fz-22 {
+  font-size: 2.4rem;
+}
+.fz-24 {
+  font-size: 2.4rem;
+}
+.fz-26 {
+  font-size: 2.6;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-justify {
+  text-align: justify;
+}
+
+
+/* ================================== Any ==================================== */
+.loadSkeleton::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #d9d9d9 0%, #888b94 20%, #d9d9d9 40%, #d9d9d9 100%);
+  background-size: 450px 400px;
+  background-repeat: no-repeat;
+  animation: shimmer 1.4s linear infinite;
+}

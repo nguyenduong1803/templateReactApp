@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import styled from "styled-components"
 
-function Button({ to, href, children, onClick, ...passProps }) {
+function Button({ to, href, children, onClick,bg="var(--primary)", ...passProps }) {
   let typeHtml = "button";
   const props = { onClick, ...passProps };
   if (to) {
@@ -27,7 +27,7 @@ function Button({ to, href, children, onClick, ...passProps }) {
   vertical-align: middle;
   appearance: none;
   text-decoration: none;  
-  background-color: var(--primary);
+  background-color: ${()=>bg};
   color:#fff;
   min-width: 80px;
   height: 40px;
