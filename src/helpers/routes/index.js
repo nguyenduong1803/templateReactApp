@@ -5,7 +5,8 @@ import Product from '~/pages/Products/Products';
 const publicRouter = [
   { path: '/', component: Home },
   { path: '/product', component: Product },
-  { path: '/about', component: About, layout: LayoutSidebar },
+  { path: '/about', component: About },
+  { path: '/contacts', component: About, layout: LayoutSidebar },
 ];
 // if login
 const privateRouter = [];
