@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import Button from '~/components/Button/Button';
+import Button2 from '~/components/Button/Button2';
 import OptimizeImage from '~/components/Image/OptimizeImage';
 import Tabs from '~/components/Tabs/Tabs';
+import Box from '~/layouts/Comp/GridSystem/Box';
 import { getProduct } from '~/services/productService/produtService';
 
 const Curriculumn = () => {
@@ -43,6 +46,9 @@ function About() {
         return <p key={res.id}>{res.name}</p>;
       })}
       <OptimizeImage listImage={listImage} />
+      <Box>Box box</Box>
+      <Button>Button click</Button>
+      <Button2 w="400px">Button click</Button2>
     </main>
   );
 }

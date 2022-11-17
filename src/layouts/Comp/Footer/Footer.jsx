@@ -10,10 +10,10 @@ function Footer({ footer }) {
             return (
               <Col key={index}>
                 <h2>{item.title}</h2>
-                <ul> {item.items.map((element, i) => <li key={i}>{element}</li>)}</ul>
+                <ul> {item.items.map((element, i) => <li key={i}><a href="/">{element}</a></li>)}</ul>
               </Col>)
+          })
           }
-          )}
         </div>
       </div>
     </footer>
