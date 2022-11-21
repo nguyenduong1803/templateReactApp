@@ -6,6 +6,8 @@ import Button from '../../components/Button/Button';
 import Accordion from '~/components/Accordion/Accordion';
 import SelectMulti from '~/components/Select/SelectMulti';
 import ScrollToTop from '~/components/ScrollToTop/ScrollToTop';
+import Paper from '~/layouts/Comp/Styled/Paper';
+import Pagination from '~/components/Pagination/Pagination';
 const fakeData = [
   { name: 'Ha noi' },
   { name: 'Hai Duong' },
@@ -14,24 +16,30 @@ const fakeData = [
   { name: 'Nam tu liem' },
   { name: 'An tho' },
 ];
+const config = {
+  currentPage: 1,
+  totalPage: 100,
+  link: 'http://foo.bar/?page=',
+  cb: function () {},
+};
 
 function Home() {
   return (
     <>
       <div className="row">
         <Col>
-          <Box>
+          <Paper elevation={2}>
             <Link to="/about">About page</Link>
-          </Box>
+          </Paper>
         </Col>
         <Col>
-          <Box>1</Box>
+          <Paper>Payper</Paper>
         </Col>
         <Col>
-          <Box>1</Box>
+          <Paper elevation={2}>Payper</Paper>
         </Col>
         <Col>
-          <Box>1</Box>
+          <Paper elevation={3}>Payper</Paper>
         </Col>
       </div>
       <Col>
@@ -62,6 +70,7 @@ function Home() {
           similique alias eius, explicabo quo a odio culpa, corporis repudiandae nobis sunt nesciunt. Quis, autem.
         </p>
       </div>
+      <Pagination {...config} />
     </>
   );
 }

@@ -49,6 +49,7 @@ function About() {
       <Box>Box box</Box>
       <Button>Button click</Button>
       <Button2 w="400px">Button click</Button2>
+      
     </main>
   );
 }
