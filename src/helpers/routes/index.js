@@ -3,6 +3,7 @@ import { DefaultLayout } from '~/layouts';
 import LayoutSidebar from '~/layouts/LayoutSidebar/LayoutSidebar';
 import About from '~/pages/About/About';
 import Home from '~/pages/Home/Home';
+import Home2 from '~/pages/Home2/Home2';
 import Product from '~/pages/Products/Products';
 
 const routerSite = [
@@ -14,6 +15,7 @@ const routerSite = [
         index: true,
         element: <Home />,
       },
+
       {
         path: '/about',
         element: <About />,
@@ -21,6 +23,16 @@ const routerSite = [
       {
         path: '/product',
         element: <Product />,
+      },
+    ],
+  },
+  {
+    path: '/',
+    element: <LayoutSidebar />,
+    children: [
+      {
+        path: '/docs',
+        element: <Home2 />,
       },
     ],
   },

@@ -9,9 +9,10 @@ import InputText from '~/components/Input/InputText';
 import InputPassword from '~/components/Input/InputPassword';
 // import InputRange from '~/components/Input/InputRange';
 import CarouselScroll from '~/components/Carousel/CarouselScroll';
-import { Col } from '~/layouts/Comp/GridSystem';
 import InputRange from '~/components/Input/InputRange';
 import ScrollToTop from '~/components/ScrollToTop/ScrollToTop';
+import Grid from '~/layouts/Comp/GridSystem/Grid';
+import { Col } from '~/layouts/Comp/GridSystem';
 
 const List = styled.li`
 width: 100%;
@@ -27,7 +28,7 @@ const Button = styled.button`
 function Product() {
   const [drawerActive, setDrawerActive] = useState(false);
   return (
-    <>
+    <Grid>
       <Drawer setDrawerActive={setDrawerActive} drawerActive={drawerActive}>
         <li>1</li>
         <li>1</li>
@@ -64,7 +65,7 @@ function Product() {
         <Col>  <List>1</List></Col>
       </CarouselScroll>
       <ScrollToTop />
-    </>
+    </Grid>
   );
 }
 

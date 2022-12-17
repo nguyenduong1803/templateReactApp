@@ -47,7 +47,7 @@ function About() {
       <OptimizeImage listImage={listImage} />
       <Box>Box box</Box>
       <Button>Button click</Button>
-      
+
     </main>
   );
 }
