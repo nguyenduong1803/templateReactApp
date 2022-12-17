@@ -8,6 +8,7 @@
   --text-danger: #dc3545;
   --text-success: #28a745;
   --text-waring: #ffc107;
+  --paper-color: rgba(0, 0, 0, 0.6);
 }
 
 html {
@@ -28,8 +29,11 @@ ul {
   padding: 0;
   margin: 0;
 }
-p,span,label,a{
-  color:var(--text-color);
+p,
+span,
+label,
+a {
+  color: var(--text-color);
 }
 a {
   text-decoration: none;
