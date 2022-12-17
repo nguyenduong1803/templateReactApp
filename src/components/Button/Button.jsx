@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 let typeHtml = "button";
-export default function Button({ to, href, children, onClick, bg = 'var(--primary)', ...passProps }) {
-  const props = { onClick, bg, ...passProps };
+export default function Button({ to, href, children, bg = 'var(--primary)', ...passProps }) {
+  const props = { bg, ...passProps };
   if (to) {
     props.to = to;
     typeHtml = Link;
@@ -13,10 +13,9 @@ export default function Button({ to, href, children, onClick, bg = 'var(--primar
     props.href = href;
     typeHtml = 'a';
   }
-
   return (
     <ButtonComp {...props}>
-      <div>{children}</div>
+      {children}
     </ButtonComp>
   );
 }

@@ -28,13 +28,13 @@ function Product() {
   const [drawerActive, setDrawerActive] = useState(false);
   return (
     <>
+      <Drawer setDrawerActive={setDrawerActive} drawerActive={drawerActive}>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+      </Drawer>
       <div>
-        <Drawer setDrawerActive={setDrawerActive} drawerActive={drawerActive}>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-        </Drawer>
         <Button onClick={() => setDrawerActive(true)}>Click</Button>
         <Skeleton />
       </div>
@@ -63,7 +63,7 @@ function Product() {
         <Col>  <List>1</List></Col>
         <Col>  <List>1</List></Col>
       </CarouselScroll>
-      <ScrollToTop/>
+      <ScrollToTop />
     </>
   );
 }

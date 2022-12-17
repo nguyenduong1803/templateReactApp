@@ -8,6 +8,7 @@ import SelectMulti from '~/components/Select/SelectMulti';
 import ScrollToTop from '~/components/ScrollToTop/ScrollToTop';
 import Paper from '~/layouts/Comp/Styled/Paper';
 import Pagination from '~/components/Pagination/Pagination';
+import ClickAnimate from '~/components/CickAnimate/ClickAnimate';
 const fakeData = [
   { name: 'Ha noi' },
   { name: 'Hai Duong' },
@@ -20,7 +21,7 @@ const config = {
   currentPage: 1,
   totalPage: 100,
   link: 'http://foo.bar/?page=',
-  cb: function () {},
+  cb: function () { },
 };
 
 function Home() {
@@ -43,10 +44,11 @@ function Home() {
         </Col>
       </div>
       <Col>
-        <Button to="/about">Button</Button>
+        <ClickAnimate> <Button to="/about">Button</Button></ClickAnimate>
         <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>
           <h2>hello</h2>
         </Modal>
+        <ClickAnimate>  <div style={{ background: "#0f51e0" }}>Caklhsdfkjahsdfouasdhfoauihfa</div></ClickAnimate>
       </Col>
       <div>
         <Accordion title="click me">
@@ -74,7 +76,7 @@ function Home() {
     </>
   );
 }
-const ButtonShow = ({ onShouldModal }) => <Button onClick={() => onShouldModal(true)}>Show Modal </Button>;
+const ButtonShow = ({ onShouldModal }) => <ClickAnimate><Button onClick={() => onShouldModal(true)}>Show Modal </Button></ClickAnimate>;
 const Box = styled.div`
   border: 1px solid rgb(99, 99, 99);
   text-align: center;

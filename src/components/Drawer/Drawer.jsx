@@ -2,9 +2,13 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 export default function Drawer({ children, setDrawerActive, drawerActive }) {
+  const handleSetDrawer = () => {
+    window.document.body.style.overflow ="auto"
+    setDrawerActive(false)
+  }
   return (
     <>
-      <Overlay className={drawerActive && 'active'} onClick={() => setDrawerActive(false)}></Overlay>
+      <Overlay className={drawerActive && 'active'} onClick={handleSetDrawer}></Overlay>
       <DrawerContent onClick={(e) => e.stopPropagation()} className={drawerActive ? 'moveIn' : 'moveOut'}>
         {children}
       </DrawerContent>
@@ -21,7 +25,6 @@ Drawer.propTypes = {
 const DrawerContent = styled.aside`
   position: absolute;
   top: 0;
-  height: 100%;
   bottom: 0;
   background-color: #ffffff;
   width: 400px;
@@ -41,9 +44,9 @@ const DrawerContent = styled.aside`
 const Overlay = styled.div`
   position: fixed;
   top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  width:100%;
+  height: 100vh;
+  overflow: hidden;
   background-color: rgba(1, 1, 1, 0.4);
   visibility: hidden;
   opacity: 0;
