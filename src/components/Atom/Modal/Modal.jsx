@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { CloseSvg } from '../../assets/svg';
+import { CloseSvg } from '../../../assets/svg';
 import styled from 'styled-components';
 
 export default function Modal({ children, modalStyle, Button, wrapStyle }) {

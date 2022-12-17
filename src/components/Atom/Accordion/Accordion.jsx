@@ -1,18 +1,24 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ChevronDown } from '~/assets/svg';
 import Paper from '~/layouts/Styled/Paper';
+import ClickAnimate from '../CickAnimate/ClickAnimate';
 
-export default function Accordion({ title, children, p = "6px", className,bg="#fff", ...props }) {
+export default function Accordion({ title, hasOpen = false, children, p = "6px", className, bg = "#fff", ...props }) {
   const [open, setOpen] = useState(false);
   const refContent = useRef();
+  useEffect(() => {
+    setOpen(hasOpen)
+  }, [hasOpen])
   return (
-    <Paper elevation={0} >
-      <ButtonAccordion onClick={() => setOpen(!open)} padding={p} bg={bg} className={`d-flex j-between a-center ${className}`} {...props}>
-        {title}
-        <DropIcon style={open ? { transform: `scale(0.8) rotate(180deg) ` } : {}} />
-      </ButtonAccordion>
+    <Paper bg='unset' elevation={0} >
+      <ClickAnimate rippleColor='#ccc'>
+        <ButtonAccordion onClick={() => setOpen(!open)} padding={p} bg={bg} className={`d-flex j-between a-center ${className}`} {...props}>
+          {title}
+          <DropIcon style={open ? { transform: `scale(0.8) rotate(180deg) ` } : {}} />
+        </ButtonAccordion>
+      </ClickAnimate>
       <ContentAccordion
         ref={refContent}
         className={open && 'active'}
@@ -42,7 +48,7 @@ const ContentAccordion = styled.ul`
   max-height: 0;
   overflow: hidden;
   transition: 0.2s ease-in-out;
-  background-color: #fff;
+  background-color:inherit;
   &.active {
     /* background-color: #29ec25; */
   }

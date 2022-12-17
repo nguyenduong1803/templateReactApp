@@ -1,6 +1,7 @@
 export const sidebars = [
   {
     id:1,
+    open:true,
     title: 'Getting Started',
     element: [
       {
@@ -27,15 +28,16 @@ export const sidebars = [
   },
   {
     id:2,
+    open:true,
     title: 'Customize',
     element: [
       {
-        id:"asdf",
+        id:"asÁDFASDFADSdf",
         element: 'Introduction',
         path: '',
       },
       {
-        id:"asdf",
+        id:"asÁDFASDdf",
         element: 'Download',
         path: '',
       },
@@ -53,6 +55,7 @@ export const sidebars = [
   },
   {
     id:3,
+    open:true,
     title: 'Layout',
     element: [
       {
@@ -66,12 +69,12 @@ export const sidebars = [
         path: '',
       },
       {
-        id:"adf",
+        id:"adWOOf",
         element: 'Contents',
         path: '',
       },
       {
-        id:"asdf",
+        id:"ASDF",
         element: 'Browsers & devices',
         path: '',
       },
@@ -79,6 +82,7 @@ export const sidebars = [
   },
   {
     id:4,
+    open:false,
     title: 'Content',
     element: [
       {
@@ -105,15 +109,16 @@ export const sidebars = [
   },
   {
     id:5,
+    open:false,
     title: 'Form',
     element: [
       {
-        id:"asdf",
+        id:"as23df",
         element: 'Introduction',
         path: '',
       },
       {
-        id:"asdf",
+        id:"a2345sdf",
         element: 'Download',
         path: '',
       },
@@ -131,6 +136,7 @@ export const sidebars = [
   },
   {
     id:6,
+    open:false,
     title: 'Components',
     element: [
       {
@@ -149,7 +155,7 @@ export const sidebars = [
         path: '',
       },
       {
-        id:"asdfasdf",
+        id:"asdfasÁDFdf",
         element: 'Browsers & devices',
         path: '',
       },
@@ -157,6 +163,7 @@ export const sidebars = [
   },
   {
     id:7,
+    open:false,
     title: 'Helps',
     element: [
       {
@@ -183,6 +190,7 @@ export const sidebars = [
   },
   {
     id:8,
+    open:false,
     title: 'Abouts',
     element: [
       {
@@ -196,7 +204,7 @@ export const sidebars = [
         path: '',
       },
       {
-        id:"fghj",
+        id:"fghÁDFj",
         element: 'Contents',
         path: '',
       },
@@ -209,15 +217,16 @@ export const sidebars = [
   },
   {
     id:9,
+    open:false,
     title: 'FAQ',
     element: [
       {
-        id:"fghj",
+        id:"fghÁDFDFj",
         element: 'Introduction',
         path: '',
       },
       {
-        id:"fghj",
+        id:"fghÁDFASDFSFSDj",
         element: 'Download',
         path: '',
       },

@@ -1,14 +1,14 @@
 import { Col, Grid } from '../../layouts/Comp/GridSystem';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Modal from '../../components/Modal/Modal';
-import Button from '../../components/Button/Button';
-import Accordion from '~/components/Accordion/Accordion';
-import SelectMulti from '~/components/Select/SelectMulti';
+import Modal from '../../components/Atom/Modal/Modal';
+import Button from '../../components/Atom/Button/Button';
+import Accordion from '~/components/Atom/Accordion/Accordion';
+import SelectMulti from '~/components/Input/Select/SelectMulti';
 import ScrollToTop from '~/components/ScrollToTop/ScrollToTop';
 import Paper from '~/layouts/Styled/Paper';
 import Pagination from '~/components/Pagination/Pagination';
-import ClickAnimate from '~/components/CickAnimate/ClickAnimate';
+import ClickAnimate from '~/components/Atom/CickAnimate/ClickAnimate';
 const fakeData = [
   { name: 'Ha noi' },
   { name: 'Hai Duong' },

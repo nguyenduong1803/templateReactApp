@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Drawer from '~/components/Drawer/Drawer';
+import Drawer from '~/components/Atom/Drawer/Drawer';
 import styled from 'styled-components';
 import Skeleton from '~/components/Skeleton/Skeleton';
 import Tippy from '~/components/Tippy/Tippy';
@@ -8,7 +8,7 @@ import Progress from '~/components/Progress/Progress';
 import InputText from '~/components/Input/InputText';
 import InputPassword from '~/components/Input/InputPassword';
 // import InputRange from '~/components/Input/InputRange';
-import CarouselScroll from '~/components/Carousel/CarouselScroll';
+import CarouselScroll from '~/components/Atom/Carousel/CarouselScroll';
 import InputRange from '~/components/Input/InputRange';
 import ScrollToTop from '~/components/ScrollToTop/ScrollToTop';
 import Grid from '~/layouts/Comp/GridSystem/Grid';

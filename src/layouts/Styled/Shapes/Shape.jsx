@@ -19,4 +19,5 @@ const ShapeStyle = styled.div`
     width: ${(props) => props.w};
     height: ${(props) => props.w};
     border-radius: ${(props) => props.radius};
+    overflow:hidden;
 `

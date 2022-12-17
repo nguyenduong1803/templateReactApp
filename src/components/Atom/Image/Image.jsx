@@ -7,7 +7,7 @@ export default function Image({ src, alt = 'image', ...props }) {
   const errorImages = () => {
     setErrorImage(ImageDefault);
   };
-  return <Img onError={errorImages} src={errorImage.toString() || src.toString()} {...props} alt={alt} />;
+  return <Img onError={errorImages} src={errorImage.toString() || src.toString()} {...props} alt={alt} {...props}/>;
 }
 
 Image.propTypes = {
