@@ -32,7 +32,7 @@ const Input = styled.input`
   width: 100%;
   padding: 0 18px;
   transition: all 0.3s;
-  border: 1px solid #eee;
+  border: 1px solid var(--border-color-light);
   border-radius: 4px;
   color: var(--text-color);
   &:focus {

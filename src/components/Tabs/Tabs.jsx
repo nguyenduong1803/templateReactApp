@@ -20,7 +20,7 @@ const TabItemAccount = styled.div`
     justify-content: center;
     user-select: none;
     cursor: pointer;
-    border: 1px solid #f0f4fa;
+    border: 1px solid var(--border-color-light);
     &.active{
     border-top-color: #385bce !important;
     background-color: #fff;

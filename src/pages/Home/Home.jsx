@@ -64,9 +64,4 @@ function Home() {
   );
 }
 const ButtonShow = ({ onShouldModal }) => <ClickAnimate><Button onClick={() => onShouldModal(true)}>Show Modal </Button></ClickAnimate>;
-const Box = styled.div`
-  border: 1px solid rgb(99, 99, 99);
-  text-align: center;
-  border-radius: 5px;
-`;
 export default Home;

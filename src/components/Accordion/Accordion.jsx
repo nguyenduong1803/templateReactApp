@@ -2,15 +2,16 @@ import { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ChevronDown } from '~/assets/svg';
+import Paper from '~/layouts/Styled/Paper';
 
-export default function Accordion({ title, children }) {
+export default function Accordion({ title, children, p = "6px", className,bg="#fff", ...props }) {
   const [open, setOpen] = useState(false);
   const refContent = useRef();
   return (
-    <Wrap>
-      <ButtonAccordion onClick={() => setOpen(!open)} className="d-flex j-between a-center">
+    <Paper elevation={0} >
+      <ButtonAccordion onClick={() => setOpen(!open)} padding={p} bg={bg} className={`d-flex j-between a-center ${className}`} {...props}>
         {title}
-        <DropIcon style={open ? { transform: `rotate(180deg)` } : {}} />
+        <DropIcon style={open ? { transform: `scale(0.8) rotate(180deg) ` } : {}} />
       </ButtonAccordion>
       <ContentAccordion
         ref={refContent}
@@ -19,20 +20,21 @@ export default function Accordion({ title, children }) {
       >
         {children}
       </ContentAccordion>
-    </Wrap>
+    </Paper>
   );
 }
 
 Accordion.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  height: PropTypes.string
 };
 
-const ButtonAccordion = styled.h3`
-  background-color: #fff;
+const ButtonAccordion = styled.p`
+  padding: ${(props) => props.padding};
+  background-color: ${(props) => props.bg};
   user-select: none;
   color: var(--text-color);
-  padding: 6px;
   cursor: pointer;
 `;
 const ContentAccordion = styled.ul`
@@ -48,11 +50,6 @@ const ContentAccordion = styled.ul`
 const DropIcon = styled(ChevronDown)`
   color: var(--text-color);
   transition: 0.3s;
+  transform: scale(0.7);
 `;
-const Wrap = styled.section`
-  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-  &:first-child {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-  }
-`;
+

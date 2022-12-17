@@ -9,6 +9,9 @@
   --text-success: #28a745;
   --text-waring: #ffc107;
   --paper-color: rgba(0, 0, 0, 0.6);
+  --border-color: #ccc;
+  --border-color-light:#eee;
+  --bg-default:#f0f2f5;
 }
 
 html {
@@ -18,7 +21,7 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   margin: 0;

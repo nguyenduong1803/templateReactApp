@@ -32,7 +32,7 @@ const DrawerContent = styled.aside`
   left: -440px;
   padding: 24px;
   transition: all 0.3s;
-  border: 1px solid rgba(249, 249, 249, 0.698);
+  border: 1px solid var(--border-color);
   z-index: 100;
   &.moveIn {
     transform: translateX(400px);

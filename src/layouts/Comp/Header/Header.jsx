@@ -1,16 +1,47 @@
-import  { useRef, useState } from 'react'
-import { Link,NavLink } from 'react-router-dom'
+import { useRef, useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { BarIcon } from '~/assets/svg'
 import Image from '~/components/Image/Image'
 
+
+export default function Header({ header }) {
+  const [menuShow, setMenuShow] = useState(false);
+  const refNav = useRef()
+  return (
+    <Wrap className="position-relative ">
+      <div className="container d-flex j-between ">
+        <WrapLogo to="/" className="logo">
+          <Image src="ádf" alt="" />
+        </WrapLogo>
+        <Nav
+          style={menuShow ? { maxHeight: `${refNav.current.scrollHeight}px` } : {}}
+          className="d-flex j-between "
+          ref={refNav}
+        >
+          <Ul className="d-flex gap-12 center ">
+            {header.map(item => {
+              return (
+                <li key={item.name}><LinkMenu to={item.path}>{item.name}</LinkMenu></li>)
+            })}
+          </Ul>
+          <div className="login d-flex center gap-12 md-mb-12">
+            <LinkMenu to="/login">Login</LinkMenu>
+            <LinkMenu to="/login">Register</LinkMenu>
+          </div>
+        </Nav>
+        <Bar onClick={() => setMenuShow(prev => !prev)} />
+      </div>
+    </Wrap>
+  )
+}
 const Wrap = styled.header`
-box-shadow: 0 8px 24px rgba(179, 179, 179, 0.4);
+box-shadow: 0 8px 12px rgba(232, 232, 232, 0.4);
 `
 const LinkMenu = styled(NavLink)`
 display:block;
 color:var(--text-color);
-font-size: 2rem;
+font-size: 1.8rem;
 border-radius:4px;
 padding:4px 12px;
 &.active{
@@ -19,11 +50,11 @@ color:#fff;
 }
 @media (max-width: 61.9375em) {
 padding:6px 0;
-border-bottom: 1px solid rgba(233, 233, 233,0.8);
+border-bottom: 1px solid var(--border-color-light);
 }
 `
 const WrapLogo = styled(Link)`
-width:80px;
+width:60px;
 `
 const Nav = styled.nav`
 flex:1;
@@ -62,35 +93,3 @@ cursor: pointer;
   opacity:0.7;
 }
 `
-function Header({header}) {
-  const [menuShow,setMenuShow]=useState(false);
-  const refNav = useRef()
-  return (
-   <Wrap className="position-relative mb-24">
-      <div className="container d-flex j-between ">
-        <WrapLogo to="/" className="logo">
-          <Image src="ádf" alt="" />
-        </WrapLogo>
-        <Nav 
-        style={menuShow?{maxHeight:`${refNav.current.scrollHeight}px`}:{}} 
-        className="d-flex j-between "
-        ref={refNav}
-        >
-          <Ul className="d-flex gap-12 center ">
-            {header.map(item => {
-              return (
-                <li key={item.name}><LinkMenu to={item.path}>{item.name}</LinkMenu></li>)
-            })}
-          </Ul>
-          <div className="login d-flex center gap-12 md-mb-12">
-            <LinkMenu to="/login">Login</LinkMenu>
-            <LinkMenu to="/login">Register</LinkMenu>
-          </div>
-        </Nav>
-        <Bar onClick={()=>setMenuShow(prev=>!prev)}/>
-      </div>
-   </Wrap>
-  )
-}
-
-export default Header

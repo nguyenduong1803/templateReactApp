@@ -202,7 +202,7 @@ const WrapSelected = styled.section`
   min-width: 83px;
   height: 32px;
   background: #f0f4f8;
-  border: 1px solid #dcdcdc;
+  border: 1px solid var(--border-color-light);
   border-radius: 4px;
   color: #486581;
 `;
