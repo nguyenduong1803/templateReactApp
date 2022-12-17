@@ -15,7 +15,7 @@ export default function Accordion({ title, children }) {
       <ContentAccordion
         ref={refContent}
         className={open && 'active'}
-        style={open ? { maxHeight: `${refContent.current.scrollHeight}px`, marginBottom: '12px' } : {}}
+        style={open ? { maxHeight: `${refContent.current.scrollHeight}px` } : {}}
       >
         {children}
       </ContentAccordion>
@@ -32,7 +32,6 @@ const ButtonAccordion = styled.h3`
   background-color: #fff;
   user-select: none;
   color: var(--text-color);
-
   padding: 6px;
   cursor: pointer;
 `;

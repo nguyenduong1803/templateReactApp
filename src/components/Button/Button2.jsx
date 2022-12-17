@@ -12,19 +12,23 @@ const Button2 = ({ to, href, children, onClick, bg = 'var(--primary)', ...passPr
     circle.style.left = e.nativeEvent.offsetX + 'px';
     circle.style.width = e.target.clientWidth + 'px';
     circle.style.height = e.target.clientWidth + 'px';
-    console.log(e.target.clientWidth);
-    const ripple = document.querySelectorAll('.circle');
+    const ripple = document.querySelectorAll(`.${styles.circle}`);
     if (ripple) {
       ripple.forEach((item) => {
         item.remove();
       });
     }
+    if (circle) {
+      circle.onclick = () => {
+        circle.remove()
+      }
+    }
     e.target.appendChild(circle);
     setTimeout(() => {
-        ripple.forEach((item) => {
-          item.remove();
-        });
-      }, 500);
+      ripple.forEach((item) => {
+        item.remove();
+      });
+    }, 300);
   };
   const props = { onClick, bg, ...passProps };
   if (to) {

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-let typeHtml = 'button';
+let typeHtml = "button";
 export default function Button({ to, href, children, onClick, bg = 'var(--primary)', ...passProps }) {
-  const props = { onClick,bg, ...passProps };
+  const props = { onClick, bg, ...passProps };
   if (to) {
     props.to = to;
     typeHtml = Link;
