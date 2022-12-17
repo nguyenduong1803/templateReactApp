@@ -1,18 +1,17 @@
 import { useState } from 'react';
 
-import Drawer from '~/components/Atom/Drawer/Drawer';
 import styled from 'styled-components';
-import Skeleton from '~/components/Skeleton/Skeleton';
-import Tippy from '~/components/Tippy/Tippy';
-import Progress from '~/components/Progress/Progress';
-import InputText from '~/components/Input/InputText';
-import InputPassword from '~/components/Input/InputPassword';
-// import InputRange from '~/components/Input/InputRange';
-import CarouselScroll from '~/components/Atom/Carousel/CarouselScroll';
-import InputRange from '~/components/Input/InputRange';
-import ScrollToTop from '~/components/ScrollToTop/ScrollToTop';
 import Grid from '~/layouts/Comp/GridSystem/Grid';
 import { Col } from '~/layouts/Comp/GridSystem';
+import Drawer from '~/components/Atom/Drawer/Drawer';
+import Skeleton from '~/components/Atom/Skeleton/Skeleton';
+import Tippy from '~/components/Atom/Tippy/Tippy';
+import Progress from '~/components/Atom/Progress/Progress';
+import InputText from '~/components/Atom/Input/InputText';
+import InputPassword from '~/components/Atom/Input/InputPassword';
+import InputRange from '~/components/Atom/Input/InputRange';
+import ScrollToTop from '~/components/Atom/ScrollToTop/ScrollToTop';
+import Carosel from '~/components/Atom/Carousel/CarouselScroll';
 
 const List = styled.li`
 width: 100%;
@@ -52,7 +51,7 @@ function Product() {
       <div>
         <InputRange />
       </div>
-      <CarouselScroll>
+      <Carosel>
         <Col>  <List>1sdfasdf</List></Col>
         <Col>  <List>2</List></Col>
         <Col>  <List>4</List></Col>
@@ -63,7 +62,7 @@ function Product() {
         <Col>  <List>1</List></Col>
         <Col>  <List>1</List></Col>
         <Col>  <List>1</List></Col>
-      </CarouselScroll>
+      </Carosel>
       <ScrollToTop />
     </Grid>
   );

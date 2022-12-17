@@ -10,3 +10,4 @@ export { default as MacIcon } from './MacIcon';
 export { default as Android } from './Android';
 export { default as WindowIcon } from './WindowIcon';
 export { default as BugIcon } from './BugIcon';
+export { default as NotifyIcon } from './NotifyIcon';

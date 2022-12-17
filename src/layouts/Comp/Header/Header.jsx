@@ -1,12 +1,14 @@
 import { useRef, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import { BarIcon } from '~/assets/svg'
+// 
+import { BarIcon, NotifyIcon } from '~/assets/svg'
 import Avatar from '~/components/Atom/Avatar/Avatar'
 import Image from '~/components/Atom/Image/Image'
+import InputText from '~/components/Atom/Input/InputText'
+import { SearchSvg } from "~/assets/svg"
 
-
-export default function Header({ header }) {
+export default function Header() {
   const [menuShow, setMenuShow] = useState(false);
   const refNav = useRef()
   return (
@@ -22,15 +24,15 @@ export default function Header({ header }) {
             ref={refNav}
           >
             <Ul className="d-flex gap-12 center ">
-              {header.map(item => {
+              <InputText style={{ paddingLeft: "4rem",width:"400px",backgroundColor:"var(--bg-default)"}} Icon={SearchIcon} />
+              {/* {header.map(item => {
                 return (
                   <li key={item.name}><LinkMenu to={item.path}>{item.name}</LinkMenu></li>)
-              })}
+              })} */}
             </Ul>
-            <div className="login d-flex center gap-12 md-mb-12">
+            <div className="login d-flex center gap-24 md-mb-12">
+              <NotifyIcon />
               <Avatar />
-              <LinkMenu to="/login">Login</LinkMenu>
-              <LinkMenu to="/login">Register</LinkMenu>
             </div>
           </Nav>
           <Bar onClick={() => setMenuShow(prev => !prev)} />
@@ -47,21 +49,6 @@ width:100%;
 backdrop-filter: blur(6px);
 background-color: rgba(249, 250, 251, 0.7);
 z-index:100;
-`
-const LinkMenu = styled(NavLink)`
-display:block;
-color:var(--text-color);
-font-size: 1.8rem;
-border-radius:4px;
-padding:4px 12px;
-&.active{
-background-color: var(--primary);
-color:#fff;
-}
-@media (max-width: 61.9375em) {
-padding:6px 0;
-border-bottom: 1px solid var(--border-color-light);
-}
 `
 const WrapLogo = styled(Link)`
 width:60px;
@@ -102,3 +89,9 @@ cursor: pointer;
   opacity:0.7;
 }
 `
+const SearchIcon = styled(SearchSvg)`
+  width: 18px;
+  height: 18px;
+  fill: #444444;
+  z-index: 10;
+`;

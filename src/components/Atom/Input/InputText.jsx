@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function InputText({ name, ...props }) {
+export default function InputText({ name, Icon, ...props }) {
   return (
     <FormFeild className="position-relative">
-      <Input type="text" placeholder=" " className="inputText_input" {...props} />
-      <Label className="position-absolute inputText_label_name">{name}</Label>
+      <Input type="text" placeholder="Search..." className="inputText_input" {...props} />
+      {Icon && <Icon className="position-absolute l-12 position-y-center" />}
+      {name && <Label className="position-absolute inputText_label_name">{name}</Label>}
     </FormFeild>
   );
 }
@@ -45,3 +46,4 @@ const Input = styled.input`
     background-color: #fff;
   }
 `;
+

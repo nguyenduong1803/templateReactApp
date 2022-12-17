@@ -51,7 +51,6 @@ const ResultSearch = memo(({ selected, setSelected, result, search }) => {
     if (selected.some((item) => item.name === value.name)) return;
     setSelected((prev) => [...prev, value]);
   };
-  console.log(result);
   // computed result
   const Result = useMemo(() => {
     console.log('Render');

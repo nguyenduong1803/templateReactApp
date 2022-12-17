@@ -2,7 +2,6 @@ import styled from "styled-components"
 import PropTypes from 'prop-types';
 
 function InsetColor({ children, color = "rgb(183, 129, 3)", bg = "rgba(183, 129, 3, 0.24)", ...props }) {
-    console.log(color);
     return (<Wrap color={color} bg={bg}{...props}>{children}</Wrap>)
 }
 const Wrap = styled.div`
