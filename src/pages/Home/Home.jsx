@@ -1,13 +1,13 @@
-import { Col } from '../../layouts/Comp/GridSystem';
+import { Col, Grid } from '../../layouts/Comp/GridSystem';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import Modal from '../../components/Modal/Modal';
-import Button from '../../components/Button/Button';
-import Accordion from '~/components/Accordion/Accordion';
-import SelectMulti from '~/components/Select/SelectMulti';
-import ScrollToTop from '~/components/ScrollToTop/ScrollToTop';
-import Paper from '~/layouts/Comp/Styled/Paper';
-import Pagination from '~/components/Pagination/Pagination';
+import Button from '~/components/Atom/Button/Button';
+import ClickAnimate from '~/components/Atom/CickAnimate/ClickAnimate';
+import Modal from '~/components/Atom/Modal/Modal';
+import Accordion from '~/components/Atom/Accordion/Accordion';
+import ScrollToTop from '~/components/Atom/ScrollToTop/ScrollToTop';
+import SelectMulti from '~/components/Atom/Input/Select/SelectMulti';
+import Pagination from '~/components/Atom/Pagination/Pagination';
+import Paper from '~/layouts/Styled/Paper';
 const fakeData = [
   { name: 'Ha noi' },
   { name: 'Hai Duong' },
@@ -20,13 +20,13 @@ const config = {
   currentPage: 1,
   totalPage: 100,
   link: 'http://foo.bar/?page=',
-  cb: function () {},
+  cb: function () { },
 };
 
 function Home() {
   return (
-    <>
-      <div className="row">
+    <Grid>
+      <Col className="row">
         <Col>
           <Paper elevation={2}>
             <Link to="/about">About page</Link>
@@ -35,33 +35,21 @@ function Home() {
         <Col>
           <Paper>Payper</Paper>
         </Col>
-        <Col>
-          <Paper elevation={2}>Payper</Paper>
-        </Col>
-        <Col>
-          <Paper elevation={3}>Payper</Paper>
-        </Col>
-      </div>
+      </Col>
       <Col>
-        <Button to="/about">Button</Button>
+        <ClickAnimate> <Button to="/about">Button</Button></ClickAnimate>
         <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>
           <h2>hello</h2>
         </Modal>
+        <ClickAnimate>  <div style={{ background: "#0f51e0" }}>Caklhsdfkjahsdfouasdhfoauihfa</div></ClickAnimate>
       </Col>
-      <div>
+      <Col>
         <Accordion title="click me">
           <li>1</li>
           <li>1</li>
           <li>1</li>
         </Accordion>
-        <Accordion title="click me">
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-        </Accordion>
-      </div>
+      </Col>
       <ScrollToTop />
       <SelectMulti name="Nhập tên thành phố" fakeData={fakeData} />
       <div style={{ width: '640px' }}>
@@ -71,13 +59,8 @@ function Home() {
         </p>
       </div>
       <Pagination {...config} />
-    </>
+    </Grid>
   );
 }
-const ButtonShow = ({ onShouldModal }) => <Button onClick={() => onShouldModal(true)}>Show Modal </Button>;
-const Box = styled.div`
-  border: 1px solid rgb(99, 99, 99);
-  text-align: center;
-  border-radius: 5px;
-`;
+const ButtonShow = ({ onShouldModal }) => <ClickAnimate><Button onClick={() => onShouldModal(true)}>Show Modal </Button></ClickAnimate>;
 export default Home;

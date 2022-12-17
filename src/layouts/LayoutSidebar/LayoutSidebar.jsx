@@ -1,12 +1,34 @@
 import React from 'react';
-
-function LayoutSidebar({ children }) {
+import { Outlet } from 'react-router-dom';
+// 
+import Footer from '../Comp/Footer/Footer';
+import Header from '../Comp/Header/Header';
+import { footer, header } from '~/helpers/config';
+import Grid from '../Comp/GridSystem/Grid';
+import { Col } from '../Comp/GridSystem';
+import Sidebar from './Sidebar';
+function LayoutSidebar() {
    return (
-      <div>
-         <h2>Head</h2>
-         {children}
-         <h2>food</h2>
-      </div>
+      <>
+         <Header header={header} />
+         <Grid container="container-fluid bg-default position-relative">
+            <Col lg={3} md={3} >
+               <Sidebar />
+            </Col>
+            <Col lg={9} md={9} sm={12}className=" pt-24" >
+               <Outlet />
+               <Footer footer={footer} />
+               <Footer footer={footer} />
+               <Footer footer={footer} />
+               <Footer footer={footer} />
+               <Footer footer={footer} />
+               <Footer footer={footer} />
+               <Footer footer={footer} />
+               <Footer footer={footer} />
+               <Footer footer={footer} />
+            </Col>
+         </Grid>
+      </>
    );
 }
 

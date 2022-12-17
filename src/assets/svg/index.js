@@ -6,3 +6,8 @@ export { default as EyeOff } from './EyeOff';
 export { default as DownIcon } from './DownIcon';
 export { default as ChevronDown } from './ChevronDown';
 export { default as ArrowUp } from './ArrowUp';
+export { default as MacIcon } from './MacIcon';
+export { default as Android } from './Android';
+export { default as WindowIcon } from './WindowIcon';
+export { default as BugIcon } from './BugIcon';
+export { default as NotifyIcon } from './NotifyIcon';
