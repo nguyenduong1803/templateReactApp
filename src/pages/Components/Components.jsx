@@ -1,5 +1,4 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Accordion from '~/components/Molecule/Accordion/Accordion';
 import { Col, Grid } from '~/layouts/Comp/GridSystem';
 import { sidebars } from '~/layouts/LayoutSidebar/_mock';
@@ -99,11 +98,10 @@ const list = [
   },
 ];
 function Components() {
-  const id = useParams('id');
 
   return (
     <div>
-      <h2 className="main-title pl-24">1. {id.id}</h2>
+      <h2 className="main-title pl-24">1. Accordion</h2>
       <h3 className="pl-24 fz-24 fw-500">Basic Components</h3>
       <Grid container="container-fluid" className="my-24">
         <Col>

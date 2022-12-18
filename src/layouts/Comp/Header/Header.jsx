@@ -49,7 +49,7 @@ height: 60px;
 width:100%;
 backdrop-filter: blur(6px);
 background-color: rgba(249, 250, 251, 0.7);
-z-index:100;
+z-index:50;
 `
 const WrapLogo = styled(Link)`
 width:60px;

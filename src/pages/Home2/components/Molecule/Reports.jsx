@@ -22,7 +22,7 @@ const list = [
   },
   {
     icon: WindowIcon,
-    name: 'Item orders',
+    name: 'Weekly Downloads',
     total: '1.22M',
     color: 'rgb(183, 129, 3)',
     bg: 'rgba(183, 129, 3, 0.24)',

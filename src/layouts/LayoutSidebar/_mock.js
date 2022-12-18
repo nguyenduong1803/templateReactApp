@@ -50,11 +50,6 @@ export const sidebars = [
         path: '',
       },
       {
-        id: 'avatar',
-        element: 'Avatar',
-        path: '',
-      },
-      {
         id: 'button',
         element: 'Button',
         path: '',
@@ -62,6 +57,11 @@ export const sidebars = [
       {
         id: 'carousel',
         element: 'Carousel',
+        path: '',
+      },
+      {
+        id: 'drawer',
+        element: 'Drawer',
         path: '',
       },
     ],

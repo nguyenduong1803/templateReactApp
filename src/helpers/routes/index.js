@@ -4,6 +4,7 @@ import LayoutSidebar from '~/layouts/LayoutSidebar/LayoutSidebar';
 import About from '~/pages/About/About';
 import ButtonPage from '~/pages/Components/Button';
 import Components from '~/pages/Components/Components';
+import DrawerPage from '~/pages/Components/Drawer';
 import Home from '~/pages/Home/Home';
 import Home2 from '~/pages/Home2/Home2';
 import Product from '~/pages/Products/Products';
@@ -40,12 +41,20 @@ const routerSite = [
             element: <Home2 />,
           },
           {
+            path: ':id',
+            element: <Home2 />,
+          },
+          {
             path: 'accordion',
             element: <Components />,
           },
           {
             path: 'button',
             element: <ButtonPage />,
+          },
+          {
+            path: 'drawer',
+            element: <DrawerPage />,
           },
         ],
       },

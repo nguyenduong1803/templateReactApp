@@ -5,7 +5,7 @@ import { sidebars } from './_mock';
 
 function Sidebar() {
   return (
-    <aside className="scrollbar-1 position-sticky pt-24 " style={{ height: '100vh', top: '85px' }}>
+    <aside className="scrollbar-1 position-sticky pt-24 " style={{ height: '100vh', top: '85px', }}>
       <div className="showScrollbar-content">
         {sidebars?.map((sidebar) => {
           return (

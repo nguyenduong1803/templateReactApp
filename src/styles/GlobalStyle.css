@@ -172,9 +172,20 @@
 .pl-24 {
   padding-left: 2.4rem;
 }
-
 .p-24 {
   padding: 2.4rem;
+}
+.py-12{
+  padding: 1.2rem 0;
+}
+.py-24{
+  padding: 2.4rem 0;
+}
+.px-12{
+  padding: 0 1.2rem ;
+}
+.px-24{
+  padding: 0  2.4rem;
 }
 /* ================================== Margin ================================== */
 
@@ -204,16 +215,16 @@
   margin: 2.4rem;
 }
 .my-12 {
-  margin: 1.2rem auto;
+  margin: 1.2rem 0;
 }
 .mx-12 {
-  margin: auto 1.2rem;
+  margin: 0 1.2rem;
 }
 .my-24 {
-  margin: 2.4rem auto;
+  margin: 2.4rem 0;
 }
 .mx-24 {
-  margin: auto 2.4rem;
+  margin: 0 2.4rem;
 }
 .m-0-auto {
   margin: 0 auto;
