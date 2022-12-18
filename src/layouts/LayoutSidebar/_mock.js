@@ -1,242 +1,263 @@
+import {
+  Android,
+  BookIcon,
+  BugIcon,
+  ComponentIcon,
+  EditIcon,
+  ScienceIcon,
+  TemplateIcon,
+  WindowIcon,
+} from '~/assets/svg';
+
 export const sidebars = [
   {
-    id:1,
-    open:true,
+    id: 1,
+    open: true,
+    icon: BookIcon,
     title: 'Getting Started',
     element: [
       {
-        id:"a",
+        id: '',
         element: 'Introduction',
         path: '',
       },
       {
-        id:"b",
+        id: 'b',
         element: 'Download',
         path: '',
       },
       {
-        id:"c",
+        id: 'c',
         element: 'Contents',
         path: '',
       },
       {
-        id:"d",
+        id: 'd',
         element: 'Browsers & devices',
         path: '',
       },
     ],
   },
   {
-    id:2,
-    open:true,
-    title: 'Customize',
-    element: [
-      {
-        id:"asÁDFASDFADSdf",
-        element: 'Introduction',
-        path: '',
-      },
-      {
-        id:"asÁDFASDdf",
-        element: 'Download',
-        path: '',
-      },
-      {
-        id:"ca",
-        element: 'Contents',
-        path: '',
-      },
-      {
-        id:"adf",
-        element: 'Browsers & devices',
-        path: '',
-      },
-    ],
-  },
-  {
-    id:3,
-    open:true,
-    title: 'Layout',
-    element: [
-      {
-        id:"df",
-        element: 'Introduction',
-        path: '',
-      },
-      {
-        id:"fds",
-        element: 'Download',
-        path: '',
-      },
-      {
-        id:"adWOOf",
-        element: 'Contents',
-        path: '',
-      },
-      {
-        id:"ASDF",
-        element: 'Browsers & devices',
-        path: '',
-      },
-    ],
-  },
-  {
-    id:4,
-    open:false,
-    title: 'Content',
-    element: [
-      {
-        id:"sdf",
-        element: 'Introduction',
-        path: '',
-      },
-      {
-        id:"bsdfa",
-        element: 'Download',
-        path: '',
-      },
-      {
-        id:"asfd",
-        element: 'Contents',
-        path: '',
-      },
-      {
-        id:"df",
-        element: 'Browsers & devices',
-        path: '',
-      },
-    ],
-  },
-  {
-    id:5,
-    open:false,
-    title: 'Form',
-    element: [
-      {
-        id:"as23df",
-        element: 'Introduction',
-        path: '',
-      },
-      {
-        id:"a2345sdf",
-        element: 'Download',
-        path: '',
-      },
-      {
-        id:"asdf",
-        element: 'Contents',
-        path: '',
-      },
-      {
-        id:"asdfff",
-        element: 'Browsers & devices',
-        path: '',
-      },
-    ],
-  },
-  {
-    id:6,
-    open:false,
+    id: 6,
+    open: false,
+    icon: ComponentIcon,
     title: 'Components',
     element: [
       {
-        id:"asdfasdfds",
+        id: 'accordion',
+        element: 'Accordion',
+        path: '',
+      },
+      {
+        id: 'avatar',
+        element: 'Avatar',
+        path: '',
+      },
+      {
+        id: 'button',
+        element: 'Button',
+        path: '',
+      },
+      {
+        id: 'carousel',
+        element: 'Carousel',
+        path: '',
+      },
+    ],
+  },
+  {
+    id: 2,
+    open: false,
+    icon: EditIcon,
+    title: 'Customize',
+    element: [
+      {
+        id: 'asÁDFASDFADSdf',
         element: 'Introduction',
         path: '',
       },
       {
-        id:"asdfasdf",
+        id: 'asÁDFASDdf',
         element: 'Download',
         path: '',
       },
       {
-        id:"asdfc",
+        id: 'ca',
         element: 'Contents',
         path: '',
       },
       {
-        id:"asdfasÁDFdf",
+        id: 'adf',
         element: 'Browsers & devices',
         path: '',
       },
     ],
   },
   {
-    id:7,
-    open:false,
+    id: 3,
+    open: false,
+    icon: TemplateIcon,
+    title: 'Layout',
+    element: [
+      {
+        id: 'df',
+        element: 'Introduction',
+        path: '',
+      },
+      {
+        id: 'fds',
+        element: 'Download',
+        path: '',
+      },
+      {
+        id: 'adWOOf',
+        element: 'Contents',
+        path: '',
+      },
+      {
+        id: 'ASDF',
+        element: 'Browsers & devices',
+        path: '',
+      },
+    ],
+  },
+  {
+    id: 4,
+    open: false,
+    icon: ScienceIcon,
+    title: 'Content',
+    element: [
+      {
+        id: 'sdf',
+        element: 'Introduction',
+        path: '',
+      },
+      {
+        id: 'bsdfa',
+        element: 'Download',
+        path: '',
+      },
+      {
+        id: 'asfd',
+        element: 'Contents',
+        path: '',
+      },
+      {
+        id: 'df',
+        element: 'Browsers & devices',
+        path: '',
+      },
+    ],
+  },
+  {
+    id: 5,
+    open: false,
+    icon: WindowIcon,
+    title: 'Form',
+    element: [
+      {
+        id: 'as23df',
+        element: 'Introduction',
+        path: '',
+      },
+      {
+        id: 'a2345sdf',
+        element: 'Download',
+        path: '',
+      },
+      {
+        id: 'asdf',
+        element: 'Contents',
+        path: '',
+      },
+      {
+        id: 'asdfff',
+        element: 'Browsers & devices',
+        path: '',
+      },
+    ],
+  },
+
+  {
+    id: 7,
+    open: false,
+    icon: BookIcon,
     title: 'Helps',
     element: [
       {
-        id:"asdfsdf",
+        id: 'asdfsdf',
         element: 'Introduction',
         path: '',
       },
       {
-        id:"asdf",
+        id: 'asdf',
         element: 'Download',
         path: '',
       },
       {
-        id:"sdasdff",
+        id: 'sdasdff',
         element: 'Contents',
         path: '',
       },
       {
-        id:"dasdfadsf",
+        id: 'dasdfadsf',
         element: 'Browsers & devices',
         path: '',
       },
     ],
   },
   {
-    id:8,
-    open:false,
+    id: 8,
+    open: false,
+    icon: Android,
     title: 'Abouts',
     element: [
       {
-        id:"asdfdf",
+        id: 'asdfdf',
         element: 'Introduction',
         path: '',
       },
       {
-        id:"asdfasdfads",
+        id: 'asdfasdfads',
         element: 'Download',
         path: '',
       },
       {
-        id:"fghÁDFj",
+        id: 'fghÁDFj',
         element: 'Contents',
         path: '',
       },
       {
-        id:"fghjj",
+        id: 'fghjj',
         element: 'Browsers & devices',
         path: '',
       },
     ],
   },
   {
-    id:9,
-    open:false,
+    id: 9,
+    open: false,
+    icon: BugIcon,
     title: 'FAQ',
     element: [
       {
-        id:"fghÁDFDFj",
+        id: 'fghÁDFDFj',
         element: 'Introduction',
         path: '',
       },
       {
-        id:"fghÁDFASDFSFSDj",
+        id: 'fghÁDFASDFSFSDj',
         element: 'Download',
         path: '',
       },
       {
-        id:"gfghjhj",
+        id: 'gfghjhj',
         element: 'Contents',
         path: '',
       },
       {
-        id:"ffghjgh",
+        id: 'ffghjgh',
         element: 'Browsers & devices',
         path: '',
       },

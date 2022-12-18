@@ -2,6 +2,7 @@ import { useRoutes } from 'react-router-dom';
 import { DefaultLayout } from '~/layouts';
 import LayoutSidebar from '~/layouts/LayoutSidebar/LayoutSidebar';
 import About from '~/pages/About/About';
+import ButtonPage from '~/pages/Components/Button';
 import Components from '~/pages/Components/Components';
 import Home from '~/pages/Home/Home';
 import Home2 from '~/pages/Home2/Home2';
@@ -33,11 +34,18 @@ const routerSite = [
     children: [
       {
         path: '/docs',
-        element: <Home2 />,
         children: [
           {
-            path: ':id',
+            index: true,
+            element: <Home2 />,
+          },
+          {
+            path: 'accordion',
             element: <Components />,
+          },
+          {
+            path: 'button',
+            element: <ButtonPage />,
           },
         ],
       },

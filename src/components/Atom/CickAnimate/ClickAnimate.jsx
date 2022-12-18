@@ -1,7 +1,7 @@
 import styles from './ClickAnimate.module.css';
 import styled from 'styled-components';
 
-const ClickAnimate = ({ children, rippleColor = "rgba(255, 255, 255, 0.5)",className='', ...props }) => {
+const ClickAnimate = ({ children, rippleColor = "rgba(255, 255, 255, 0.5)", className = '', cancel = true, ...props }) => {
     const createRipple = (e) => {
         let circle = document.createElement('span');
         circle.classList.add(styles.circle);
@@ -29,9 +29,10 @@ const ClickAnimate = ({ children, rippleColor = "rgba(255, 255, 255, 0.5)",class
             });
         }, 300);
     };
+
     return (
         <Wrap {...props} className={className}>
-            <Ripple onClick={createRipple} >
+            <Ripple onClick={cancel ? createRipple : () => {}} >
                 {children}
             </Ripple>
         </Wrap>

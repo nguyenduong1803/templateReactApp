@@ -7,7 +7,7 @@ function Home2() {
   return (
     <div>
       <Reports />
-      <Grid className="container-fluid p-0">
+      <Grid container="container-fluid">
         <Col lg={12} md={12} sm={12}>
           <Paper r={10} elevation={8}>
             <div className="p-24">
@@ -39,7 +39,7 @@ function Home2() {
             </div>
           </Paper></Col>
       </Grid>
-      <Grid className="mt-24 mb-24">
+      <Grid className="mt-24 mb-24" container="container-fluid">
         <Col>
           <Paper r={10} elevation={8} className="p-24">
             <p>

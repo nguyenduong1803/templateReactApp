@@ -31,5 +31,6 @@ const WrapPaper = styled.section`
   min-height:${(props) => props.minHeight};
   box-shadow: ${(props) => props.boxShadow};
   color: var(--paper-color);
+  overflow: hidden;
 `;
 export default Paper;

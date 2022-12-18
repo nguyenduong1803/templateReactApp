@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Button from '~/components/Atom/Button/Button';
 import ClickAnimate from '~/components/Atom/CickAnimate/ClickAnimate';
 import Modal from '~/components/Atom/Modal/Modal';
-import Accordion from '~/components/Atom/Accordion/Accordion';
+import Accordion from '~/components/Molecule/Accordion/Accordion';
 import ScrollToTop from '~/components/Atom/ScrollToTop/ScrollToTop';
 import SelectMulti from '~/components/Atom/Input/Select/SelectMulti';
 import Pagination from '~/components/Atom/Pagination/Pagination';

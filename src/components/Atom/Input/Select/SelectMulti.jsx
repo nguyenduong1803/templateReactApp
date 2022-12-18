@@ -53,7 +53,6 @@ const ResultSearch = memo(({ selected, setSelected, result, search }) => {
   };
   // computed result
   const Result = useMemo(() => {
-    console.log('Render');
     if (!result || search.trim() === '') return '';
     else if (result.length === 0) return <h4 className="p-12">không tìm thấy</h4>;
     else

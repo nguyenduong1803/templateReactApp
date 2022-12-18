@@ -39,7 +39,7 @@ const list = [
 ];
 function Reports() {
   return (
-    <Grid className="mb-24">
+    <Grid container="container-fluid" className="mb-24">
       {list.map((item, index) => {
         const Icon = item.icon
         return (

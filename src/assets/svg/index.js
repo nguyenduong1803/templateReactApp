@@ -11,3 +11,8 @@ export { default as Android } from './Android';
 export { default as WindowIcon } from './WindowIcon';
 export { default as BugIcon } from './BugIcon';
 export { default as NotifyIcon } from './NotifyIcon';
+export { default as BookIcon } from './BookIcon';
+export { default as ComponentIcon } from './ComponentIcon';
+export { default as EditIcon } from './EditIcon';
+export { default as TemplateIcon } from './TemplateIcon';
+export { default as ScienceIcon } from './ScienceIcon';

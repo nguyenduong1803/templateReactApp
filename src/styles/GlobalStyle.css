@@ -142,11 +142,14 @@
 .p-0 {
   padding: 0;
 }
+.p-6{
+  padding: 0.6rem;
+}
 .p-12 {
-  margin: 1.2rem;
+  padding: 1.2rem;
 }
 .pb-12 {
-  margin-bottom: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 .pr-12 {
   padding-right: 1.2rem;
@@ -155,19 +158,19 @@
   padding-left: 1.2rem;
 }
 .pt-12 {
-  margin-top: 1.2rem;
+  padding-top: 1.2rem;
 }
 .pb-24 {
-  margin-bottom: 2.4rem;
+  padding-bottom: 2.4rem;
 }
 .pt-24 {
-  margin-top: 2.4rem;
+  padding-top: 2.4rem;
 }
 .pr-24 {
-  margin-right: 2.4rem;
+  padding-right: 2.4rem;
 }
 .pl-24 {
-  margin-left: 2.4rem;
+  padding-left: 2.4rem;
 }
 
 .p-24 {
@@ -200,10 +203,28 @@
 .m-24 {
   margin: 2.4rem;
 }
+.my-12 {
+  margin: 1.2rem auto;
+}
+.mx-12 {
+  margin: auto 1.2rem;
+}
+.my-24 {
+  margin: 2.4rem auto;
+}
+.mx-24 {
+  margin: auto 2.4rem;
+}
 .m-0-auto {
   margin: 0 auto;
 }
 /* ================================== Text ==================================== */
+.main-title {
+  text-transform: capitalize;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
 .textOverflow-1 {
   width: 100%;
   overflow: hidden;
@@ -230,6 +251,15 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
 }
 .text-color {
   color: var(--text-color);
@@ -303,6 +333,28 @@
 .w-100 {
   width: 100%;
 }
+/* ================================== font-weight ==================================== */
+.fw-300{
+  font-weight:300;
+}
+.fw-400{
+  font-weight:400;
+}
+.fw-500{
+  font-weight:500;
+}
+.fw-600{
+  font-weight:600;
+}
+.fw-700{
+  font-weight:700;
+}
+.fw-800{
+  font-weight:800;
+}
+.fw-900{
+  font-weight:900;
+}
 /* ================================== line-heihgt ==================================== */
 .line-heihgt-24 {
   line-height: 2.4rem;
@@ -327,7 +379,7 @@
 }
 .scrollbar-1:hover,
 .scrollbar-1:focus,
-.showScrollbar-content{
+.showScrollbar-content {
   visibility: visible;
 }
 .scrollbar-1::-webkit-scrollbar-track {
