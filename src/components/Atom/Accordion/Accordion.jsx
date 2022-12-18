@@ -5,7 +5,8 @@ import { ChevronDown } from '~/assets/svg';
 import Paper from '~/layouts/Styled/Paper';
 import ClickAnimate from '../CickAnimate/ClickAnimate';
 
-export default function Accordion({ title, hasOpen = false, children, p = "6px", className, bg = "#fff", ...props }) {
+export default function Accordion({ title, hasOpen = false, children, p = "6px", hover = '', className = '', bg = "#fff", ...props }) {
+  console.log(hover);
   const [open, setOpen] = useState(false);
   const refContent = useRef();
   useEffect(() => {
@@ -13,7 +14,7 @@ export default function Accordion({ title, hasOpen = false, children, p = "6px",
   }, [hasOpen])
   return (
     <Paper bg='unset' elevation={0} >
-      <ClickAnimate rippleColor='#ccc'>
+      <ClickAnimate className={hover} rippleColor='#ccc'>
         <ButtonAccordion onClick={() => setOpen(!open)} padding={p} bg={bg} className={`d-flex j-between a-center ${className}`} {...props}>
           {title}
           <DropIcon style={open ? { transform: `scale(0.8) rotate(180deg) ` } : {}} />
@@ -33,7 +34,10 @@ export default function Accordion({ title, hasOpen = false, children, p = "6px",
 Accordion.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  height: PropTypes.string
+  height: PropTypes.string,
+  hasOpen: PropTypes.bool,
+  hover: PropTypes.string,
+  className: PropTypes.string
 };
 
 const ButtonAccordion = styled.p`

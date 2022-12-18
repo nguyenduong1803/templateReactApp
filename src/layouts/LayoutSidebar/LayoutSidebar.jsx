@@ -12,17 +12,11 @@ function LayoutSidebar() {
       <>
          <Header header={header} />
          <Grid container="container-fluid bg-default position-relative">
-            <Col lg={3} md={3} >
+            <Col lg={2} md={3} >
                <Sidebar />
             </Col>
-            <Col lg={9} md={9} sm={12}className=" pt-24" >
-               <Outlet />
-               <Footer footer={footer} />
-               <Footer footer={footer} />
-               <Footer footer={footer} />
-               <Footer footer={footer} />
-               <Footer footer={footer} />
-               <Footer footer={footer} />
+            <Col lg={10} md={9} sm={12} className=" pt-24" >
+               <Outlet />  
                <Footer footer={footer} />
                <Footer footer={footer} />
                <Footer footer={footer} />

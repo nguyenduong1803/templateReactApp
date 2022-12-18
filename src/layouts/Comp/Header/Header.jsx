@@ -24,13 +24,14 @@ export default function Header() {
             ref={refNav}
           >
             <Ul className="d-flex gap-12 center ">
-              <InputText style={{ paddingLeft: "4rem",width:"400px",backgroundColor:"var(--bg-default)"}} Icon={SearchIcon} />
+              <InputText style={{ paddingLeft: "4rem", width: "400px", backgroundColor: "var(--bg-default)" }} Icon={SearchIcon} />
               {/* {header.map(item => {
                 return (
                   <li key={item.name}><LinkMenu to={item.path}>{item.name}</LinkMenu></li>)
               })} */}
             </Ul>
             <div className="login d-flex center gap-24 md-mb-12">
+              <img src="https://minimal-kit-react.vercel.app/assets/icons/ic_flag_en.svg" alt="" />
               <NotifyIcon />
               <Avatar />
             </div>
