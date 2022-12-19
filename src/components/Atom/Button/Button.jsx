@@ -13,7 +13,6 @@ export default function Button({ to, href, children, bg = 'var(--primary)', ...p
     props.href = href;
     typeHtml = 'a';
   }
-  console.log(props);
   return (
     <ButtonComp {...props}>
       {children}

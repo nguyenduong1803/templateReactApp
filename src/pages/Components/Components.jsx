@@ -109,9 +109,7 @@ function Components() {
             {list.map((item) => {
               return (
                 <Accordion key={item.id} title={item.title} bg={item.bg}>
-                  {item.child.map((child) => (
-                    <li className="hover-default p-6" key={child.id}>{child.name}</li>
-                  ))}
+                  {item.child.map((child) => (<li className="hover-default p-6" key={child.id}>{child.name}</li>))}
                 </Accordion>
               );
             })}
@@ -166,6 +164,7 @@ function Components() {
                 </Accordion>
               );
            }
+           return <></>
           })}
         </Paper>
         </Col>
