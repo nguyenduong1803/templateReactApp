@@ -55,13 +55,33 @@ export const sidebars = [
         path: '',
       },
       {
-        id: 'carousel',
-        element: 'Carousel',
+        id: 'drawer',
+        element: 'Drawer',
         path: '',
       },
       {
-        id: 'drawer',
-        element: 'Drawer',
+        id: 'image',
+        element: 'Image',
+        path: '',
+      },
+      {
+        id: 'modal',
+        element: 'Modal',
+        path: '',
+      },
+      {
+        id: 'skeleton',
+        element: 'Skeleton',
+        path: '',
+      },
+      {
+        id: 'tabs',
+        element: 'Tabs',
+        path: '',
+      },
+      {
+        id: 'tippy',
+        element: 'Tippy',
         path: '',
       },
     ],

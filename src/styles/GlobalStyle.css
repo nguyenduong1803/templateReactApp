@@ -333,6 +333,23 @@
 .border-top {
   border-right: 1px solid var(--border-color);
 }
+/* ================================== radius ==================================== */
+.radius-4{
+border-radius: 0.4rem;
+}
+.radius-6{
+border-radius: 0.6rem;
+}
+.radius-8{
+border-radius: 0.8rem;
+}
+.radius-10{
+border-radius: 0.8rem;
+}
+.radius-50{
+border-radius: 50%;
+}
+
 /* ================================== heihgt ==================================== */
 .h-100 {
   height: 100%;
