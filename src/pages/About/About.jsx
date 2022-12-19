@@ -37,7 +37,6 @@ function About() {
   useEffect(() => {
     getProduct(setData);
   }, []);
-  console.log(data);
   return (
     <main>
       <Tabs listTab={listTab} />

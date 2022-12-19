@@ -7,135 +7,121 @@ function Home2() {
   return (
     <div>
       <Reports />
-      <Paper r={10} elevation={8}>
-        <div className="p-24">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-            praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-            temporibus!
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-            praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-            temporibus!
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-            praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-            temporibus!
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-            praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-            temporibus!
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-            praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-            temporibus!
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-            praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-            temporibus!
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-            praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-            temporibus!
-          </p>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-            praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-            temporibus!
-          </p>
-        </div>
-      </Paper>
-      <div className="mt-24 mb-24">
-        <Grid>
-          <Col>
-            <Paper r={10} elevation={8} className="p-24">
+      <Grid container="container-fluid">
+        <Col lg={12} md={12} sm={12}>
+          <Paper r={10} elevation={8}>
+            <div className="p-24">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
-                nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
-                omnis iusto.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
+                praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
+                temporibus!
               </p>
-            </Paper>
-          </Col>
-          <Col>
-            <Paper r={10} elevation={8} className="p-24">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
-                nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
-                omnis iusto.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
+                praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
+                temporibus!
               </p>
-            </Paper>
-          </Col>
-          <Col>
-            <Paper r={10} elevation={8} className="p-24">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
-                nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
-                omnis iusto.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
+                praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
+                temporibus!
               </p>
-            </Paper>
-          </Col>
-          <Col>
-            <Paper r={10} elevation={8} className="p-24">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
-                nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
-                omnis iusto.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
+                praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
+                temporibus!
               </p>
-            </Paper>
-          </Col>
-          <Col>
-            <Paper r={10} elevation={8} className="p-24">
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
-                nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
-                omnis iusto.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
+                praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
+                temporibus!
               </p>
-            </Paper>
-          </Col>
-          <Col>
-            <Paper r={10} elevation={8} className="p-24">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
-                nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
-                omnis iusto.
-              </p>
-            </Paper>
-          </Col>
-          <Col>
-            <Paper r={10} elevation={8} className="p-24">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
-                nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
-                omnis iusto.
-              </p>
-            </Paper>
-          </Col>
-          <Col>
-            <Paper r={10} elevation={8} className="p-24">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
-                nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
-                omnis iusto.
-              </p>
-            </Paper>
-          </Col>
-          <Col>
-            <Paper r={10} elevation={8} className="p-24">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
-                nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
-                omnis iusto.
-              </p>
-            </Paper>
-          </Col>
-        </Grid>
-      </div>
+            </div>
+          </Paper></Col>
+      </Grid>
+      <Grid className="mt-24 mb-24" container="container-fluid">
+        <Col>
+          <Paper r={10} elevation={8} className="p-24">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
+              nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
+              omnis iusto.
+            </p>
+          </Paper>
+        </Col>
+        <Col>
+          <Paper r={10} elevation={8} className="p-24">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
+              nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
+              omnis iusto.
+            </p>
+          </Paper>
+        </Col>
+        <Col>
+          <Paper r={10} elevation={8} className="p-24">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
+              nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
+              omnis iusto.
+            </p>
+          </Paper>
+        </Col>
+        <Col>
+          <Paper r={10} elevation={8} className="p-24">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
+              nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
+              omnis iusto.
+            </p>
+          </Paper>
+        </Col>
+        <Col>
+          <Paper r={10} elevation={8} className="p-24">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
+              nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
+              omnis iusto.
+            </p>
+          </Paper>
+        </Col>
+        <Col>
+          <Paper r={10} elevation={8} className="p-24">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
+              nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
+              omnis iusto.
+            </p>
+          </Paper>
+        </Col>
+        <Col>
+          <Paper r={10} elevation={8} className="p-24">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
+              nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
+              omnis iusto.
+            </p>
+          </Paper>
+        </Col>
+        <Col>
+          <Paper r={10} elevation={8} className="p-24">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
+              nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
+              omnis iusto.
+            </p>
+          </Paper>
+        </Col>
+        <Col>
+          <Paper r={10} elevation={8} className="p-24">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam et explicabo sint. Ab, reprehenderit
+              nobis! Nihil sed ipsum, tenetur dolores voluptatem dicta numquam assumenda inventore quaerat rem soluta
+              omnis iusto.
+            </p>
+          </Paper>
+        </Col>
+      </Grid>
     </div>
   );
 }
