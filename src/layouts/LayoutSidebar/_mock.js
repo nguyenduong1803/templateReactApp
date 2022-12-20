@@ -65,6 +65,11 @@ export const sidebars = [
         path: '',
       },
       {
+        id: 'input',
+        element: 'Input',
+        path: '',
+      },
+      {
         id: 'modal',
         element: 'Modal',
         path: '',

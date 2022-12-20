@@ -335,7 +335,7 @@ Extra large screen / wide desktop xl: 1200px */
     margin: 0 auto;
   }
   .container-fluid {
-   padding: 0 24px;
+   padding: 0 12px;
   }
   .row {
     margin-right: -12px;

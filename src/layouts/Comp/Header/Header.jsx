@@ -13,10 +13,10 @@ export default function Header() {
   const refNav = useRef()
   return (
     <>
-      <Wrap className="position-fixed bg-white r-0 l-0 t-0">
-        <div className="container d-flex j-between ">
-          <WrapLogo to="/" className="logo">
-            <Image src="ádf" alt="" />
+      <Wrap className="position-sticky bg-white r-0 l-0 t-0">
+        <div className="container p-0 d-flex j-between a-center">
+        <WrapLogo to="/" className="logo">
+            <Image src="https://seeklogo.com/images/M/material-design-logo-8BAFEFE50B-seeklogo.com.png" className="p-6" alt="" />
           </WrapLogo>
           <Nav
             style={menuShow ? { maxHeight: `${refNav.current.scrollHeight}px` } : {}}
@@ -24,7 +24,7 @@ export default function Header() {
             ref={refNav}
           >
             <Ul className="d-flex gap-12 center ">
-              <InputText style={{ paddingLeft: "4rem", width: "400px", backgroundColor: "var(--bg-default)" }} Icon={SearchIcon} />
+              <InputText style={{ paddingLeft: "4rem", width: "400px", backgroundColor: "var(--bg-default)" }} placeholder="Search..." Icon={SearchIcon} />
               {/* {header.map(item => {
                 return (
                   <li key={item.name}><LinkMenu to={item.path}>{item.name}</LinkMenu></li>)
@@ -39,17 +39,17 @@ export default function Header() {
           <Bar onClick={() => setMenuShow(prev => !prev)} />
         </div>
       </Wrap>
-      <div className="position-relative" style={{ height: '60px' }}></div>
     </>
   )
 }
 const Wrap = styled.header`
+top:0;
 transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 height: 60px;
 width:100%;
 backdrop-filter: blur(6px);
 background-color: rgba(249, 250, 251, 0.7);
-z-index:50;
+z-index:150;
 `
 const WrapLogo = styled(Link)`
 width:60px;

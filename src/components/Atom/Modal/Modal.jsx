@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import { CloseSvg } from '../../../assets/svg';
 import styled from 'styled-components';
 
-export default function Modal({ children, modalStyle, Button, wrapStyle }) {
+export default function Modal({ children,w="500px",h="300px", modalStyle, Button, wrapStyle }) {
   const [shouldShow, setShouldShow] = useState(false);
   return (
     <>
       <Button onShouldModal={setShouldShow} />
       {shouldShow && (
         <Wrap onClick={() => setShouldShow(false)} style={wrapStyle} className="position-fixed full">
-          <ModalShow style={modalStyle} onClick={(e) => e.stopPropagation()} className="position-absolute center">
+          <ModalShow w={w} h={h} style={modalStyle} onClick={(e) => e.stopPropagation()} className="position-absolute center">
             {children}
             <Close onClick={() => setShouldShow(false)} className="position-absolute" />
           </ModalShow>
@@ -27,8 +27,8 @@ const Wrap = styled.section`
   z-index: 99;
 `;
 const ModalShow = styled.div`
-  width: 400px;
-  height: 300px;
+  width: ${(props)=>props.w};
+  height:  ${(props)=>props.h};
   max-width: calc(100% - (24px));
   background-color: #fff;
   overflow: auto;
@@ -49,4 +49,6 @@ Modal.propTypes = {
   modalStyle: PropTypes.object,
   Button: PropTypes.func,
   wrapStyle: PropTypes.object,
+  w: PropTypes.string,
+  h: PropTypes.string,
 };

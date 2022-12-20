@@ -22,6 +22,7 @@ export default function Button({ to, href, children, bg = 'var(--primary)', ...p
 Button.propTypes = {
   to: PropTypes.string,
   href: PropTypes.string,
+  bg: PropTypes.string,
   onClick: PropTypes.func,
   children: PropTypes.string,
 };

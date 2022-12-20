@@ -27,7 +27,7 @@ const Card = styled.section`
   max-width: 350px;
   width: 100%;
   padding: 30px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #e9e9e9;
   border-radius: 10px;
 `;
 const Header = styled.div`

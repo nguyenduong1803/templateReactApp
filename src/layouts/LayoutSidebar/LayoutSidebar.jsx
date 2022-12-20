@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import styled from 'styled-components';
 //
 import Footer from '../Comp/Footer/Footer';
 import Header from '../Comp/Header/Header';
@@ -10,12 +11,14 @@ import Sidebar from './Sidebar';
 function LayoutSidebar() {
   return (
     <>
-      <Header header={header} />
       <Grid container="container-fluid" className="bg-default position-relative">
-        <Col lg={2} md={3}>
+        <WrapSidebar lg={2} md={3}>
           <Sidebar />
-        </Col>
-        <Col lg={10} md={9} sm={12} className=" pt-24">
+        </WrapSidebar>
+        <Col lg={10} md={9} sm={12}>
+          <Grid container="container-fluid p-0">
+            <Header header={header} />
+          </Grid>
           <Outlet />
           <Footer footer={footer} />
         </Col>
@@ -23,5 +26,9 @@ function LayoutSidebar() {
     </>
   );
 }
-
+const WrapSidebar = styled(Col)`
+  background-color: #fff;
+  box-shadow: 0 2px 0 rgb(90 97 105 / 11%), 0 4px 8px rgb(90 97 105 / 12%), 0 10px 10px rgb(90 97 105 / 6%),
+    0 7px 70px rgb(90 97 105 / 10%);
+`;
 export default LayoutSidebar;
