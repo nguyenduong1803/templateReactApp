@@ -16,7 +16,9 @@ function LayoutSidebar() {
           <Sidebar />
         </WrapSidebar>
         <Col lg={10} md={9} sm={12}>
-          <Header header={header} />
+          <Grid container="container-fluid p-0">
+            <Header header={header} />
+          </Grid>
           <Outlet />
           <Footer footer={footer} />
         </Col>
