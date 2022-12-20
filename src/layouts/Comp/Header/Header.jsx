@@ -39,7 +39,6 @@ export default function Header() {
           <Bar onClick={() => setMenuShow(prev => !prev)} />
         </div>
       </Wrap>
-      <div className="position-relative" style={{ height: '60px' }}></div>
     </>
   )
 }
