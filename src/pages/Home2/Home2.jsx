@@ -6,6 +6,7 @@ import Reports from './components/Molecule/Reports';
 function Home2() {
   return (
     <div>
+      <h2 className="main-title pl-24 mb-12">Hi, Welcome</h2>
       <Reports />
       <Grid container="container-fluid">
         <Col lg={12} md={12} sm={12}>
