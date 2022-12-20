@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function InputText({ name, Icon, ...props }) {
+export default function InputText({ name, Icon,placeholder=' ', ...props }) {
   return (
     <FormFeild className="position-relative">
-      <Input type="text" placeholder="Search..." className="inputText_input" {...props} />
+      <Input type="text" className="inputText_input" placeholder={placeholder} {...props} />
       {Icon && <Icon className="position-absolute l-12 position-y-center" />}
       {name && <Label className="position-absolute inputText_label_name">{name}</Label>}
     </FormFeild>

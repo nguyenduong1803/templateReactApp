@@ -16,7 +16,7 @@ export default function Header() {
       <Wrap className="position-fixed bg-white r-0 l-0 t-0">
         <div className="container d-flex j-between ">
           <WrapLogo to="/" className="logo">
-            <Image src="ádf" alt="" />
+            <Image src="https://seeklogo.com/images/M/material-design-logo-8BAFEFE50B-seeklogo.com.png" className="p-6" alt="" />
           </WrapLogo>
           <Nav
             style={menuShow ? { maxHeight: `${refNav.current.scrollHeight}px` } : {}}
@@ -24,7 +24,7 @@ export default function Header() {
             ref={refNav}
           >
             <Ul className="d-flex gap-12 center ">
-              <InputText style={{ paddingLeft: "4rem", width: "400px", backgroundColor: "var(--bg-default)" }} Icon={SearchIcon} />
+              <InputText style={{ paddingLeft: "4rem", width: "400px", backgroundColor: "var(--bg-default)" }} placeholder="Search..." Icon={SearchIcon} />
               {/* {header.map(item => {
                 return (
                   <li key={item.name}><LinkMenu to={item.path}>{item.name}</LinkMenu></li>)

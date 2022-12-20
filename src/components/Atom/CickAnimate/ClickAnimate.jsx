@@ -31,21 +31,14 @@ const ClickAnimate = ({ children, rippleColor = "rgba(255, 255, 255, 0.5)", clas
     };
 
     return (
-        <Wrap {...props} className={className}>
+        <div {...props} className={`overflow-hidden position-relative cursor-pointer w-100 ${className}`}>
             <Ripple onClick={cancel ? createRipple : () => {}} >
                 {children}
             </Ripple>
-        </Wrap>
+        </div>
     );
 };
-const Wrap = styled.div`
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    z-index:50;
-    width: 100%;
-    
-`
+
 const Ripple = styled.div`
   display: inline-block;
   width: 100%;

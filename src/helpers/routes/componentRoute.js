@@ -1,7 +1,9 @@
 import ButtonPage from '~/pages/Components/Button';
-import Components from '~/pages/Components/Components';
+import Components from '~/pages/Components/Accordion';
 import DrawerPage from '~/pages/Components/Drawer';
 import ImagePage from '~/pages/Components/Image';
+import InputPage from '~/pages/Components/Input';
+import ModalPage from '~/pages/Components/Modal';
 import SkeletonPage from '~/pages/Components/Skeleton';
 import TabsPage from '~/pages/Components/Tabs';
 import TippyPage from '~/pages/Components/Tippy';
@@ -33,9 +35,8 @@ const componentRoute = [
     element: <ImagePage/>,
   },
   {
-    id: 'modal',
-    element: 'Modal',
-    path: '',
+    element: <ModalPage/>,
+    path: 'modal',
   },
   {
     element: 'Image',
@@ -52,6 +53,10 @@ const componentRoute = [
   {
     path: 'tippy',
     element: <TippyPage />,
+  },
+  {
+    path: 'input',
+    element: <InputPage />,
   },
 ];
 export default componentRoute;

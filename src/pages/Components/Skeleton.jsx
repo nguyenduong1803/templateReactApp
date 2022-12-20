@@ -5,7 +5,7 @@ import { Col, Grid } from '~/layouts/Comp/GridSystem';
 function SkeletonPage() {
   return (
     <div>
-      <Grid>
+      <Grid container='container-fluid'>
         <Col>
           <Skeleton />
         </Col>
