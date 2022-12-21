@@ -8,6 +8,7 @@ import ScrollToTop from '~/components/Atom/ScrollToTop/ScrollToTop';
 import SelectMulti from '~/components/Atom/Input/Select/SelectMulti';
 import Pagination from '~/components/Atom/Pagination/Pagination';
 import Paper from '~/layouts/Styled/Paper';
+import Badge from '~/components/Atom/Badge/Badge';
 const fakeData = [
   { name: 'Ha noi' },
   { name: 'Hai Duong' },
@@ -26,7 +27,7 @@ const config = {
 function Home() {
   return (
     <Grid>
-      <Col className="row">
+      <Col className="">
         <Col>
           <Paper elevation={2}>
             <Link to="/about">About page</Link>
@@ -51,6 +52,8 @@ function Home() {
         </Accordion>
       </Col>
       <ScrollToTop />
+      <Badge number={2}>  <h2>Hello</h2></Badge>
+
       <SelectMulti name="Nhập tên thành phố" fakeData={fakeData} />
       <div style={{ width: '640px' }}>
         <p className="textOverflow-1">

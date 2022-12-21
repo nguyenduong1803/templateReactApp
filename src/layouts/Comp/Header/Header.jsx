@@ -3,6 +3,7 @@ import styled from 'styled-components'
 // 
 import { BarIcon, NotifyIcon, SearchSvg } from '~/assets/svg'
 import Avatar from '~/components/Atom/Avatar/Avatar'
+import Badge from '~/components/Atom/Badge/Badge'
 import InputText from '~/components/Atom/Input/InputText'
 
 export default function Header() {
@@ -27,7 +28,7 @@ export default function Header() {
 
             <div className="login d-flex a-center j-flex-end gap-24 ">
               <img src="https://minimal-kit-react.vercel.app/assets/icons/ic_flag_en.svg" alt="" />
-              <NotifyIcon />
+              <Badge number={2}>  <NotifyIcon /></Badge >
               <Avatar />
             </div>
           </Nav>
