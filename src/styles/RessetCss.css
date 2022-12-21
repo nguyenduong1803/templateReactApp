@@ -13,6 +13,7 @@
   --border-color-light: #eee;
   --bg-default: #f4f5f7;
   --hover-color: #eaebed;
+  --overlay-color: rgba(149, 149, 149, 0.3);
 }
 
 html {

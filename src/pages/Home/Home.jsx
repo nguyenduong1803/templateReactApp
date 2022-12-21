@@ -9,6 +9,7 @@ import SelectMulti from '~/components/Atom/Input/Select/SelectMulti';
 import Pagination from '~/components/Atom/Pagination/Pagination';
 import Paper from '~/layouts/Styled/Paper';
 import Badge from '~/components/Atom/Badge/Badge';
+import DropDown from '~/components/Atom/DropDown/DropDown';
 const fakeData = [
   { name: 'Ha noi' },
   { name: 'Hai Duong' },
@@ -53,7 +54,7 @@ function Home() {
       </Col>
       <ScrollToTop />
       <Badge number={2}>  <h2>Hello</h2></Badge>
-
+      <DropDown />
       <SelectMulti name="Nhập tên thành phố" fakeData={fakeData} />
       <div style={{ width: '640px' }}>
         <p className="textOverflow-1">
