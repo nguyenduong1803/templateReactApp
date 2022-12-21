@@ -12,14 +12,10 @@ top: 100%;
     }
 `
 const Tip = styled(Paper)`
-position: absolute;
 visibility: hidden;
 opacity: 0;
 background-color: #fff;
-border-radius:4px;
 transition: .4s;
-width: 100%;
-padding: 12px;
 z-index: 100;
 
 `
@@ -27,7 +23,7 @@ function Tippy({ children,elevation=1, title, ...passProps }) {
     return (
         <Wrap>
             <p {...passProps}>{title}</p>
-            <Tip elevation={elevation} className="childrenTippy">{children}</Tip>
+            <Tip elevation={elevation} className="childrenTippy position-absolute w-100 p-12 radius-4">{children}</Tip>
         </Wrap>
     )
 }
