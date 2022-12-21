@@ -23,6 +23,9 @@ export default function Image({ src, objectFit = 'contain', alt = 'image', w = '
 Image.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string,
+  w: PropTypes.string,
+  h: PropTypes.string,
+  objectFit: PropTypes.string,
 };
 
 const Img = styled.img`

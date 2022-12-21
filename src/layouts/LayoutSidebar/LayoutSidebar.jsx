@@ -4,29 +4,28 @@ import styled from 'styled-components';
 //
 import Footer from '../Comp/Footer/Footer';
 import Header from '../Comp/Header/Header';
-import { footer, header } from '~/helpers/config';
-import Grid from '../Comp/GridSystem/Grid';
-import { Col } from '../Comp/GridSystem';
 import Sidebar from './Sidebar';
+import { footer } from '~/helpers/config';
+import { Box, Grid } from '../Comp/GridSystem';
 function LayoutSidebar() {
   return (
     <>
-      <Grid container="container-fluid" className="bg-default position-relative">
-        <WrapSidebar lg={2} md={3}>
+      <Box className="bg-default ">
+        <WrapSidebar className="vh-100 position-fixed t-0 p-12" w="300px">
           <Sidebar />
         </WrapSidebar>
-        <Col lg={10} md={9} sm={12}>
+        <Box sx={{ paddingLeft: '324px' }}>
           <Grid container="container-fluid p-0">
-            <Header header={header} />
+            <Header />
           </Grid>
           <Outlet />
           <Footer footer={footer} />
-        </Col>
-      </Grid>
+        </Box >
+      </Box>
     </>
   );
 }
-const WrapSidebar = styled(Col)`
+const WrapSidebar = styled(Box)`
   background-color: #fff;
   box-shadow: 0 2px 0 rgb(90 97 105 / 11%), 0 4px 8px rgb(90 97 105 / 12%), 0 10px 10px rgb(90 97 105 / 6%),
     0 7px 70px rgb(90 97 105 / 10%);

@@ -1,36 +1,31 @@
 import { useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 // 
-import { BarIcon, NotifyIcon } from '~/assets/svg'
+import { BarIcon, NotifyIcon, SearchSvg } from '~/assets/svg'
 import Avatar from '~/components/Atom/Avatar/Avatar'
-import Image from '~/components/Atom/Image/Image'
 import InputText from '~/components/Atom/Input/InputText'
-import { SearchSvg } from "~/assets/svg"
 
 export default function Header() {
   const [menuShow, setMenuShow] = useState(false);
   const refNav = useRef()
   return (
     <>
-      <Wrap className="position-sticky bg-white r-0 l-0 t-0">
-        <div className="container p-0 d-flex j-between a-center">
-        <WrapLogo to="/" className="logo">
-            <Image src="https://seeklogo.com/images/M/material-design-logo-8BAFEFE50B-seeklogo.com.png" className="p-6" alt="" />
-          </WrapLogo>
-          <Nav
-            style={menuShow ? { maxHeight: `${refNav.current.scrollHeight}px` } : {}}
-            className="d-flex j-between "
-            ref={refNav}
-          >
-            <Ul className="d-flex gap-12 center ">
-              <InputText style={{ paddingLeft: "4rem", width: "400px", backgroundColor: "var(--bg-default)" }} placeholder="Search..." Icon={SearchIcon} />
-              {/* {header.map(item => {
+      <Wrap className="position-sticky bg-white w-100 t-0">
+        <div className="container p-0 d-flex j-between a-center h-100">
+          <div className="center ">
+            <InputText style={{ paddingLeft: "4rem", width: "400px", backgroundColor: "var(--bg-default)" }} placeholder="Search..." Icon={SearchIcon} />
+            {/* {header.map(item => {
                 return (
                   <li key={item.name}><LinkMenu to={item.path}>{item.name}</LinkMenu></li>)
               })} */}
-            </Ul>
-            <div className="login d-flex center gap-24 md-mb-12">
+          </div>
+          <Nav
+            style={menuShow ? { maxHeight: `${refNav.current.scrollHeight}px` } : {}}
+            className="d-flex j-end "
+            ref={refNav}
+          >
+
+            <div className="login d-flex a-center j-flex-end gap-24 ">
               <img src="https://minimal-kit-react.vercel.app/assets/icons/ic_flag_en.svg" alt="" />
               <NotifyIcon />
               <Avatar />
@@ -51,9 +46,6 @@ backdrop-filter: blur(6px);
 background-color: rgba(249, 250, 251, 0.7);
 z-index:150;
 `
-const WrapLogo = styled(Link)`
-width:60px;
-`
 const Nav = styled.nav`
 flex:1;
 flex-grow: 1;
@@ -73,13 +65,7 @@ transition: all 0.25s;
   border-bottom-right-radius: 5px;
 }
 `
-const Ul = styled.ul`
-flex:1;
-@media (max-width: 61.9375em) {
-  display: block;
-  padding:24px;
-}
-`
+
 const Bar = styled(BarIcon)`
 cursor: pointer;
   @media (min-width: 62em) {

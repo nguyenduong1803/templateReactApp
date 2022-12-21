@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 function Box({
-  h = 'auto',
+  h,
   w = '100%',
   p,
   m,
