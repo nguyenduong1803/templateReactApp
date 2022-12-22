@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { CommonProps } from './CommonStyled';
 function Box({
   h,
   w = '100%',
@@ -11,7 +12,7 @@ function Box({
   minWidth,
   maxWidth,
   radius,
-  bg = '#fff',
+  bg ,
   children,
   sx = {},
   zIndex,
@@ -20,6 +21,10 @@ function Box({
   boxShadow,
   display,
   hover,
+  bottom,
+  left,
+  top,
+  right,
   ...props
 }) {
   return (
@@ -30,6 +35,10 @@ function Box({
       m={m}
       p={p}
       bg={bg}
+      top={top}
+      right={right}
+      left={left}
+      bottom={bottom}
       minHeight={minHeight}
       maxHeight={maxHeight}
       minWidth={minWidth}
@@ -60,25 +69,7 @@ Box.propTypes = {
   hover: PropTypes.string,
   children: PropTypes.node,
 };
-const Wrap = styled.div`
+const Wrap = styled(CommonProps)`
   display: block;
-  width: ${(props) => props.w};
-  ${({ minWidth }) => minWidth && `min-width: ${minWidth};`}
-  ${({ maxWidth }) => maxWidth && `max-width: ${maxWidth};`}
-  ${({ minHeight }) => minHeight && `min-height: ${minHeight};`}
-  ${({ maxHeight }) => maxHeight && `max-height: ${maxHeight};`}
-  ${({ radius }) => radius && `border-radius: ${radius};`}
-  ${({ position }) => position && `position: ${position};`}
-  ${({ display }) => display && `display: ${display};`}
-  ${({ zIndex }) => zIndex && `z-index: ${zIndex};`}
-  ${({ border }) => border && `border: ${border};`}
-  ${({ hover }) => hover && `&:hover{ ${hover}};`}
-  ${({ h }) => h && `height: ${h};`}
-  ${({ w }) => w && `width: ${w};`}
-  ${({ m }) => m && `margin: ${m};`}
-  ${({ p }) => p && `padding: ${p};`}
-  
-  background-color: ${(props) => props.bg};
-  box-shadow: ${(props) => props.boxShadow};
 `;
 export default Box;

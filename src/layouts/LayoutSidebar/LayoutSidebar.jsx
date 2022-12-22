@@ -14,8 +14,8 @@ function LayoutSidebar() {
         <WrapSidebar className="vh-100 position-fixed t-0 p-12" w="300px">
           <Sidebar />
         </WrapSidebar>
-        <Box sx={{ paddingLeft: '324px' }}>
-          <Grid container="container-fluid p-0">
+        <Box className='space-sidebar'>
+          <Grid container="container-fluid p-0" style={{margin:"0 0 65px 0"}}>
             <Header />
           </Grid>
           <Outlet />
@@ -29,5 +29,6 @@ const WrapSidebar = styled(Box)`
   background-color: #fff;
   box-shadow: 0 2px 0 rgb(90 97 105 / 11%), 0 4px 8px rgb(90 97 105 / 12%), 0 10px 10px rgb(90 97 105 / 6%),
     0 7px 70px rgb(90 97 105 / 10%);
+    z-index: 200;
 `;
 export default LayoutSidebar;

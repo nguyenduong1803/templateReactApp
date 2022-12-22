@@ -102,7 +102,6 @@ function Components() {
   return (
     <div>
       <h2 className="main-title pl-24">Accordion</h2>
-      <h3 className="pl-24 fz-24 fw-500">Basic Components</h3>
       <Grid container="container-fluid" className="my-24">
         <Col>
           <Paper r={4} elevation={8}>

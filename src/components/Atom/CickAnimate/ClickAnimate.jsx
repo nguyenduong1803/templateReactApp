@@ -31,8 +31,8 @@ const ClickAnimate = ({ children, rippleColor = "rgba(255, 255, 255, 0.5)", clas
     };
 
     return (
-        <div {...props} className={`overflow-hidden position-relative cursor-pointer w-100 ${className}`}>
-            <Ripple onClick={cancel ? createRipple : () => {}} >
+        <div className={`overflow-hidden position-relative cursor-pointer userSelect-none w-100 ${className}`}  {...props} >
+            <Ripple  onClick={cancel ? createRipple : () => {}} >
                 {children}
             </Ripple>
         </div>

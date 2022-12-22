@@ -1,5 +1,5 @@
 import React from 'react'
-import Tabs from '~/components/Atom/Tabs/Tabs';
+import Tabs from '~/components/Molecule/Tabs/Tabs';
 import { Col, Grid } from '~/layouts/Comp/GridSystem';
 
 const Curriculumn = () => {

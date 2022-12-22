@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Button from '~/components/Atom/Button/Button';
 import OptimizeImage from '~/components/Atom/Image/OptimizeImage';
-import Tabs from '~/components/Atom/Tabs/Tabs';
+import Tabs from '~/components/Molecule/Tabs/Tabs';
 import Box from '~/layouts/Comp/GridSystem/Box';
 import { getProduct } from '~/services/productService/produtService';
 

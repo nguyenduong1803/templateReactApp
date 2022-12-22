@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '~/components/Atom/Button/Button';
 import ClickAnimate from '~/components/Atom/CickAnimate/ClickAnimate';
-import Modal from '~/components/Atom/Modal/Modal';
+import Modal from '~/components/Molecule/Modal/Modal';
 import { Col, Grid } from '~/layouts/Comp/GridSystem';
 
 function ModalPage() {
