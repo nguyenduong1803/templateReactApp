@@ -13,6 +13,7 @@
   --border-color-light: #eee;
   --bg-default: #f4f5f7;
   --hover-color: #eaebed;
+  --width-sidebar:300px;
 }
 
 html {

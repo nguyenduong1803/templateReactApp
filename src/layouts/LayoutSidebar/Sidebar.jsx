@@ -20,7 +20,6 @@ function Sidebar() {
               title={sidebar.title}
               key={sidebar.id}
               p="6px 12px 6px 24px"
-              bg="var(--bg-default)"
               className="hover-default"
               cancel
             >

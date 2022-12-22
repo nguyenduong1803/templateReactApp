@@ -16,7 +16,7 @@ const list = [
     icon: MacIcon,
     name: 'New users',
     total: '1.35M',
-    color: 'rgb(12, 83, 183) ',
+    color: 'rgb(12, 83, 183)',
     bg: 'rgba(16, 57, 150, 0.24)',
     wrapColor: 'rgb(208, 242, 255)',
   },
@@ -39,7 +39,7 @@ const list = [
 ];
 function Reports() {
   return (
-    <Grid container="container-fluid" className="mb-24">
+    <div className="row">
       {list.map((item, index) => {
         const Icon = item.icon
         return (
@@ -56,7 +56,7 @@ function Reports() {
           </Col>
         );
       })}
-    </Grid>
+    </div>
   )
 }
 

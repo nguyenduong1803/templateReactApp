@@ -492,12 +492,16 @@ border-radius: 50%;
 .bg-white {
   background-color: var(--white);
 }
-/* ================================== any ==================================== */
+/* ================================== overfllow ==================================== */
 .overflow-hidden{
   overflow: hidden;
 }
 .overflow-auto{
   overflow: auto;
+}
+/* ================================== any ==================================== */
+.space-sidebar{
+  padding-left: var(--width-sidebar);
 }
 .loadSkeleton::before {
   content: '';

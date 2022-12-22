@@ -1,46 +1,29 @@
 import React from 'react';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Row, Stack } from '~/layouts/Comp/GridSystem';
 import Paper from '~/layouts/Styled/Paper';
+import CharPie from './components/Molecule/CharPie';
+import LinePie from './components/Molecule/LinePie';
 import Reports from './components/Molecule/Reports';
 
 function Home2() {
   return (
-    <div>
-      <h2 className="main-title pl-24 mb-12">Hi, Welcome</h2>
+    <div className="container-fluid">
+      <h2 className="main-title  mb-12">Hi, Welcome</h2>
       <Reports />
-      <Grid container="container-fluid">
-        <Col lg={12} md={12} sm={12}>
-          <Paper r={10} elevation={8}>
-            <div className="p-24">
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-                praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-                temporibus!
-              </p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-                praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-                temporibus!
-              </p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-                praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-                temporibus!
-              </p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-                praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-                temporibus!
-              </p>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit non quod repellendus, rem tempore expedita
-                praesentium atque quas! Tempore velit accusamus ex delectus possimus tenetur qui expedita officiis quas
-                temporibus!
-              </p>
-            </div>
-          </Paper></Col>
-      </Grid>
-      <Grid className="mt-24 mb-24" container="container-fluid">
+      <Row>
+        <Col lg={8} md={8} sm={8}>
+          <Paper r={10} elevation={8} className="p-24">
+            <LinePie />
+          </Paper>
+        </Col>
+        <Col lg={4} md={4} sm={4}>
+          <Paper r={10} elevation={8} p="2.4rem" className="p-24 h-100">
+            <CharPie />
+            <div>Sort</div>
+          </Paper>
+        </Col>
+      </Row>
+      <Row className="">
         <Col>
           <Paper r={10} elevation={8} className="p-24">
             <p>
@@ -122,7 +105,7 @@ function Home2() {
             </p>
           </Paper>
         </Col>
-      </Grid>
+      </Row>
     </div>
   );
 }
