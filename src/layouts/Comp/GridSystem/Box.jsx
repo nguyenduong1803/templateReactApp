@@ -42,7 +42,6 @@ function Box({
       bottom={bottom}
       zIndex={zIndex}
       position={position}
-
       minHeight={minHeight}
       maxHeight={maxHeight}
       minWidth={minWidth}
