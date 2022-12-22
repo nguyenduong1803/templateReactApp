@@ -3,6 +3,7 @@ import styled from 'styled-components';
 //
 import { BarIcon, NotifyIcon, SearchSvg } from '~/assets/svg';
 import Avatar from '~/components/Atom/Avatar/Avatar';
+import Badge from '~/components/Atom/Badge/Badge';
 import InputText from '~/components/Atom/Input/InputText';
 import { Box } from '../GridSystem';
 
