@@ -8,6 +8,7 @@ import SkeletonPage from '~/pages/Components/Skeleton';
 import TabsPage from '~/pages/Components/Tabs';
 import TippyPage from '~/pages/Components/Tippy';
 import Home2 from '~/pages/Home2/Home2';
+import DropdownPage from '~/pages/Components/Dropdown';
 
 const componentRoute = [
   {
@@ -31,11 +32,15 @@ const componentRoute = [
     element: <DrawerPage />,
   },
   {
-    path: 'image',
-    element: <ImagePage/>,
+    path: 'dropdown',
+    element: <DropdownPage />,
   },
   {
-    element: <ModalPage/>,
+    path: 'image',
+    element: <ImagePage />,
+  },
+  {
+    element: <ModalPage />,
     path: 'modal',
   },
   {
@@ -44,10 +49,10 @@ const componentRoute = [
   },
   {
     path: 'skeleton',
-    element: <SkeletonPage/>,
+    element: <SkeletonPage />,
   },
   {
-    element: <TabsPage/>,
+    element: <TabsPage />,
     path: 'tabs',
   },
   {

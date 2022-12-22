@@ -17,7 +17,7 @@ function InputPage() {
   return (
     <div>
       <Grid container="container-fluid">
-        <Col>
+        <Col lg={4}>
           <Paper className="p-24">
             <h2 className="text-center">Form login</h2>
             <Box className="my-24">
@@ -29,7 +29,7 @@ function InputPage() {
           </Paper>
         </Col>
         <Col></Col>
-        <Col lg={6} md={6}>
+        <Col lg={5} md={5}>
           <InputRange />
           <InputRange color="var(--text-success)" />
           <InputRange color="var(--text-danger)" />

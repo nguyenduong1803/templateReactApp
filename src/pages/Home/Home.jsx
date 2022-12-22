@@ -38,14 +38,12 @@ function Home() {
       </Col>
       <Col lg={12}>
         <ClickAnimate>
-          {' '}
           <Button to="/about">Button</Button>
         </ClickAnimate>
         <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>
           <h2>hello</h2>
         </Modal>
         <ClickAnimate>
-          {' '}
           <div style={{ background: '#0f51e0' }}>Caklhsdfkjahsdfouasdhfoauihfa</div>
         </ClickAnimate>
       </Col>

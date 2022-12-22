@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const CommonProps = styled.div`
+ const CommonStyled = styled.div`
   ${({ minWidth }) => minWidth && `min-width: ${minWidth};`}
   ${({ maxWidth }) => maxWidth && `max-width: ${maxWidth};`}
   ${({ minHeight }) => minHeight && `min-height: ${minHeight};`}
@@ -18,6 +18,9 @@ export const CommonProps = styled.div`
   ${({ bottom }) => bottom && `bottom: ${bottom};`}
   ${({ left }) => left && `left: ${left};`}
   ${({ right }) => right && `right: ${right};`}
-  
+  ${({ border }) => border && `border: ${border};`}
+  ${({ overflow }) => overflow && `overflow: ${overflow};`}
   background-color: ${(props) => props.bg};
 `;
+
+export default CommonStyled
