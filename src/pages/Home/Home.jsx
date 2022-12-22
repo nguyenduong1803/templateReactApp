@@ -63,8 +63,9 @@ function Home() {
 
       <Col lg={12} md={12}>
         <Box w="20rem">
+          <Button onClick={()=>setShowDropdown(true)}>Show Drop</Button>
           <DropDown showDropdown={showDropdown} setShowDropdown={setShowDropdown}>
-            <Paper elevation={8} className='p-12'>
+            <Paper elevation={10} className='p-12'>
                 <li>item</li>
                 <li>item</li>
                 <li>item</li>

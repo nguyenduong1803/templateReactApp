@@ -5,15 +5,19 @@ import { BarIcon, NotifyIcon, SearchSvg } from '~/assets/svg';
 import Avatar from '~/components/Atom/Avatar/Avatar';
 import Badge from '~/components/Atom/Badge/Badge';
 import InputText from '~/components/Atom/Input/InputText';
+import Dropdown from '~/components/Molecule/Dropdown/Dropdown';
+import Paper from '~/layouts/Styled/Paper';
 import { Box } from '../GridSystem';
 
 export default function Header() {
   const [menuShow, setMenuShow] = useState(false);
+  const [showDropdown, setShowDropdown] = useState(false);
+
   const refNav = useRef();
   return (
     <>
       <Wrap className="position-fixed bg-white w-100 t-0 r-0">
-        <div className="d-flex j-between a-center h-100" style={{zIndex:100,padding:"0 2.4rem 0 32.4rem"}}>
+        <div className="d-flex j-between a-center h-100" style={{ zIndex: 100, padding: '0 2.4rem 0 32.4rem' }}>
           <div className="center ">
             <InputText
               style={{ paddingLeft: '4rem', width: '400px', backgroundColor: 'var(--bg-default)' }}
@@ -32,14 +36,26 @@ export default function Header() {
           >
             <div className="login d-flex a-center gap-24 ">
               <img src="https://minimal-kit-react.vercel.app/assets/icons/ic_flag_en.svg" alt="" />
-              <Badge number={2}>  <NotifyIcon /></Badge >
-              <Avatar />
+              <Badge number={2}>
+                <NotifyIcon />
+              </Badge>
+              <Box>
+                <Avatar onClick={() => setShowDropdown(true)} />
+                <Dropdown showDropdown={showDropdown} setShowDropdown={setShowDropdown} right="50%" w="22rem">
+                  <Paper elevation={10} className="p-12"  >
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                  </Paper>
+                </Dropdown>
+              </Box>
             </div>
           </Nav>
           <Bar onClick={() => setMenuShow((prev) => !prev)} />
         </div>
       </Wrap>
-      <Box  className="position-relative"></Box>
+      <Box className="position-relative"></Box>
     </>
   );
 }
