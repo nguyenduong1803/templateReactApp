@@ -513,3 +513,6 @@ border-radius: 50%;
   background-repeat: no-repeat;
   animation: shimmer 1.4s linear infinite;
 }
+.overlay{
+  background-color:var(--overlay-color);
+}
