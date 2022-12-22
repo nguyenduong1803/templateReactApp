@@ -12,6 +12,7 @@ import { Box } from '../GridSystem';
 export default function Header() {
   const [menuShow, setMenuShow] = useState(false);
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showNotify, setShowNotify] = useState(false);
 
   const refNav = useRef();
   return (
@@ -36,13 +37,23 @@ export default function Header() {
           >
             <div className="login d-flex a-center gap-24 ">
               <img src="https://minimal-kit-react.vercel.app/assets/icons/ic_flag_en.svg" alt="" />
-              <Badge number={2}>
-                <NotifyIcon />
-              </Badge>
+              <Box >
+                <Badge className='cursor-pointer' onClick={() => setShowNotify(true)} number={2}>
+                  <NotifyIcon />
+                </Badge>
+                <Dropdown showDropdown={showNotify} setShowDropdown={setShowNotify} right="50%" w="22rem">
+                  <Paper elevation={10} className="p-12">
+                    <li>thong baos</li>
+                    <li>thong baos</li>
+                    <li>thong baos</li>
+                    <li>thong baos</li>
+                  </Paper>
+                </Dropdown>
+              </Box>
               <Box>
                 <Avatar onClick={() => setShowDropdown(true)} />
                 <Dropdown showDropdown={showDropdown} setShowDropdown={setShowDropdown} right="50%" w="22rem">
-                  <Paper elevation={10} className="p-12"  >
+                  <Paper elevation={10} className="p-12">
                     <li>item</li>
                     <li>item</li>
                     <li>item</li>

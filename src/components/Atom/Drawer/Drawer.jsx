@@ -24,10 +24,13 @@ Drawer.propTypes = {
 
 const DrawerContent = styled.aside`
   position: absolute;
+  top: 0;
   background-color: #ffffff;
   width: 400px;
   left: -440px;
   padding: 24px;
+  top: 0;
+  height: 100%;
   transition: all 0.3s;
   border: 1px solid var(--border-color);
   z-index: 302;
