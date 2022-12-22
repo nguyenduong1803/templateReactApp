@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-function Badge({ children, number, w = "1.8rem", h = "1.8rem", top = "-0.7rem", color = "#fff;", right = "-0.7rem", bottom, left, bg = 'var(--text-danger)', ...props }) {
+function Badge({ children, number,className='', w = "1.8rem", h = "1.8rem", top = "-0.7rem", color = "#fff;", right = "-0.7rem", bottom, left, bg = 'var(--text-danger)', ...props }) {
 
     return (
-        <div className="position-relative" {...props}>
+        <div className={`position-relative  ${className}`} {...props}>
             <WrapBage className="position-absolute text-center fz-14"
                 h={h}
                 w={w}
