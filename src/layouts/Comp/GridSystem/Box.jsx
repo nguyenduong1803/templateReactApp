@@ -12,7 +12,7 @@ function Box({
   minWidth,
   maxWidth,
   radius,
-  bg = '#fff',
+  bg ,
   children,
   sx = {},
   zIndex,
@@ -21,6 +21,10 @@ function Box({
   boxShadow,
   display,
   hover,
+  bottom,
+  left,
+  top,
+  right,
   ...props
 }) {
   return (
@@ -31,6 +35,10 @@ function Box({
       m={m}
       p={p}
       bg={bg}
+      top={top}
+      right={right}
+      left={left}
+      bottom={bottom}
       minHeight={minHeight}
       maxHeight={maxHeight}
       minWidth={minWidth}

@@ -7,8 +7,7 @@ import Paper from '~/layouts/Styled/Paper';
 function ButtonPage() {
   return (
     <div>
-      <h2 className="main-title pl-24">2. Button</h2>
-      <h3 className="pl-24 fz-24 fw-500">Basic Components</h3>
+      <h2 className="main-title pl-24">Button</h2>
       <Paper className='m-24'>
         <Grid container="container-fluid my-24">
           <Col>

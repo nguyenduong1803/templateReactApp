@@ -15,7 +15,7 @@ function LayoutSidebar() {
           <Sidebar />
         </WrapSidebar>
         <Box className='space-sidebar'>
-          <Grid container="container-fluid p-0">
+          <Grid container="container-fluid p-0" style={{margin:"0 0 65px 0"}}>
             <Header />
           </Grid>
           <Outlet />

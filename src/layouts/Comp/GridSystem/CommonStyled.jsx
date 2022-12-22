@@ -14,6 +14,10 @@ export const CommonProps = styled.div`
   ${({ w }) => w && `width: ${w};`}
   ${({ m }) => m && `margin: ${m};`}
   ${({ p }) => p && `padding: ${p};`}
+  ${({ top }) => top && `top: ${top};`}
+  ${({ bottom }) => bottom && `bottom: ${bottom};`}
+  ${({ left }) => left && `left: ${left};`}
+  ${({ right }) => right && `right: ${right};`}
   
   background-color: ${(props) => props.bg};
 `;

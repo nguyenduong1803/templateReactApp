@@ -27,10 +27,10 @@ export default function Header() {
           </div>
           <Nav
             style={menuShow ? { maxHeight: `${refNav.current.scrollHeight}px` } : {}}
-            className="d-flex j-end "
+            className="d-flex j-end"
             ref={refNav}
           >
-            <div className="login d-flex a-center j-flex-end gap-24 ">
+            <div className="login d-flex a-center gap-24 ">
               <img src="https://minimal-kit-react.vercel.app/assets/icons/ic_flag_en.svg" alt="" />
               <Badge number={2}>  <NotifyIcon /></Badge >
               <Avatar />
@@ -39,7 +39,7 @@ export default function Header() {
           <Bar onClick={() => setMenuShow((prev) => !prev)} />
         </div>
       </Wrap>
-      <Box h="65px" className="position-relative"></Box>
+      <Box  className="position-relative"></Box>
     </>
   );
 }
