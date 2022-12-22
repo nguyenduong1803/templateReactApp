@@ -25,19 +25,19 @@ export const options = {
   },
 };
 
-const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+const labels = ['January', 'February', 'March', 'April', 'May', 'Son', 'Messi',];
 export const data = {
   labels,
   datasets: [
     {
       label: 'Dataset 1',
-      data: [11, 27, 10, 26, 16, 31, 5],
+      data: [7, 21, 10, 21, 12, 28, 12, 23],
       borderColor: 'rgb(255, 99, 132)',
       backgroundColor: 'rgba(255, 99, 132, 0.7)',
     },
     {
       label: 'Dataset 2',
-      data: [23, 16, 20, 12, 32, 5, 11],
+      data: [23, 16, 25, 12, 34, 9, 17, 12],
       borderColor: 'rgb(53, 162, 235)',
       backgroundColor: 'rgba(53, 162, 235, 0.7)',
     },

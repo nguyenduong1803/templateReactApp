@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import CommonStyled from './CommonStyled';
 
-function Stack({ children, gap, direction, bg, hover, justify, alignItems, w, h, m, p, wrap, radius }) {
+function Stack({ children, gap, direction, bg, hover, justify, alignItems, w, h, m, p, wrap, radius,...props}) {
   return (
     <Wrap
       className="d-flex"
@@ -18,6 +18,7 @@ function Stack({ children, gap, direction, bg, hover, justify, alignItems, w, h,
       radius={radius}
       wrap={wrap}
       bg={bg}
+      {...props}
     >
       {children}
     </Wrap>

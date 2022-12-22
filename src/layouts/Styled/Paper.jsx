@@ -7,9 +7,11 @@ function Paper({
   elevation = 1,
   bg = 'var(--white)',
   minHeight = 'auto',
-  h ,
+  h,
   overflow = 'hidden',
   r = 4,
+  p,
+  m,
   ...props
 }) {
   const papers = [
@@ -31,6 +33,8 @@ function Paper({
       bg={bg}
       r={r}
       h={h}
+      p={p}
+      m={m}
       overflow={overflow}
       boxShadow={papers[Number(elevation)]}
       minHeight={minHeight}
@@ -54,6 +58,8 @@ const WrapPaper = styled.section`
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   border-radius: ${(props) => props.r}px;
   ${({ h }) => h && ` height: ${h};`}
+  ${({ p }) => p && ` padding: ${p};`}
+  ${({ m }) => m && ` margin: ${m};`}
   ${({ boxShadow }) => boxShadow && `box-shadow: ${boxShadow};`}
   ${({ overflow }) => overflow && `overflow: ${overflow};`}
   color: var(--paper-color);

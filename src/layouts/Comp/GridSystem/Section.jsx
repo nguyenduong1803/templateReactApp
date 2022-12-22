@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { CommonStyled } from './CommonStyled'
+import CommonStyled from './CommonStyled'
 
 function Section({
     h,

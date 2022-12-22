@@ -8,7 +8,7 @@ import Reports from './components/Molecule/Reports';
 function Home2() {
   return (
     <div className="container-fluid">
-      <h2 className="main-title  mb-12">Hi, Welcome</h2>
+      <h2 className="main-title">Hi, Welcome</h2>
       <Reports />
       <Row>
         <Col lg={8} md={8} sm={8}>
@@ -17,7 +17,7 @@ function Home2() {
           </Paper>
         </Col>
         <Col lg={4} md={4} sm={4}>
-          <Paper r={10} elevation={8} p="2.4rem" className="p-24 h-100">
+          <Paper r={10} elevation={8} p={'3.6rem'} className="h-100 m-0-auto">
             <CharPie />
             <div>Sort</div>
           </Paper>
