@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { CommonProps } from './CommonStyled';
+import  CommonStyled  from './CommonStyled';
 function Box({
   h,
-  w = '100%',
+  w,
   p,
   m,
   minHeight,
@@ -12,19 +12,20 @@ function Box({
   minWidth,
   maxWidth,
   radius,
-  bg ,
+  bg,
   children,
   sx = {},
-  zIndex,
   position,
   border,
   boxShadow,
   display,
   hover,
+  zIndex,
   bottom,
   left,
   top,
   right,
+  overflow,
   ...props
 }) {
   return (
@@ -39,16 +40,18 @@ function Box({
       right={right}
       left={left}
       bottom={bottom}
+      zIndex={zIndex}
+      position={position}
+
       minHeight={minHeight}
       maxHeight={maxHeight}
       minWidth={minWidth}
       maxWidth={maxWidth}
       radius={radius}
       display={display}
-      position={position}
       boxShadow={boxShadow}
-      zIndex={zIndex}
       border={border}
+      overflow={overflow}
       hover={hover}
       {...props}
     >
@@ -69,7 +72,12 @@ Box.propTypes = {
   hover: PropTypes.string,
   children: PropTypes.node,
 };
-const Wrap = styled(CommonProps)`
+const Wrap = styled(CommonStyled)`
   display: block;
+  background-color: ${(props) => props.bg};
+  width:  ${({ w }) => w};
+  height:  ${({ h }) => h};
+  margin:  ${({ m }) => m};
+  padding:  ${({ p }) => p};
 `;
 export default Box;

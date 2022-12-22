@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { CommonProps } from './CommonStyled';
+import CommonStyled from './CommonStyled';
 
-function Stack({ children, gap, direction, hover, justify, alignItems, w, h, m, p, wrap, radius }) {
+function Stack({ children, gap, direction, bg, hover, justify, alignItems, w, h, m, p, wrap, radius }) {
   return (
     <Wrap
       className="d-flex"
@@ -17,12 +17,13 @@ function Stack({ children, gap, direction, hover, justify, alignItems, w, h, m, 
       p={p}
       radius={radius}
       wrap={wrap}
+      bg={bg}
     >
       {children}
     </Wrap>
   );
 }
-const Wrap = styled(CommonProps)`
+const Wrap = styled(CommonStyled)`
   display: flex;
   ${({ gap }) => gap && `gap: ${gap};`}
   ${({ direction }) => direction && `flex-direction: ${direction};`}
