@@ -3,6 +3,7 @@ import Accordion from '~/components/Molecule/Accordion/Accordion';
 import { Col, Grid } from '~/layouts/Comp/GridSystem';
 import { sidebars } from '~/layouts/LayoutSidebar/_mock';
 import Paper from '~/layouts/Styled/Paper';
+import HighligtCode from '../HighligtCode';
 const list = [
   {
     id: 1,
@@ -168,7 +169,7 @@ function Components() {
                     cancel
                   >
                     {sidebar.element.map((item) => (
-                      <li className=" line-h eihgt-36 hover-default" key={item.id}>
+                      <li className=" line-height-36 hover-default" key={item.id}>
                         <p>{item.element}</p>
                       </li>
                     ))}
@@ -179,10 +180,32 @@ function Components() {
             })}
           </Paper>
         </Col>
+        <Col lg={12}>
+          <h3 className="fz-24 fw-500">Source Code</h3>
+
+          <HighligtCode  codeString={ArrcourdionString} />
+        </Col>
       </Grid>
-      <h3 className="pl-24 fz-24 fw-500">Source Code</h3>
     </div>
   );
 }
 
+const ArrcourdionString = `
+<Accordion
+    Icon={sidebar.icon}
+    hasOpen={sidebar.open}
+    title={sidebar.title}
+    key={sidebar.id}
+    h="40px"
+    p="6px 12px 6px 24px"
+    className="hover-default"
+    cancel
+    >
+    {sidebar.element.map((item) => (
+      <li className=" line-height-36 hover-default" key={item.id}>
+        <p>{item.element}</p>
+      </li>
+    ))} 
+</Accordion>
+`;
 export default Components;

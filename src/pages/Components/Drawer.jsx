@@ -21,5 +21,4 @@ function DrawerPage() {
     </div>
   );
 }
-
 export default DrawerPage;

@@ -13,7 +13,7 @@
   --border-color-light: #eee;
   --bg-default: #f4f5f7;
   --hover-color: #eaebed;
-  --width-sidebar:300px;
+  --width-sidebar: 300px;
   --overlay-color: rgba(149, 149, 149, 0.3);
 }
 
@@ -53,4 +53,8 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+/* style higlight code */
+pre span {
+  color: #fff;
 }
