@@ -98,17 +98,25 @@ const list = [
   },
 ];
 function Components() {
-
   return (
     <div>
-      <h2 className="main-title pl-24">Accordion</h2>
-      <Grid container="container-fluid" className="my-24">
+      <Grid>
+        <Col lg={12} md={12} sm={12}>
+          <h1>Accordion</h1>
+          <p className="fz-18">
+            The accordion component allows the user to show and hide sections of related content on a page.
+          </p>
+        </Col>
         <Col>
           <Paper r={4} elevation={8}>
             {list.map((item) => {
               return (
                 <Accordion key={item.id} title={item.title} bg={item.bg}>
-                  {item.child.map((child) => (<li className="hover-default p-6" key={child.id}>{child.name}</li>))}
+                  {item.child.map((child) => (
+                    <li className="hover-default p-6" key={child.id}>
+                      {child.name}
+                    </li>
+                  ))}
                 </Accordion>
               );
             })}
@@ -120,7 +128,9 @@ function Components() {
               return (
                 <Accordion key={item.id} title={item.title} bg={item.bg} cancel>
                   {item.child.map((child) => (
-                    <li className="hover-default" key={child.id}>{child.name}</li>
+                    <li className="hover-default" key={child.id}>
+                      {child.name}
+                    </li>
                   ))}
                 </Accordion>
               );
@@ -133,7 +143,9 @@ function Components() {
               return (
                 <Accordion key={item.id} title={item.title} bg={item.bg}>
                   {item.child.map((child) => (
-                    <li key={child.id} className="hover-default">{child.name}</li>
+                    <li key={child.id} className="hover-default">
+                      {child.name}
+                    </li>
                   ))}
                 </Accordion>
               );
@@ -141,31 +153,31 @@ function Components() {
           </Paper>
         </Col>
         <Col>
-        <Paper elevation={2}>
-        {sidebars?.map((sidebar,index) => {
-           if(index>4){
-            return (
-                <Accordion
-                  Icon={sidebar.icon}
-                  hasOpen={sidebar.open}
-                  title={sidebar.title}
-                  key={sidebar.id}
-                  h="40px"
-                  p="6px 12px 6px 24px"
-                  className="hover-default"
-                  cancel
-                >
-                  {sidebar.element.map((item) => (
-                    <li className=" line-h eihgt-36 hover-default" key={item.id}>
-                      <li>{item.element}</li>
-                    </li>
-                  ))}
-                </Accordion>
-              );
-           }
-           return <></>
-          })}
-        </Paper>
+          <Paper elevation={2}>
+            {sidebars?.map((sidebar, index) => {
+              if (index > 4) {
+                return (
+                  <Accordion
+                    Icon={sidebar.icon}
+                    hasOpen={sidebar.open}
+                    title={sidebar.title}
+                    key={sidebar.id}
+                    h="40px"
+                    p="6px 12px 6px 24px"
+                    className="hover-default"
+                    cancel
+                  >
+                    {sidebar.element.map((item) => (
+                      <li className=" line-h eihgt-36 hover-default" key={item.id}>
+                        <p>{item.element}</p>
+                      </li>
+                    ))}
+                  </Accordion>
+                );
+              }
+              return <React.Fragment key={index}></React.Fragment>;
+            })}
+          </Paper>
         </Col>
       </Grid>
       <h3 className="pl-24 fz-24 fw-500">Source Code</h3>
