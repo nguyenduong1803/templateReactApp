@@ -38,8 +38,10 @@ function Home() {
       </Col>
       <Col lg={12}>
         <ClickAnimate>
-          <Button to="/about">Button</Button>
+          <Button href="/about">Button</Button>
         </ClickAnimate>
+      </Col>
+      <Col lg={12}>
         <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>
           <h2>hello</h2>
         </Modal>
@@ -61,13 +63,13 @@ function Home() {
 
       <Col lg={12} md={12}>
         <Box w="20rem">
-          <Button onClick={()=>setShowDropdown(true)}>Show Drop</Button>
+          <Button onClick={() => setShowDropdown(true)}>Show Drop</Button>
           <DropDown showDropdown={showDropdown} setShowDropdown={setShowDropdown}>
-            <Paper elevation={10} className='p-12'>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
-                <li>item</li>
+            <Paper elevation={10} className="p-12">
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
             </Paper>
           </DropDown>
         </Box>
@@ -85,7 +87,7 @@ function Home() {
 }
 const ButtonShow = ({ onShouldModal }) => (
   <ClickAnimate>
-    <Button onClick={() => onShouldModal(true)}>Show Modal </Button>
+    <Button onClick={() => onShouldModal(true)}>Show Modal</Button>
   </ClickAnimate>
 );
 export default Home;
