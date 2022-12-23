@@ -9,6 +9,7 @@ import TabsPage from '~/pages/Components/Tabs';
 import TippyPage from '~/pages/Components/Tippy';
 import Home2 from '~/pages/Home2/Home2';
 import DropdownPage from '~/pages/Components/Dropdown';
+import Overview from '~/pages/GettingStarted/Overview';
 
 const componentRoute = [
   {
@@ -63,5 +64,10 @@ const componentRoute = [
     path: 'input',
     element: <InputPage />,
   },
+  {
+    path: 'overview',
+    element: <Overview />,
+  },
+
 ];
 export default componentRoute;

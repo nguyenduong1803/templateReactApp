@@ -22,6 +22,11 @@ export const sidebars = [
         path: '',
       },
       {
+        id: 'overview',
+        element: 'Overview',
+        path: '',
+      },
+      {
         id: 'b',
         element: 'Download',
         path: '',

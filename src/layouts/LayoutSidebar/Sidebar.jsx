@@ -24,7 +24,7 @@ function Sidebar() {
               cancel
             >
               {sidebar.element.map((item) => (
-                <li className="line-height-36 hover-default radius-4 m-3" key={item.id}>
+                <li className="line-height-24 hover-default radius-4 m-3 pl-6" key={item.id}>
                   <NavLinkActive to={`docs/${item.id}`} bg="var(--hover-color)">
                     {item.element}
                   </NavLinkActive>

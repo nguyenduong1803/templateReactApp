@@ -272,7 +272,8 @@
 .main-title {
   text-transform: capitalize;
   font-size: 2.6rem;
-  font-weight: 500;
+  font-weight: 600;
+  margin: 12px 0;
   color: var(--text-color);
 }
 .textOverflow-1 {
@@ -357,6 +358,9 @@
   text-align: justify;
 }
 /* ================================== border ==================================== */
+.border-0 {
+  border: none;
+}
 .border {
   border: 1px solid var(--border-color);
 }
@@ -367,10 +371,10 @@
   border-left: 1px solid var(--border-color);
 }
 .border-bottom {
-  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 .border-top {
-  border-right: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
 }
 /* ================================== radius ==================================== */
 .radius-4 {
@@ -423,13 +427,13 @@
   font-weight: 900;
 }
 /* ================================== line-heihgt ==================================== */
-.line-heihgt-24 {
+.line-height-24 {
   line-height: 2.4rem;
 }
-.line-heihgt-36 {
+.line-height-36 {
   line-height: 3.6rem;
 }
-.line-heihgt-48 {
+.line-height-48 {
   line-height: 4.8rem;
 }
 /* ================================== hover ==================================== */
@@ -463,7 +467,7 @@
 .scrollbar-1::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(164, 168, 171, 0.7);
-  background-color: rgba(164, 168, 171, 0.7);
+  background-color: rgba(194, 198, 201, 0.7);
   transition: 0.3s;
 }
 
@@ -502,18 +506,22 @@
   overflow: auto;
 }
 /* ================================== cursor ==================================== */
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
 }
 /* ================================== any ==================================== */
-.pointer-events-none{
+.pointer-events-none {
   pointer-events: none;
 }
-.userSelect-none{
+.userSelect-none {
   user-select: none;
 }
 .space-sidebar {
-  padding-left: var(--width-sidebar);
+  margin-left: var(--width-sidebar);
+}
+.list {
+  list-style: disc;
+  padding-left: 24px;
 }
 .show {
   visibility: visible;
