@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '~/components/Atom/Button/Button';
-import ClickAnimate from '~/components/Atom/CickAnimate/ClickAnimate';
+import ButtonRipple from '~/components/Atom/Button/ButtonRipple';
+import ButtonSank from '~/components/Atom/Button/ButtonSank';
 import { Col, Grid } from '~/layouts/Comp/GridSystem';
 
 function ButtonPage() {
@@ -9,26 +10,31 @@ function ButtonPage() {
       <h2 className="main-title pl-24">Button</h2>
       <Grid>
         <Col>
+          <Button variant="outline" bg="var(--va )">
+            Primary Button
+          </Button>
           <Button>Primary Button</Button>
           <p className="py-12"> Default Click</p>
         </Col>
         <Col>
-          <ClickAnimate overflow="inherit">
-            <Button bg="var(--text-danger)">Danger Button</Button>
-          </ClickAnimate>
+          <ButtonRipple variant="outline" bg="var(--text-danger)">
+            Danger
+          </ButtonRipple>
+          <ButtonRipple variant="text" bg="var(--text-success)">
+            Success
+          </ButtonRipple>
+          <ButtonRipple>Primary </ButtonRipple>
           <p className="py-12"> Animate Click</p>
         </Col>
         <Col>
-          <ClickAnimate overflow="inherit">
-            <Button bg="var(--text-success)">Success Button</Button>
-          </ClickAnimate>
+          <ButtonSank bg="var(--text-success)">Success Button</ButtonSank>
           <p className="py-12">Animate Click</p>
         </Col>
         <Col>
-          <Button bg="var(--text-waring)">Click me</Button>
+          <Button bg="var(--text-warning)">Click me</Button>
           <p className="py-12"> Default Click</p>
         </Col>
-        </Grid>
+      </Grid>
     </div>
   );
 }
