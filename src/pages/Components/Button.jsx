@@ -10,13 +10,20 @@ function ButtonPage() {
       <h2 className="main-title pl-24">Button</h2>
       <Grid>
         <Col>
-          <Button variant='outline' bg="var(--va )">Primary Button</Button>
-          <Button >Primary Button</Button>
+          <Button variant="outline" bg="var(--va )">
+            Primary Button
+          </Button>
+          <Button>Primary Button</Button>
           <p className="py-12"> Default Click</p>
         </Col>
         <Col>
-          <ButtonRipple variant='outline' bg="var(--text-danger)">Danger </ButtonRipple>
-          <ButtonRipple variant='text' bg="var(--text-success)">Success </ButtonRipple>
+          <ButtonRipple variant="outline" bg="var(--text-danger)">
+            Danger
+          </ButtonRipple>
+          <ButtonRipple variant="text" bg="var(--text-success)">
+            Success
+          </ButtonRipple>
+          <ButtonRipple>Primary </ButtonRipple>
           <p className="py-12"> Animate Click</p>
         </Col>
         <Col>
@@ -24,7 +31,7 @@ function ButtonPage() {
           <p className="py-12">Animate Click</p>
         </Col>
         <Col>
-          <Button bg="var(--text-waring)">Click me</Button>
+          <Button bg="var(--text-warning)">Click me</Button>
           <p className="py-12"> Default Click</p>
         </Col>
       </Grid>

@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import  CommonStyled  from './CommonStyled';
+import CommonStyled from './commonStyled';
+
 function Box({
   h,
   w,
@@ -71,12 +72,5 @@ Box.propTypes = {
   hover: PropTypes.string,
   children: PropTypes.node,
 };
-const Wrap = styled(CommonStyled)`
-  display: block;
-  background-color: ${(props) => props.bg};
-  width:  ${({ w }) => w};
-  height:  ${({ h }) => h};
-  margin:  ${({ m }) => m};
-  padding:  ${({ p }) => p};
-`;
+const Wrap = styled(CommonStyled)``;
 export default Box;

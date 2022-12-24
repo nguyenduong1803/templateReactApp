@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import CommonProps from './CommonStyled';
+import CommonProps from './commonStyled';
 
 function Container({ children, container = 'container', p, className = '', ...props }) {
   return (
