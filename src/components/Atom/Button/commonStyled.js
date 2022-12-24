@@ -1,24 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
-import ClickAnimate from '../CickAnimate/ClickAnimate';
 
-function Button3({ children, variant = 'text', bg = 'var(--primary)', ...props }) {
-  return (
-    <ClickAnimate rippleColor={variant === 'outline' || (variant === 'text' && bg)} style={{ width: 'auto' }}>
-      <Wrap
-        variant={variant}
-        rippleColor={'red'}
-        bg={bg}
-        className="d-inline-block cursor-pointer border-0 overflow-hidden py-6 px-12"
-        {...props}
-      >
-        {children}
-      </Wrap>
-    </ClickAnimate>
-  );
-}
-
-const Wrap = styled.div`
+export const WrapButton = styled.div`
   display: inline-flex;
   -webkit-box-align: center;
   align-items: center;
@@ -51,13 +33,14 @@ const Wrap = styled.div`
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, transform 0.2s linear,
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  ${({ variant, bg }) =>
-    variant === 'outline' && `color: ${bg}; background-color:#fff; border:1px solid ${bg}; box-shadow:none;`}
-  ${({ variant, bg }) => variant === 'contained' && `color: #fff; background-color:${bg};`}
-  ${({ variant, bg }) => variant === 'texttext' && `box-shadow:none; border:0px`}
-
   &:hover {
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
   }
+  ${({ variant, bg }) =>
+    variant === 'outline' && `color: ${bg}; background-color:#fff; border:1px solid ${bg}; box-shadow:none;`}
+  ${({ variant, bg }) => variant === 'contained' && `color: #fff; background-color:${bg};`}
+  ${({ variant, bg }) => variant === 'text' && `box-shadow:none; border:0px;color: ${bg}; &:hover{box-shadow:none};`}
+  & + & {
+    margin-left: ${(props) => props.buttonAndButton};
+  }
 `;
-export default Button3;
