@@ -196,17 +196,29 @@
 .p-24 {
   padding: 2.4rem;
 }
+.py-6 {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
 .py-12 {
-  padding: 1.2rem 0;
+  padding-top: 1.2rem ;
+  padding-bottom: 1.2rem ;
 }
 .py-24 {
-  padding: 2.4rem 0;
+  padding-top: 2.4rem ;
+  padding-bottom: 2.4rem ;
+}
+.px-6 {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
 }
 .px-12 {
-  padding: 0 1.2rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
 }
 .px-24 {
-  padding: 0 2.4rem;
+  padding-right:2.4rem;
+  padding-left:2.4rem;
 }
 /* ================================== Margin ================================== */
 

@@ -101,7 +101,7 @@ const list = [
 function Components() {
   return (
     <div>
-      <Grid>
+      <Grid className="p-12">
         <Col lg={12} md={12} sm={12}>
           <h1>Accordion</h1>
           <p className="fz-18">
@@ -165,7 +165,7 @@ function Components() {
                     key={sidebar.id}
                     h="40px"
                     p="6px 12px 6px 24px"
-                    className="hover-default"
+                    hover={{ backgroundColor: 'var(--hover-color)',color:"red" }}
                     cancel
                   >
                     {sidebar.element.map((item) => (
@@ -180,10 +180,10 @@ function Components() {
             })}
           </Paper>
         </Col>
-        <Col lg={12}>
+        <Col lg={12} md={12}>
           <h3 className="fz-24 fw-500">Source Code</h3>
 
-          <HighligtCode  codeString={ArrcourdionString} />
+          <HighligtCode codeString={ArrcourdionString} />
         </Col>
       </Grid>
     </div>
