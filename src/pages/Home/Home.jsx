@@ -45,7 +45,7 @@ function Home() {
       </Col>
       <Col lg={12}>
         <ButtonRipple></ButtonRipple>
-        <Button3>Click me</Button3>
+        <Button3>Button 3</Button3>
       </Col>
       <Col lg={12}>
         <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>

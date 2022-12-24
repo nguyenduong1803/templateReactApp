@@ -1,9 +1,8 @@
 import styles from './ClickAnimate.module.css';
-import styled from 'styled-components';
 
 const ClickAnimate = ({
   children,
-  rippleColor = 'rgba(255, 255, 255, 0.5)',
+  rippleColor = 'rgb(255, 255, 255)',
   className = '',
   hover,
   cancel = true,
@@ -13,6 +12,7 @@ const ClickAnimate = ({
     let circle = document.createElement('span');
     circle.classList.add(styles.circle);
     circle.style.backgroundColor = rippleColor;
+    circle.style.opacity = '0.2';
     circle.style.top = e.nativeEvent.offsetY + 'px';
     circle.style.left = e.nativeEvent.offsetX + 'px';
     circle.style.width = e.target.clientWidth + 'px';
@@ -36,21 +36,12 @@ const ClickAnimate = ({
       });
     }, 300);
   };
-  console.log(hover);
   return (
-    <div
-      className={`overflow-hidden d-inline-block position-relative cursor-pointer userSelect-none w-100`}
-
-      {...props}
-    >
+    <div className={`overflow-hidden d-inline-block position-relative cursor-pointer userSelect-none w-100`} {...props}>
       <div className={`w-100 ${className}`} onClick={cancel ? createRipple : () => {}}>
         {children}
       </div>
     </div>
   );
 };
-const Wrap = styled.div(({ hover, ...props }) => ({
-    backgroundColor:"red",
-  ':hover': { backgroundColor: 'var(--hover-color)', color: 'red', borderColor: 'lightskyblue' },
-}));
 export default ClickAnimate;
