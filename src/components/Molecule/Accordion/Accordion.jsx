@@ -10,7 +10,7 @@ export default function Accordion({
   hasOpen = false,
   children,
   p = '6px',
-  hover = '',
+  hover,
   className = '',
   bg = '#fff',
   cancel = false,
@@ -23,17 +23,23 @@ export default function Accordion({
   }, [hasOpen]);
   return (
     <>
-      <ClickAnimate cancel={cancel} className={hover} rippleColor="#ccc">
+      <ClickAnimate cancel={cancel} rippleColor="#ccc">
         <ButtonAccordion
           onClick={() => setOpen(!open)}
-          padding={p}
+          p={p}
           bg={bg}
-          className={`d-flex j-between a-center ${className}`}
+          hover={hover}
+          className={`d-flex j-between a-center cursor-pointer ${className}`}
           {...props}
         >
           {Icon && (
             <div className="d-flex gap-12 a-center">
-              <Icon width="1.9rem" fill="#4e4e4e" className="position-relative" style={{ top: '-1px', pointerEvents: "none" }} />
+              <Icon
+                width="1.9rem"
+                fill="#4e4e4e"
+                className="position-relative"
+                style={{ top: '-1px', pointerEvents: 'none' }}
+              />
               {title}
             </div>
           )}
@@ -59,20 +65,15 @@ Accordion.propTypes = {
   hasOpen: PropTypes.bool,
   hover: PropTypes.string,
   className: PropTypes.string,
-  cancel: PropTypes.bool
+  cancel: PropTypes.bool,
 };
 
-const ButtonAccordion = styled.div`
-  padding: ${(props) => props.padding};
-  background-color: ${(props) => props.bg};
-  user-select: none;
-  color: var(--text-color);
-  & + &{
-  border-bottom-left-radius:unset;
-  border-bottom-right-radius:unset;
-  }
-  cursor: pointer;
-`;
+const ButtonAccordion = styled.div(({ hover, ...props }) => ({
+  backgroundColor: props.bg,
+  padding: props.p,
+  userSelect: 'none',
+  ':hover': hover,
+}));
 const ContentAccordion = styled.ul`
   padding: 0 20px;
   max-height: 0;

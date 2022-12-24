@@ -68,7 +68,7 @@ const Wrap = styled.button`
   }
 
   &:active {
-    transform: scale(0.92);
+    transform: scale(0.95);
     background-color: darken(#ff0081, 5%);
     box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
   }

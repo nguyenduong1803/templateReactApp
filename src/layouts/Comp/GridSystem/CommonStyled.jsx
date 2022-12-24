@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
- const CommonStyled = styled.div`
+const CommonStyled = styled.div`
   ${({ minWidth }) => minWidth && `min-width: ${minWidth};`}
   ${({ maxWidth }) => maxWidth && `max-width: ${maxWidth};`}
   ${({ minHeight }) => minHeight && `min-height: ${minHeight};`}
@@ -22,5 +22,25 @@ import styled from "styled-components"
   ${({ overflow }) => overflow && `overflow: ${overflow};`}
   background-color: ${(props) => props.bg};
 `;
-
-export default CommonStyled
+const CommonStyled2 = styled.div((props) => ({
+  minHeight: props.mh,
+  maxHeight: props.maxHeight,
+  minWidth: props.minWidth,
+  maxWidth: props.maxWidth,
+  height: props.height,
+  width: props.width,
+  margin: props.margin,
+  padding: props.padding,
+  display: props.display,
+  position: props.position,
+  overflow: props.overflow,
+  backgroundColor: props.bg,
+  border: props.border,
+  radius: props.radius,
+  zIndex: props.zIndex,
+  ':hover': props.hover,
+  ':after': props.after,
+  ':before': props.before,
+  ...props.sx,
+}));
+export default CommonStyled;

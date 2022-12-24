@@ -1,25 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import ClickAnimate from '../CickAnimate/ClickAnimate';
 
-export default function Button({ children, variant = 'outline', bg = 'var(--primary)', ...props }) {
-  console.log(variant);
+function Button3({ children, variant = 'text', bg = 'var(--primary)', ...props }) {
   return (
-    <ButtonComp variant={variant} bg={bg} {...props}>
-      {children}
-    </ButtonComp>
+    <ClickAnimate rippleColor={variant === 'outline' || (variant === 'text' && bg)} style={{ width: 'auto' }}>
+      <Wrap
+        variant={variant}
+        rippleColor={'red'}
+        bg={bg}
+        className="d-inline-block cursor-pointer border-0 overflow-hidden py-6 px-12"
+        {...props}
+      >
+        {children}
+      </Wrap>
+    </ClickAnimate>
   );
 }
 
-Button.propTypes = {
-  to: PropTypes.string,
-  href: PropTypes.string,
-  bg: PropTypes.string,
-  onClick: PropTypes.func,
-  children: PropTypes.string,
-};
-
-const ButtonComp = styled.button`
+const Wrap = styled.div`
   display: inline-flex;
   -webkit-box-align: center;
   align-items: center;
@@ -41,8 +40,8 @@ const ButtonComp = styled.button`
   line-height: 1.75;
   letter-spacing: 0.02857em;
   text-transform: uppercase;
+  width: auto;
   min-width: 64px;
-  padding: 6px 16px;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -55,8 +54,10 @@ const ButtonComp = styled.button`
   ${({ variant, bg }) =>
     variant === 'outline' && `color: ${bg}; background-color:#fff; border:1px solid ${bg}; box-shadow:none;`}
   ${({ variant, bg }) => variant === 'contained' && `color: #fff; background-color:${bg};`}
+  ${({ variant, bg }) => variant === 'texttext' && `box-shadow:none; border:0px`}
 
   &:hover {
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
   }
 `;
+export default Button3;

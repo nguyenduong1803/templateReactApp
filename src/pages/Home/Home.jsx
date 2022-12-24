@@ -12,6 +12,7 @@ import Badge from '~/components/Atom/Badge/Badge';
 import DropDown from '~/components/Molecule/Dropdown/Dropdown';
 import { useState } from 'react';
 import ButtonRipple from '~/components/Atom/Button/ButtonRipple';
+import Button3 from '~/components/Atom/Button/Button3';
 const fakeData = [
   { name: 'Ha noi' },
   { name: 'Hai Duong' },
@@ -24,7 +25,7 @@ const config = {
   currentPage: 1,
   totalPage: 100,
   link: 'http://foo.bar/?page=',
-  cb: function () {},
+  cb: function () { },
 };
 
 function Home() {
@@ -43,7 +44,8 @@ function Home() {
         </ClickAnimate>
       </Col>
       <Col lg={12}>
-        <ButtonRipple></ButtonRipple> 
+        <ButtonRipple></ButtonRipple>
+        <Button3>Button 3</Button3>
       </Col>
       <Col lg={12}>
         <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>
