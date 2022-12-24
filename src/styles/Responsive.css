@@ -4,8 +4,8 @@
 .container-fluid {
   width: 100%;
   display: block;
-  padding: 0 24px;
-  margin: auto;
+  max-width: calc(100% - (24px));
+  margin: 0 auto;
 }
 
 .container {
@@ -141,7 +141,7 @@
     max-width: 720px;
   }
   .container-fluid {
-   padding:0 12px;
+    max-width: calc(100% - (12px));
   }
   .row {
     margin-right: -8px;
@@ -335,7 +335,7 @@ Extra large screen / wide desktop xl: 1200px */
     margin: 0 auto;
   }
   .container-fluid {
-   padding: 0 24px;
+    max-width: calc(100% - (24px));
   }
   .row {
     margin-right: -12px;

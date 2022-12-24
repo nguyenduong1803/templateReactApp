@@ -25,7 +25,7 @@ const config = {
   currentPage: 1,
   totalPage: 100,
   link: 'http://foo.bar/?page=',
-  cb: function () { },
+  cb: function () {},
 };
 
 function Home() {
@@ -65,7 +65,9 @@ function Home() {
         </Badge>
       </Col>
       <ScrollToTop />
-
+      <Box md={{fontSize:"20rem"}}>
+        teesst
+      </Box>
       <Col lg={12} md={12}>
         <Box w="20rem">
           <Button onClick={() => setShowDropdown(true)}>Show Drop</Button>
