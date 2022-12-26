@@ -12,7 +12,6 @@ import Badge from '~/components/Atom/Badge/Badge';
 import DropDown from '~/components/Molecule/Dropdown/Dropdown';
 import { useState } from 'react';
 import ButtonRipple from '~/components/Atom/Button/ButtonSank';
-import Button3 from '~/components/Atom/Button/ButtonRipple';
 const fakeData = [
   { name: 'Ha noi' },
   { name: 'Hai Duong' },
