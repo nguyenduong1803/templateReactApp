@@ -15,7 +15,8 @@ const setStyleComponent = ({ radius, ...props }) => {
     ...props,
     ...props.sx,
     '@media (min-width:62em)and (max-width: 74.9375em)': props.lg,
-    '@media (min-width:48em)and (max-width: 61.9375em)': props.md,
+    '@media (min-width: 48em) and (max-width: 61.9375em)': props.md,
+    '@media (min-width:36em)and(max-width: 47.9375em)': props.sm,
   };
 };
 const CommonStyled = styled.div(setStyleComponent);
