@@ -5,6 +5,7 @@
   animation: scale 0.8s ease-out;
   cursor: pointer;
   z-index: 100;
+  pointer-events: none;
 }
 
 @keyframes scale {
