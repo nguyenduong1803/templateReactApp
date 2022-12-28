@@ -39,7 +39,10 @@
   padding-left: 4px;
   padding-bottom: 12px;
 }
+/* Small screen /  xs: 576px*/
+@media  (max-width: 35.9375em) {
 
+}
 /* Small screen / phone sm: 576px*/
 @media (min-width: 36em) and (max-width: 47.9375em) {
   .container {
