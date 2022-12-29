@@ -1,8 +1,7 @@
-
-function Container({ children, container = 'container-xxl', p, className = '', ...props }) {
-
+function Container({ children, size = 'container', p, className = '', ...props }) {
+  const newContainer = size === 'container' ? 'container' : 'container-' + size;
   return (
-    <div className={`${container} ${className}`} {...props}>
+    <div className={`${newContainer} ${className}`} {...props}>
       {children}
     </div>
   );

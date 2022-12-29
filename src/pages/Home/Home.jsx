@@ -88,7 +88,7 @@ function Home() {
         </div>
         <Pagination {...config} />
       </Grid>
-      <Container container='container-fluid'>
+      <Container size="xxl">
         <Row>
           <Col>
             <div className="border">1</div>
@@ -103,9 +103,7 @@ function Home() {
             <div className="border">4</div>
           </Col>
         </Row>
-        <Section className="row">
-          asdhfalk
-        </Section>
+        <Section className="row">asdhfalk</Section>
       </Container>
     </>
   );
