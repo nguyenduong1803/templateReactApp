@@ -4,54 +4,80 @@
 .container-fluid {
   width: 100%;
   display: block;
-  max-width: calc(100% - (24px));
+  max-width: calc(100% - (2.4rem));
   margin: 0 auto;
 }
-
+.container-xxl {
+  width: 100%;
+  display: block;
+  max-width: calc(100% - (2.4rem));
+  margin: 0 auto;
+}
+.container-xl {
+  width: 100%;
+  display: block;
+  max-width: calc(100% - (2.4rem));
+  margin: 0 auto;
+}
 .container {
+  width: 100%;
+  display: block;
   margin: 0 auto;
-  max-width: calc(100% - (24px));
+  max-width: calc(100% - (2.4rem));
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -4px;
-  margin-left: -4px;
-}
-
-.col-sm-1,
-.col-sm-2,
-.col-sm-3,
-.col-sm-4,
-.col-sm-5,
-.col-sm-6,
-.col-sm-7,
-.col-sm-8,
-.col-sm-9,
-.col-sm-10,
-.col-sm-11,
-.col-sm-12 {
-  display: block;
-  max-width: 100%;
-  flex: 0 0 100%;
-  padding-right: 4px;
-  padding-left: 4px;
-  padding-bottom: 12px;
 }
 /* Small screen /  xs: 576px*/
-@media  (max-width: 35.9375em) {
-
+@media (max-width: 35.9375em) {
+  .container-fluid {
+    max-width: calc(100% - (1.5em));
+  }
+  .container {
+    max-width: calc(100% - (1.5em));
+  }
+  .row {
+    margin-right: -0.4rem;
+    margin-left: -0.4rem;
+  }
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    display: block;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    padding-bottom: 1.2rem;
+  }
 }
 /* Small screen / phone sm: 576px*/
-@media (min-width: 36em) and (max-width: 47.9375em) {
+@media (min-width: 36em) {
   .container {
-    max-width: 540px;
+    max-width: 33.75em;
   }
-
+  .container-xl {
+    max-width: 33.75em;
+  }
+  .container-xxl {
+    max-width: 33.75em;
+  }
+  .container-fluid {
+    width: calc(100% - 3.2rem);
+  }
   .row {
-    margin-right: -8px;
-    margin-left: -8px;
+    margin-right: -0.8rem;
+    margin-left: -0.8rem;
   }
 
   .col-sm-1,
@@ -67,9 +93,9 @@
   .col-sm-11,
   .col-sm-12 {
     display: block;
-    padding-right: 8px;
-    padding-left: 8px;
-    padding-bottom: 16px;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    padding-bottom: 1.6rem;
   }
 
   .col-sm-1 {
@@ -139,16 +165,22 @@
 }
 
 /* Medium screen / tablet md: 768px */
-@media (min-width: 48em) and (max-width: 61.9375em) {
+@media (min-width: 48em) {
   .container {
-    max-width: 720px;
+    max-width: 45em;
   }
   .container-fluid {
-    max-width: calc(100% - (12px));
+    max-width: calc(100% - (3.2rem));
+  }
+  .container-xl {
+    max-width: 45em;
+  }
+  .container-xxl {
+    max-width: 45em;
   }
   .row {
-    margin-right: -8px;
-    margin-left: -8px;
+    margin-right: -0.8rem;
+    margin-left: -0.8rem;
   }
 
   .col-md-1,
@@ -164,9 +196,9 @@
   .col-md-11,
   .col-md-12 {
     display: block;
-    padding-right: 8px;
-    padding-left: 8px;
-    padding-bottom: 16px;
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+    padding-bottom: 1.6rem;
   }
 
   .col-md-1 {
@@ -236,13 +268,22 @@
 }
 
 /* Large screen / desktop lg: 992px, */
-@media (min-width: 62em) and (max-width: 74.9375em) {
+@media (min-width: 62em) {
   .container {
-    max-width: 960px;
+    max-width: 60em;
+  }
+  .container-fluid {
+    width: calc(100% - (4.8rem));
+  }
+  .container-xl {
+    max-width: 60em;
+  }
+  .container-xxl {
+    max-width: 60em;
   }
   .row {
-    margin-right: -8px;
-    margin-left: -8px;
+    margin-right: -1.2rem;
+    margin-left: -1.2rem;
   }
 
   .col-lg-1,
@@ -258,9 +299,9 @@
   .col-lg-11,
   .col-lg-12 {
     display: block;
-    padding-right: 8px;
-    padding-left: 8px;
-    padding-bottom: 16px;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    padding-bottom: 2.4rem;
   }
 
   .col-lg-1 {
@@ -334,15 +375,18 @@ từ 75 em trở lên
 Extra large screen / wide desktop xl: 1200px */
 @media (min-width: 75em) {
   .container {
-    max-width: 1200px;
+    max-width: 73em;
     margin: 0 auto;
   }
-  .container-fluid {
-    max-width: calc(100% - (24px));
+  .container-xxl {
+    max-width: 73em;
+  }
+  .container-xl {
+    max-width: 73em;
   }
   .row {
-    margin-right: -12px;
-    margin-left: -12px;
+    margin-right: -1.2rem;
+    margin-left: -1.2rem;
   }
 
   .col-lg-1,
@@ -358,9 +402,9 @@ Extra large screen / wide desktop xl: 1200px */
   .col-lg-11,
   .col-lg-12 {
     display: block;
-    padding-right: 12px;
-    padding-left: 12px;
-    padding-bottom: 24px;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+    padding-bottom: 2.4rem;
   }
 
   .col-lg-1 {
@@ -426,5 +470,13 @@ Extra large screen / wide desktop xl: 1200px */
   .col-lg-12 {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+}
+/*
+từ 75 em trở lên 
+Extra large screen / wide desktop xxl: 1320px */
+@media (min-width: 87.5em) {
+  .container-xxl {
+    max-width: 82.5em;
   }
 }

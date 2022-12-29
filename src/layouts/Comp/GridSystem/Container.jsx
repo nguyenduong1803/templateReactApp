@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import CommonProps from './commonStyled';
 
-function Container({ children, container = 'container', p, className = '', ...props }) {
+function Container({ children, container = 'container-xxl', p, className = '', ...props }) {
+  
   return (
-    <Wrap p={p} className={`${container} ${className}`} {...props}>
+    <div className={`${container} ${className}`} {...props}>
       {children}
-    </Wrap>
+    </div>
   );
 }
-const Wrap = styled(CommonProps)``;
 export default Container;
