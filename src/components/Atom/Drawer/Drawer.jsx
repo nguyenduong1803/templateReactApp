@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 export default function Drawer({ children, setDrawerActive, drawerActive }) {
   const handleSetDrawer = () => {
     // window.document.body.style.overflow ="auto"
-    setDrawerActive(false)
-  }
+    setDrawerActive(false);
+  };
   return (
     <>
-      <div className={drawerActive ? 'overlay show position-fixed full' :'hidden'} onClick={handleSetDrawer}></div>
+      <div className={drawerActive ? 'overlay show position-fixed full' : 'hidden'} onClick={handleSetDrawer}></div>
       <DrawerContent onClick={(e) => e.stopPropagation()} className={drawerActive ? 'moveIn' : 'moveOut'}>
         {children}
       </DrawerContent>
@@ -19,7 +19,7 @@ export default function Drawer({ children, setDrawerActive, drawerActive }) {
 Drawer.propTypes = {
   children: PropTypes.node,
   setDrawerActive: PropTypes.func,
-  drawerActive: PropTypes.bool,
+  drawerActive: PropTypes.bool
 };
 
 const DrawerContent = styled.aside`

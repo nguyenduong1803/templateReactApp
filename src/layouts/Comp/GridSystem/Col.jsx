@@ -1,6 +1,8 @@
-
-
-function Col({ children, lg = 6,className='',...props }) {
-  return <div  className={`col-sm-${lg} col-md-4 col-lg-3 ${className}`} {...props}>{children}</div>;
+function Col({ children, lg = 6, md = '4', sm = '', className = '', ...props }) {
+  return (
+    <div className={`${sm && 'col-sm-' + sm} ${md && 'col-md-' + md} ${lg && 'col-lg-' + lg} ${className}`} {...props}>
+      {children}
+    </div>
+  );
 }
 export default Col;

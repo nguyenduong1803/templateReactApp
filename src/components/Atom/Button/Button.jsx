@@ -28,5 +28,5 @@ Button.propTypes = {
   variant: PropTypes.string,
   className: PropTypes.string,
   buttonAndButton: PropTypes.string,
-  children: PropTypes.node,
+  children: PropTypes.node
 };

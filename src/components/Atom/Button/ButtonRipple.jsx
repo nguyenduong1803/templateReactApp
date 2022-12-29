@@ -10,11 +10,11 @@ function ButtonRipple({ children, variant = 'contained', buttonAndButton = '12px
       rippleColor={'red'}
       bg={bg}
       buttonAndButton={buttonAndButton}
-      className="d-inline-block cursor-pointer border-0 overflow-hidden"
+      className='d-inline-block cursor-pointer border-0 overflow-hidden'
       {...props}
     >
       <ClickAnimate
-        className="py-6 px-12"
+        className='py-6 px-12'
         rippleColor={variant === 'outline' || variant === 'text' ? bg : 'rgba(255, 255, 255,0.7)'}
         style={{ width: 'auto' }}
       >
@@ -29,6 +29,6 @@ ButtonRipple.propTypes = {
   variant: PropTypes.string,
   className: PropTypes.string,
   buttonAndButton: PropTypes.string,
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 export default ButtonRipple;

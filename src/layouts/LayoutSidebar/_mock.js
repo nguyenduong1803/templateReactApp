@@ -6,7 +6,7 @@ import {
   EditIcon,
   ScienceIcon,
   TemplateIcon,
-  WindowIcon,
+  WindowIcon
 } from '~/assets/svg';
 
 export const sidebars = [
@@ -19,29 +19,29 @@ export const sidebars = [
       {
         id: '',
         element: 'Introduction',
-        path: '',
+        path: ''
       },
       {
         id: 'overview',
         element: 'Overview',
-        path: '',
+        path: ''
       },
       {
         id: 'b',
         element: 'Download',
-        path: '',
+        path: ''
       },
       {
         id: 'c',
         element: 'Contents',
-        path: '',
+        path: ''
       },
       {
         id: 'd',
         element: 'Browsers & devices',
-        path: '',
-      },
-    ],
+        path: ''
+      }
+    ]
   },
   {
     id: 6,
@@ -52,49 +52,49 @@ export const sidebars = [
       {
         id: 'accordion',
         element: 'Accordion',
-        path: '',
+        path: ''
       },
       {
         id: 'button',
         element: 'Button',
-        path: '',
+        path: ''
       },
       {
         id: 'drawer',
         element: 'Drawer',
-        path: '',
+        path: ''
       },
       {
         id: 'image',
         element: 'Image',
-        path: '',
+        path: ''
       },
       {
         id: 'input',
         element: 'Input',
-        path: '',
+        path: ''
       },
       {
         id: 'modal',
         element: 'Modal',
-        path: '',
+        path: ''
       },
       {
         id: 'skeleton',
         element: 'Skeleton',
-        path: '',
+        path: ''
       },
       {
         id: 'tabs',
         element: 'Tabs',
-        path: '',
+        path: ''
       },
       {
         id: 'tippy',
         element: 'Tippy',
-        path: '',
-      },
-    ],
+        path: ''
+      }
+    ]
   },
   {
     id: 2,
@@ -105,24 +105,24 @@ export const sidebars = [
       {
         id: 'asÁDFASDFADSdf',
         element: 'Introduction',
-        path: '',
+        path: ''
       },
       {
         id: 'asÁDFASDdf',
         element: 'Download',
-        path: '',
+        path: ''
       },
       {
         id: 'ca',
         element: 'Contents',
-        path: '',
+        path: ''
       },
       {
         id: 'adf',
         element: 'Browsers & devices',
-        path: '',
-      },
-    ],
+        path: ''
+      }
+    ]
   },
   {
     id: 3,
@@ -133,24 +133,24 @@ export const sidebars = [
       {
         id: 'df',
         element: 'Introduction',
-        path: '',
+        path: ''
       },
       {
         id: 'fds',
         element: 'Download',
-        path: '',
+        path: ''
       },
       {
         id: 'adWOOf',
         element: 'Contents',
-        path: '',
+        path: ''
       },
       {
         id: 'ASDF',
         element: 'Browsers & devices',
-        path: '',
-      },
-    ],
+        path: ''
+      }
+    ]
   },
   {
     id: 4,
@@ -161,24 +161,24 @@ export const sidebars = [
       {
         id: 'sdf',
         element: 'Introduction',
-        path: '',
+        path: ''
       },
       {
         id: 'bsdfa',
         element: 'Download',
-        path: '',
+        path: ''
       },
       {
         id: 'asfd',
         element: 'Contents',
-        path: '',
+        path: ''
       },
       {
         id: 'df',
         element: 'Browsers & devices',
-        path: '',
-      },
-    ],
+        path: ''
+      }
+    ]
   },
   {
     id: 5,
@@ -189,24 +189,24 @@ export const sidebars = [
       {
         id: 'as23df',
         element: 'Introduction',
-        path: '',
+        path: ''
       },
       {
         id: 'a2345sdf',
         element: 'Download',
-        path: '',
+        path: ''
       },
       {
         id: 'asdf',
         element: 'Contents',
-        path: '',
+        path: ''
       },
       {
         id: 'asdfff',
         element: 'Browsers & devices',
-        path: '',
-      },
-    ],
+        path: ''
+      }
+    ]
   },
 
   {
@@ -218,24 +218,24 @@ export const sidebars = [
       {
         id: 'asdfsdf',
         element: 'Introduction',
-        path: '',
+        path: ''
       },
       {
         id: 'asdf',
         element: 'Download',
-        path: '',
+        path: ''
       },
       {
         id: 'sdasdff',
         element: 'Contents',
-        path: '',
+        path: ''
       },
       {
         id: 'dasdfadsf',
         element: 'Browsers & devices',
-        path: '',
-      },
-    ],
+        path: ''
+      }
+    ]
   },
   {
     id: 8,
@@ -246,24 +246,24 @@ export const sidebars = [
       {
         id: 'asdfdf',
         element: 'Introduction',
-        path: '',
+        path: ''
       },
       {
         id: 'asdfasdfads',
         element: 'Download',
-        path: '',
+        path: ''
       },
       {
         id: 'fghÁDFj',
         element: 'Contents',
-        path: '',
+        path: ''
       },
       {
         id: 'fghjj',
         element: 'Browsers & devices',
-        path: '',
-      },
-    ],
+        path: ''
+      }
+    ]
   },
   {
     id: 9,
@@ -274,23 +274,23 @@ export const sidebars = [
       {
         id: 'fghÁDFDFj',
         element: 'Introduction',
-        path: '',
+        path: ''
       },
       {
         id: 'fghÁDFASDFSFSDj',
         element: 'Download',
-        path: '',
+        path: ''
       },
       {
         id: 'gfghjhj',
         element: 'Contents',
-        path: '',
+        path: ''
       },
       {
         id: 'ffghjgh',
         element: 'Browsers & devices',
-        path: '',
-      },
-    ],
-  },
+        path: ''
+      }
+    ]
+  }
 ];

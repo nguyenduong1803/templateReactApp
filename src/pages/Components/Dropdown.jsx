@@ -27,9 +27,9 @@ function DropdownPage() {
   return (
     <Container>
       clg
-      <Box w="20rem"> 1 </Box>
-      <Box w="20rem"> 1 </Box>
-      <Box w="20rem"> 1 </Box>
+      <Box w='20rem'> 1 </Box>
+      <Box w='20rem'> 1 </Box>
+      <Box w='20rem'> 1 </Box>
       <Box>
         <span>asdfhalkdshadlshfaslpdh</span>{' '}
       </Box>
@@ -47,7 +47,7 @@ function DropdownPage() {
       <Box> 1 </Box>
       <Box> 1 </Box>
       <Box> 1 </Box>
-      <Paper className="p-12">
+      <Paper className='p-12'>
         <HighligtCode codeString={codeString} />
       </Paper>
     </Container>

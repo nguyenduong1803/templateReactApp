@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function InputRange({color="var(--primary)",...props}) {
-  return <Input color={color} type="range" {...props}></Input>;
+export default function InputRange({ color = 'var(--primary)', ...props }) {
+  return <Input color={color} type='range' {...props}></Input>;
 }
 
 const Input = styled.input`
@@ -43,7 +43,7 @@ const Input = styled.input`
         height: 20px;
         cursor: ew-resize;
         background: #fff;
-        box-shadow: -340px 0 0 330px ${(props)=>props.color}, inset 0 0 0 20px ${(props)=>props.color};
+        box-shadow: -340px 0 0 330px ${(props) => props.color}, inset 0 0 0 20px ${(props) => props.color};
         border-radius: 50%;
         transition: box-shadow 0.2s ease-in-out;
         position: relative;
@@ -51,7 +51,7 @@ const Input = styled.input`
       }
       &:active::-webkit-slider-thumb {
         background: #fff;
-        box-shadow: -340px 0 0 330px ${(props)=>props.color}, inset 0 0 0 3px ${(props)=>props.color};
+        box-shadow: -340px 0 0 330px ${(props) => props.color}, inset 0 0 0 3px ${(props) => props.color};
       }
     }
     // Firefox
