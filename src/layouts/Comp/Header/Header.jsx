@@ -37,8 +37,8 @@ export default function Header() {
           >
             <div className="login d-flex a-center gap-24 ">
               <img src="https://minimal-kit-react.vercel.app/assets/icons/ic_flag_en.svg" alt="" />
-              <Box >
-                <Badge className='cursor-pointer' onClick={() => setShowNotify(true)} number={2}>
+              <div>
+                <Badge className="cursor-pointer" onClick={() => setShowNotify(true)} number={2}>
                   <NotifyIcon />
                 </Badge>
                 <Dropdown showDropdown={showNotify} setShowDropdown={setShowNotify} right="50%" w="22rem">
@@ -55,8 +55,8 @@ export default function Header() {
                     <li>thong baos</li>
                   </Paper>
                 </Dropdown>
-              </Box>
-              <Box>
+              </div>
+              <div>
                 <Avatar onClick={() => setShowDropdown(true)} />
                 <Dropdown showDropdown={showDropdown} setShowDropdown={setShowDropdown} right="50%" w="22rem">
                   <Paper elevation={10} className="p-12">
@@ -66,7 +66,7 @@ export default function Header() {
                     <li>item</li>
                   </Paper>
                 </Dropdown>
-              </Box>
+              </div>
             </div>
           </Nav>
           <Bar onClick={() => setMenuShow((prev) => !prev)} />

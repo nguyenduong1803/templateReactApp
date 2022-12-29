@@ -30,6 +30,7 @@ const Wrap = styled(CommonStyled)((props) => {
     bottom: props.bottom,
     top: props.top,
     zIndex: props.zIndex,
+    position: props.position,
   };
 });
 export default PositionItem;
