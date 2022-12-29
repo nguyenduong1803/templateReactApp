@@ -1,4 +1,4 @@
-import { Box, Col, Grid } from '../../layouts/Comp/GridSystem';
+import { Box, Col, Container, Grid, Row, Section } from '../../layouts/Comp/GridSystem';
 import { Link } from 'react-router-dom';
 import Button from '~/components/Atom/Button/Button';
 import ClickAnimate from '~/components/Atom/CickAnimate/ClickAnimate';
@@ -31,64 +31,83 @@ function Home() {
   const [showDropdown, setShowDropdown] = useState(false);
 
   return (
-    <Grid>
-      <Col lg={12}>
-        <Paper elevation={2}>
-          <Link to="/about">About page</Link>
-        </Paper>
-      </Col>
-      <Col lg={12}>
-        <ClickAnimate>
-          <Button href="/about">Button</Button>
-        </ClickAnimate>
-      </Col>
-      <Col lg={12}>
-        <ButtonRipple>Click ripple</ButtonRipple>
-      </Col>
-      <Col lg={12}>
-        <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>
-          <h2>hello</h2>
-        </Modal>
-        <ClickAnimate>
-          <div style={{ background: '#0f51e0' }}>Caklhsdfkjahsdfouasdhfoauihfa</div>
-        </ClickAnimate>
-      </Col>
-      <Col lg={12}>
-        <Accordion title="click me">
-          <li>1</li>
-          <li>1</li>
-          <li>1</li>
-        </Accordion>
-        <Badge number={2}>
-          <h2>Hello</h2>
-        </Badge>
-      </Col>
-      <ScrollToTop />
-      <Box md={{fontSize:"20rem"}}>
-        teesst
-      </Box>
-      <Col lg={12} md={12}>
-        <Box w="20rem">
-          <Button onClick={() => setShowDropdown(true)}>Show Drop</Button>
-          <DropDown showDropdown={showDropdown} setShowDropdown={setShowDropdown}>
-            <Paper elevation={10} className="p-12">
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>
-            </Paper>
-          </DropDown>
-        </Box>
-      </Col>
-      <SelectMulti name="Nhập tên thành phố" fakeData={fakeData} />
-      <div style={{ width: '640px' }}>
-        <p className="textOverflow-1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae hic fugiat maiores commodi sapiente qui
-          similique alias eius, explicabo quo a odio culpa, corporis repudiandae nobis sunt nesciunt. Quis, autem.
-        </p>
-      </div>
-      <Pagination {...config} />
-    </Grid>
+    <>
+      <Grid>
+        <Col lg={12}>
+          <Paper elevation={2}>
+            <Link to="/about">About page</Link>
+          </Paper>
+        </Col>
+        <Col lg={12}>
+          <ClickAnimate>
+            <Button href="/about">Button</Button>
+          </ClickAnimate>
+        </Col>
+        <Col lg={12}>
+          <ButtonRipple>Click ripple</ButtonRipple>
+        </Col>
+        <Col lg={12}>
+          <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>
+            <h2>hello</h2>
+          </Modal>
+          <ClickAnimate>
+            <div style={{ background: '#0f51e0' }}>Caklhsdfkjahsdfouasdhfoauihfa</div>
+          </ClickAnimate>
+        </Col>
+        <Col lg={12}>
+          <Accordion title="click me">
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+          </Accordion>
+          <Badge number={2}>
+            <h2>Hello</h2>
+          </Badge>
+        </Col>
+        <ScrollToTop />
+        <Box md={{ fontSize: '20rem' }}>teesst</Box>
+        <Col lg={12} md={12}>
+          <Box w="20rem">
+            <Button onClick={() => setShowDropdown(true)}>Show Drop</Button>
+            <DropDown showDropdown={showDropdown} setShowDropdown={setShowDropdown}>
+              <Paper elevation={10} className="p-12">
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+              </Paper>
+            </DropDown>
+          </Box>
+        </Col>
+        <SelectMulti name="Nhập tên thành phố" fakeData={fakeData} />
+        <div style={{ width: '640px' }} className="overflow-hidden">
+          <p className="textOverflow-1 ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae hic fugiat maiores commodi sapiente qui
+            similique alias eius, explicabo quo a odio culpa, corporis repudiandae nobis sunt nesciunt. Quis, autem.
+          </p>
+        </div>
+        <Pagination {...config} />
+      </Grid>
+      <Container container='container-fluid'>
+        <Row>
+          <Col>
+            <div className="border">1</div>
+          </Col>
+          <Col>
+            <div className="border">2</div>
+          </Col>
+          <Col>
+            <div className="border">3</div>
+          </Col>
+          <Col>
+            <div className="border">4</div>
+          </Col>
+        </Row>
+        <Section className="row">
+          asdhfalk
+        </Section>
+      </Container>
+    </>
   );
 }
 const ButtonShow = ({ onShouldModal }) => (

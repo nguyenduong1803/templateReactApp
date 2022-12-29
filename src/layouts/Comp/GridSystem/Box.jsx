@@ -31,7 +31,6 @@ function Box({
 }) {
   return (
     <Wrap
-      style={sx}
       w={w}
       h={h}
       m={m}
@@ -53,6 +52,7 @@ function Box({
       border={border}
       overflow={overflow}
       hover={hover}
+      sx={sx}
       {...props}
     >
       {children}

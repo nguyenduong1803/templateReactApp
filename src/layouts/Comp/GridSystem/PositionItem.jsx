@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import CommonStyled from './commonStyled';
 
-function PositionItem({ children, zIndex, bottom, left, top, right, position, h, w, p, m, bg, ...props }) {
+function PositionItem({ children, zIndex, bottom, left, top, right, position, h, w, p, m, bg, sx, ...props }) {
   return (
     <Wrap
       top={top}
@@ -16,11 +16,21 @@ function PositionItem({ children, zIndex, bottom, left, top, right, position, h,
       m={m}
       p={p}
       bg={bg}
+      sx={sx}
       {...props}
     >
       {children}
     </Wrap>
   );
 }
-const Wrap = styled(CommonStyled)``;
+const Wrap = styled(CommonStyled)((props) => {
+  return {
+    right: props.right,
+    left: props.left,
+    bottom: props.bottom,
+    top: props.top,
+    zIndex: props.zIndex,
+    position: props.position,
+  };
+});
 export default PositionItem;

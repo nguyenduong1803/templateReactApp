@@ -8,17 +8,18 @@ const setStyleComponent = ({ radius, ...props }) => {
     width: props.w,
     padding: props.p,
     margin: props.m,
+    overflow: props.overflow,
     borderRadius: props.radius,
     ':hover': props.hover,
     ':after': props.after,
     ':before': props.before,
-    ...props,
     ...props.sx,
-    '@media (min-width:62em)and (max-width: 74.9375em)': props.lg,
-    '@media (min-width:48em)and (max-width: 61.9375em)': props.md,
-    '@media (min-width: 36em) and (max-width: 47.9375em)': props.sm,
     '@media  (max-width: 35.9375em)': props.xs,
-    
+    '@media (min-width: 36em)': props.sm,
+    '@media (min-width: 48em)': props.md,
+    '@media (min-width: 62em)': props.lg,
+    '@media (min-width: 75em)': props.xl,
+    '@media (min-width: 87.5em)': props.xxl,
   };
 };
 const CommonStyled = styled.div(setStyleComponent);
