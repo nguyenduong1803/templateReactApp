@@ -6,18 +6,18 @@ export default function InputPassword({ name, ...props }) {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
-    <FormFeild className="position-relative">
-      <Input type={showPassword ? 'text' : 'password'} placeholder=" " className="inputText_input" {...props} />
-      <Label className="position-absolute inputText_label_name">{name}</Label>
+    <FormFeild className='position-relative'>
+      <Input type={showPassword ? 'text' : 'password'} placeholder=' ' className='inputText_input' {...props} />
+      <Label className='position-absolute inputText_label_name'>{name}</Label>
       <Eye onClick={() => setShowPassword((prev) => !prev)}>
-        {showPassword ? <EyeIcon stroke="#999" /> : <EyeOff stroke="#999" />}
+        {showPassword ? <EyeIcon stroke='#999' /> : <EyeOff stroke='#999' />}
       </Eye>
     </FormFeild>
   );
 }
 Image.propTypes = {
-    name: PropTypes.string.isRequired,
-  };
+  name: PropTypes.string.isRequired
+};
 const FormFeild = styled.div``;
 const Label = styled.label`
   top: 50%;

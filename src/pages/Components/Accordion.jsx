@@ -12,21 +12,21 @@ const list = [
     child: [
       {
         name: 'Samsung',
-        id: 'samsung',
+        id: 'samsung'
       },
       {
         name: 'IPhone',
-        id: 'iphone',
+        id: 'iphone'
       },
       {
         name: 'IPad',
-        id: 'ipad',
+        id: 'ipad'
       },
       {
         name: 'Computer',
-        id: 'computer',
-      },
-    ],
+        id: 'computer'
+      }
+    ]
   },
   {
     id: 2,
@@ -35,21 +35,21 @@ const list = [
     child: [
       {
         name: 'Samsung',
-        id: 'samsung2',
+        id: 'samsung2'
       },
       {
         name: 'IPhone',
-        id: 'iphone2',
+        id: 'iphone2'
       },
       {
         name: 'IPad',
-        id: 'ipad2',
+        id: 'ipad2'
       },
       {
         name: 'Computer',
-        id: 'computer2',
-      },
-    ],
+        id: 'computer2'
+      }
+    ]
   },
   {
     id: 3,
@@ -58,21 +58,21 @@ const list = [
     child: [
       {
         name: 'Samsung',
-        id: 'samsung3',
+        id: 'samsung3'
       },
       {
         name: 'IPhone',
-        id: 'iphone3',
+        id: 'iphone3'
       },
       {
         name: 'IPad',
-        id: 'ipad3',
+        id: 'ipad3'
       },
       {
         name: 'Computer',
-        id: 'computer3',
-      },
-    ],
+        id: 'computer3'
+      }
+    ]
   },
   {
     id: 4,
@@ -81,30 +81,30 @@ const list = [
     child: [
       {
         name: 'Samsung',
-        id: 'samsung4',
+        id: 'samsung4'
       },
       {
         name: 'IPhone',
-        id: 'iphone4',
+        id: 'iphone4'
       },
       {
         name: 'IPad',
-        id: 'ipad4',
+        id: 'ipad4'
       },
       {
         name: 'Computer',
-        id: 'computer4',
-      },
-    ],
-  },
+        id: 'computer4'
+      }
+    ]
+  }
 ];
 function Components() {
   return (
     <div>
-      <Grid className="p-12">
+      <Grid className='p-12'>
         <Col lg={12} md={12} sm={12}>
           <h1>Accordion</h1>
-          <p className="fz-18">
+          <p className='fz-18'>
             The accordion component allows the user to show and hide sections of related content on a page.
           </p>
         </Col>
@@ -114,7 +114,7 @@ function Components() {
               return (
                 <Accordion key={item.id} title={item.title} bg={item.bg}>
                   {item.child.map((child) => (
-                    <li className="hover-default p-6" key={child.id}>
+                    <li className='hover-default p-6' key={child.id}>
                       {child.name}
                     </li>
                   ))}
@@ -129,7 +129,7 @@ function Components() {
               return (
                 <Accordion key={item.id} title={item.title} bg={item.bg} cancel>
                   {item.child.map((child) => (
-                    <li className="hover-default" key={child.id}>
+                    <li className='hover-default' key={child.id}>
                       {child.name}
                     </li>
                   ))}
@@ -144,7 +144,7 @@ function Components() {
               return (
                 <Accordion key={item.id} title={item.title} bg={item.bg}>
                   {item.child.map((child) => (
-                    <li key={child.id} className="hover-default">
+                    <li key={child.id} className='hover-default'>
                       {child.name}
                     </li>
                   ))}
@@ -163,13 +163,13 @@ function Components() {
                     hasOpen={sidebar.open}
                     title={sidebar.title}
                     key={sidebar.id}
-                    h="40px"
-                    p="6px 12px 6px 24px"
-                    hover={{ backgroundColor: 'var(--hover-color)',color:"red" }}
+                    h='40px'
+                    p='6px 12px 6px 24px'
+                    hover={{ backgroundColor: 'var(--hover-color)', color: 'red' }}
                     cancel
                   >
                     {sidebar.element.map((item) => (
-                      <li className=" line-height-36 hover-default" key={item.id}>
+                      <li className=' line-height-36 hover-default' key={item.id}>
                         <p>{item.element}</p>
                       </li>
                     ))}
@@ -181,7 +181,7 @@ function Components() {
           </Paper>
         </Col>
         <Col lg={12} md={12}>
-          <h3 className="fz-24 fw-500">Source Code</h3>
+          <h3 className='fz-24 fw-500'>Source Code</h3>
 
           <HighligtCode codeString={ArrcourdionString} />
         </Col>

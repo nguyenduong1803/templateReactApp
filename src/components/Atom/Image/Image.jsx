@@ -25,7 +25,7 @@ Image.propTypes = {
   alt: PropTypes.string,
   w: PropTypes.string,
   h: PropTypes.string,
-  objectFit: PropTypes.string,
+  objectFit: PropTypes.string
 };
 
 const Img = styled.img`

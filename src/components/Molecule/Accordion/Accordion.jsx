@@ -23,7 +23,7 @@ export default function Accordion({
   }, [hasOpen]);
   return (
     <>
-      <ClickAnimate cancel={cancel} rippleColor="#ccc">
+      <ClickAnimate cancel={cancel} rippleColor='#ccc'>
         <ButtonAccordion
           onClick={() => setOpen(!open)}
           p={p}
@@ -33,11 +33,11 @@ export default function Accordion({
           {...props}
         >
           {Icon && (
-            <div className="d-flex gap-12 a-center">
+            <div className='d-flex gap-12 a-center'>
               <Icon
-                width="1.9rem"
-                fill="#4e4e4e"
-                className="position-relative"
+                width='1.9rem'
+                fill='#4e4e4e'
+                className='position-relative'
                 style={{ top: '-1px', pointerEvents: 'none' }}
               />
               {title}
@@ -65,14 +65,14 @@ Accordion.propTypes = {
   hasOpen: PropTypes.bool,
   hover: PropTypes.string,
   className: PropTypes.string,
-  cancel: PropTypes.bool,
+  cancel: PropTypes.bool
 };
 
 const ButtonAccordion = styled.div(({ hover, ...props }) => ({
   backgroundColor: props.bg,
   padding: props.p,
   userSelect: 'none',
-  ':hover': hover,
+  ':hover': hover
 }));
 const ContentAccordion = styled.ul`
   padding: 0 20px;

@@ -11,36 +11,36 @@ const fakeData = [
   { name: 'Da Nang' },
   { name: 'Can tho' },
   { name: 'Nam tu liem' },
-  { name: 'An tho' },
+  { name: 'An tho' }
 ];
 function InputPage() {
   return (
     <div>
-      <Grid container="container-fluid">
+      <Grid container='container-fluid'>
         <Col lg={4}>
-          <Paper className="p-24">
-            <h2 className="text-center">Form login</h2>
-            <Box className="my-24">
-              <InputText name="Nhập tên" />
+          <Paper className='p-24'>
+            <h2 className='text-center'>Form login</h2>
+            <Box className='my-24'>
+              <InputText name='Nhập tên' />
             </Box>
-            <Box className="my-24">
-              <InputPassword name="Nhập password" />
+            <Box className='my-24'>
+              <InputPassword name='Nhập password' />
             </Box>
           </Paper>
         </Col>
         <Col></Col>
         <Col lg={5} md={5}>
           <InputRange />
-          <InputRange color="var(--text-success)" />
-          <InputRange color="var(--text-danger)" />
-          <InputRange color="var(--text-warning)" />
+          <InputRange color='var(--text-success)' />
+          <InputRange color='var(--text-danger)' />
+          <InputRange color='var(--text-warning)' />
         </Col>
         <Col lg={6} md={6}>
-          <InputText name="Nhập tên" />
+          <InputText name='Nhập tên' />
         </Col>
 
         <Col lg={6} md={6}>
-          <SelectMulti name="Nhập tên thành phố" fakeData={fakeData} />
+          <SelectMulti name='Nhập tên thành phố' fakeData={fakeData} />
         </Col>
       </Grid>
     </div>

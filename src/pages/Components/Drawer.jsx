@@ -8,16 +8,24 @@ function DrawerPage() {
 
   return (
     <div>
-     <Grid container="container-fluid">
+      <Grid container='container-fluid'>
         <Col>
-        <Drawer setDrawerActive={setDrawerActive} drawerActive={drawerActive}>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-      </Drawer>
-      <Button onClick ={()=>{setDrawerActive(true)}}>Show Drawer</Button></Col>
-     `</Grid>
+          <Drawer setDrawerActive={setDrawerActive} drawerActive={drawerActive}>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+          </Drawer>
+          <Button
+            onClick={() => {
+              setDrawerActive(true);
+            }}
+          >
+            Show Drawer
+          </Button>
+        </Col>
+        `
+      </Grid>
     </div>
   );
 }

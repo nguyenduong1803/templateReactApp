@@ -1,4 +1,4 @@
-import { Box, Col, Container, Grid, Row, Section } from '../../layouts/Comp/GridSystem';
+import { Box, Col, Container, Grid, Section } from '../../layouts/Comp/GridSystem';
 import { Link } from 'react-router-dom';
 import Button from '~/components/Atom/Button/Button';
 import ClickAnimate from '~/components/Atom/CickAnimate/ClickAnimate';
@@ -18,13 +18,13 @@ const fakeData = [
   { name: 'Da Nang' },
   { name: 'Can tho' },
   { name: 'Nam tu liem' },
-  { name: 'An tho' },
+  { name: 'An tho' }
 ];
 const config = {
   currentPage: 1,
   totalPage: 100,
   link: 'http://foo.bar/?page=',
-  cb: function () {},
+  cb: function () {}
 };
 
 function Home() {
@@ -35,12 +35,12 @@ function Home() {
       <Grid>
         <Col lg={12}>
           <Paper elevation={2}>
-            <Link to="/about">About page</Link>
+            <Link to='/about'>About page</Link>
           </Paper>
         </Col>
         <Col lg={12}>
           <ClickAnimate>
-            <Button href="/about">Button</Button>
+            <Button href='/about'>Button</Button>
           </ClickAnimate>
         </Col>
         <Col lg={12}>
@@ -55,7 +55,7 @@ function Home() {
           </ClickAnimate>
         </Col>
         <Col lg={12}>
-          <Accordion title="click me">
+          <Accordion title='click me'>
             <li>1</li>
             <li>1</li>
             <li>1</li>
@@ -67,10 +67,10 @@ function Home() {
         <ScrollToTop />
         <Box md={{ fontSize: '20rem' }}>teesst</Box>
         <Col lg={12} md={12}>
-          <Box w="20rem">
+          <Box w='20rem'>
             <Button onClick={() => setShowDropdown(true)}>Show Drop</Button>
             <DropDown showDropdown={showDropdown} setShowDropdown={setShowDropdown}>
-              <Paper elevation={10} className="p-12">
+              <Paper elevation={10} className='p-12'>
                 <li>item</li>
                 <li>item</li>
                 <li>item</li>
@@ -79,31 +79,31 @@ function Home() {
             </DropDown>
           </Box>
         </Col>
-        <SelectMulti name="Nhập tên thành phố" fakeData={fakeData} />
-        <div style={{ width: '640px' }} className="overflow-hidden">
-          <p className="textOverflow-1 ">
+        <SelectMulti name='Nhập tên thành phố' fakeData={fakeData} />
+        <div style={{ width: '640px' }} className='overflow-hidden'>
+          <p className='textOverflow-1 '>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae hic fugiat maiores commodi sapiente qui
             similique alias eius, explicabo quo a odio culpa, corporis repudiandae nobis sunt nesciunt. Quis, autem.
           </p>
         </div>
         <Pagination {...config} />
       </Grid>
-      <Container size="xxl">
-        <Row>
+      <Container size='xxl'>
+        <Section row>
           <Col>
-            <div className="border">1</div>
+            <div className='border'>1</div>
           </Col>
           <Col>
-            <div className="border">2</div>
+            <div className='border'>2</div>
           </Col>
           <Col>
-            <div className="border">3</div>
+            <div className='border'>3</div>
           </Col>
           <Col>
-            <div className="border">4</div>
+            <div className='border'>4</div>
           </Col>
-        </Row>
-        <Section className="row">asdhfalk</Section>
+        </Section>
+        <Section className='row'>asdhfalk</Section>
       </Container>
     </>
   );

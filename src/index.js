@@ -13,6 +13,6 @@ root.render(
         <RouterSite />
       </Router>
     </GlobalStyle>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
 reportWebVitals();

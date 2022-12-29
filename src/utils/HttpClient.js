@@ -1,6 +1,6 @@
 import axios from 'axios';
 // const baseURL = process.env.BASE_URL;
-const baseURL = "https://636cc906ab4814f2b26e2b1f.mockapi.io/";
+const baseURL = 'https://636cc906ab4814f2b26e2b1f.mockapi.io/';
 const headers = { 'Content-Type': 'application/json' };
 class Axios {
   instance;
@@ -8,7 +8,7 @@ class Axios {
   constructor() {
     const instance = axios.create({
       baseURL,
-      headers,
+      headers
     });
     // request interceptor
     instance.interceptors.request.use(
@@ -17,12 +17,12 @@ class Axios {
         }
         return config;
       },
-      (error) => Promise.reject(error),
+      (error) => Promise.reject(error)
     );
     // response interceptor
     const interceptor = instance.interceptors.response.use(
       (response) => response.data,
-      (error) => Promise.reject(error),
+      (error) => Promise.reject(error)
     );
     this.instance = instance;
     this.interceptor = interceptor;
@@ -34,7 +34,7 @@ class Axios {
     if (this.interceptor === null) {
       const interceptor = this.instance.interceptors.response.use(
         (response) => response.data,
-        (error) => Promise.reject(error),
+        (error) => Promise.reject(error)
       );
       this.interceptor = interceptor;
     }

@@ -70,7 +70,7 @@ Box.propTypes = {
   zIndex: PropTypes.number,
   maxWidth: PropTypes.string,
   hover: PropTypes.string,
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 const Wrap = styled(CommonStyled)``;
 export default Box;

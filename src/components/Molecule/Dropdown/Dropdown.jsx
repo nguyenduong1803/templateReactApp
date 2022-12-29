@@ -3,14 +3,14 @@ import PositionItem from '~/layouts/Comp/GridSystem/PositionItem';
 
 function Dropdown({ children, mt = '0.6rem', w, setShowDropdown, showDropdown, right, ...props }) {
   return (
-    <div className="position-relative">
+    <div className='position-relative'>
       <div onClick={() => setShowDropdown(false)} className={showDropdown && 'position-fixed full'}></div>
       <PositionItem
         right={right}
         w={w}
         zIndex={301}
         m={`${mt} 0 0 0`}
-        position="absolute"
+        position='absolute'
         onClick={(e) => e.stopPropagation()}
         className={showDropdown ? 'show' : 'hidden'}
         {...props}
@@ -25,6 +25,6 @@ Dropdown.propTypes = {
   my: PropTypes.string,
   setShowDropdown: PropTypes.func,
   showDropdown: PropTypes.bool,
-  children: PropTypes.node,
+  children: PropTypes.node
 };
 export default Dropdown;

@@ -17,12 +17,12 @@ export default function Header() {
   const refNav = useRef();
   return (
     <>
-      <Wrap className="position-fixed bg-white w-100 t-0 r-0">
-        <div className="d-flex j-between a-center h-100" style={{ zIndex: 100, padding: '0 2.4rem 0 32.4rem' }}>
-          <div className="center ">
+      <Wrap className='position-fixed bg-white w-100 t-0 r-0'>
+        <div className='d-flex j-between a-center h-100' style={{ zIndex: 100, padding: '0 2.4rem 0 32.4rem' }}>
+          <div className='center '>
             <InputText
               style={{ paddingLeft: '4rem', width: '400px', backgroundColor: 'var(--bg-default)' }}
-              placeholder="Search..."
+              placeholder='Search...'
               Icon={SearchIcon}
             />
             {/* {header.map(item => {
@@ -32,17 +32,17 @@ export default function Header() {
           </div>
           <Nav
             style={menuShow ? { maxHeight: `${refNav.current.scrollHeight}px` } : {}}
-            className="d-flex j-end"
+            className='d-flex j-end'
             ref={refNav}
           >
-            <div className="login d-flex a-center gap-24 ">
-              <img src="https://minimal-kit-react.vercel.app/assets/icons/ic_flag_en.svg" alt="" />
+            <div className='login d-flex a-center gap-24 '>
+              <img src='https://minimal-kit-react.vercel.app/assets/icons/ic_flag_en.svg' alt='' />
               <div>
-                <Badge className="cursor-pointer" onClick={() => setShowNotify(true)} number={2}>
+                <Badge className='cursor-pointer' onClick={() => setShowNotify(true)} number={2}>
                   <NotifyIcon />
                 </Badge>
-                <Dropdown showDropdown={showNotify} setShowDropdown={setShowNotify} right="50%" w="22rem">
-                  <Paper elevation={10} className="p-12">
+                <Dropdown showDropdown={showNotify} setShowDropdown={setShowNotify} right='50%' w='22rem'>
+                  <Paper elevation={10} className='p-12'>
                     <li>thong baos</li>
                     <li>thong baos</li>
                     <li>thong baos</li>
@@ -58,8 +58,8 @@ export default function Header() {
               </div>
               <div>
                 <Avatar onClick={() => setShowDropdown(true)} />
-                <Dropdown showDropdown={showDropdown} setShowDropdown={setShowDropdown} right="50%" w="22rem">
-                  <Paper elevation={10} className="p-12">
+                <Dropdown showDropdown={showDropdown} setShowDropdown={setShowDropdown} right='50%' w='22rem'>
+                  <Paper elevation={10} className='p-12'>
                     <li>item</li>
                     <li>item</li>
                     <li>item</li>
@@ -72,7 +72,7 @@ export default function Header() {
           <Bar onClick={() => setMenuShow((prev) => !prev)} />
         </div>
       </Wrap>
-      <Box className="position-relative"></Box>
+      <Box className='position-relative'></Box>
     </>
   );
 }
