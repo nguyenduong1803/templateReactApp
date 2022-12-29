@@ -4,7 +4,7 @@ import PositionItem from '~/layouts/Comp/GridSystem/PositionItem';
 function Dropdown({ children, mt = '0.6rem', w, setShowDropdown, showDropdown, right, ...props }) {
   return (
     <div className='position-relative'>
-      <div onClick={() => setShowDropdown(false)} className={showDropdown && 'position-fixed full'}></div>
+      <div onClick={() => setShowDropdown(false)} className={showDropdown ? 'position-fixed full' : ''}></div>
       <PositionItem
         right={right}
         w={w}

@@ -29,7 +29,6 @@ const config = {
 
 function Home() {
   const [showDropdown, setShowDropdown] = useState(false);
-
   return (
     <>
       <Grid>
@@ -81,14 +80,14 @@ function Home() {
         </Col>
         <SelectMulti name='Nhập tên thành phố' fakeData={fakeData} />
         <div style={{ width: '640px' }} className='overflow-hidden'>
-          <p className='textOverflow-1 '>
+          <p className='textOverflow-1'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae hic fugiat maiores commodi sapiente qui
             similique alias eius, explicabo quo a odio culpa, corporis repudiandae nobis sunt nesciunt. Quis, autem.
           </p>
         </div>
         <Pagination {...config} />
       </Grid>
-      <Container size='xxl'>
+      <Container size='âsdfadsf'>
         <Section row>
           <Col>
             <div className='border'>1</div>

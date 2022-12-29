@@ -12,6 +12,7 @@ function Paper({
   r = 4,
   p,
   m,
+  className = '',
   ...props
 }) {
   const papers = [
@@ -38,6 +39,7 @@ function Paper({
       overflow={overflow}
       boxShadow={papers[Number(elevation)]}
       minHeight={minHeight}
+      className={className}
       {...props}
     >
       {children}
