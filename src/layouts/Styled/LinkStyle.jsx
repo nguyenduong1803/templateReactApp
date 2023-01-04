@@ -10,8 +10,4 @@ export const NavLinkActive = styled(NavLink)`
     background-color: ${(props) => props.bg};
     color: #000;
   }
-  @media (max-width: 61.9375em) {
-    padding: 6px 0;
-    border-bottom: 1px solid var(--border-color-light);
-  }
 `;

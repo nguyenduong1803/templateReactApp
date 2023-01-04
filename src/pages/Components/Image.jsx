@@ -16,16 +16,16 @@ const listImage = [
 ];
 function ImagePage() {
   return (
-    <div className=' my-24'>
-      <Grid container='container-fluid'>
-        <Col>
-          <Paper className='border radius-6 p-12'>
-            <Image src='' />
+    <div className=" my-24">
+      <Grid container="container-fluid">
+        <Col sm={3}>
+          <Paper className="border radius-6 p-12">
+            <Image src="" />
             <p>Default Image error</p>
           </Paper>
         </Col>
-        <Col>
-          <Paper className='d-flex flex-direction-column h-100 j-between border radius-6 p-12'>
+        <Col sm={3}>
+          <Paper className="d-flex flex-direction-column h-100 j-between border radius-6 p-12">
             <Image
               h='200px'
               objectFit='cover'
@@ -34,14 +34,14 @@ function ImagePage() {
             <p>Image basic</p>
           </Paper>
         </Col>
-        <Col>
-          <Paper className=' d-flex flex-direction-column j-between h-100 border radius-6 p-12'>
-            <OptimizeImage listImage={listImage} src='' />
+        <Col sm={3}>
+          <Paper className=" d-flex flex-direction-column j-between h-100 border radius-6 p-12">
+            <OptimizeImage listImage={listImage} src="" />
             <p> Optimize with desktop tablet and mobile</p>
           </Paper>
         </Col>
-        <Col>
-          <Paper className='d-flex flex-direction-column h-100 j-between border radius-6 p-12'>
+        <Col sm={3}>
+          <Paper className="d-flex flex-direction-column h-100 j-between border radius-6 p-12">
             <Image
               h='200px'
               objectFit='cover'
