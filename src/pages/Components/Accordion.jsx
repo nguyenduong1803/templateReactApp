@@ -1,4 +1,6 @@
 import React from 'react';
+import Button from '~/components/Atom/Button/Button';
+import Ripple from '~/components/Atom/Ripple/Ripple';
 import Accordion from '~/components/Molecule/Accordion/Accordion';
 import { Col, Grid } from '~/layouts/Comp/GridSystem';
 import { sidebars } from '~/layouts/LayoutSidebar/_mock';
@@ -108,7 +110,7 @@ function Components() {
             The accordion component allows the user to show and hide sections of related content on a page.
           </p>
         </Col>
-        <Col>
+        <Col sm={3}>
           <Paper r={4} elevation={8}>
             {list.map((item) => {
               return (
@@ -123,7 +125,7 @@ function Components() {
             })}
           </Paper>
         </Col>
-        <Col>
+        <Col sm={3}>
           <Paper r={4} elevation={1}>
             {list.map((item) => {
               return (
@@ -138,7 +140,7 @@ function Components() {
             })}
           </Paper>
         </Col>
-        <Col>
+        <Col sm={3}>
           <Paper r={4} elevation={0}>
             {list.map((item) => {
               return (
@@ -153,7 +155,7 @@ function Components() {
             })}
           </Paper>
         </Col>
-        <Col>
+        <Col sm={3}>
           <Paper elevation={2}>
             {sidebars?.map((sidebar, index) => {
               if (index > 4) {

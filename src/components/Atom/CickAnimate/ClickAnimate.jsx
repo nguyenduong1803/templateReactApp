@@ -20,12 +20,13 @@ const ClickAnimate = ({
     circle.style.width = e.target.clientWidth + 'px';
     circle.style.height = e.target.clientWidth + 'px';
     e.target.appendChild(circle);
+    console.log('clicked');
     refTime.current = setTimeout(() => {
       const rippleClear = document.querySelectorAll(`.${styles.circle}`);
       rippleClear.forEach((item) => {
         item.remove();
       });
-    }, 300);
+    }, 500);
   };
   useEffect(() => {
     return () => {
@@ -37,7 +38,7 @@ const ClickAnimate = ({
       className={`overflow-hidden d-inline-block position-relative cursor-pointer userSelect-none w-100 `}
       {...props}
     >
-      <div className={`w-100  ${className}`} onClick={cancel ? createRipple : () => {}}>
+      <div className={`w-100 ${className}`} onClick={cancel ? createRipple : () => {}}>
         {children}
       </div>
     </div>
