@@ -2,13 +2,13 @@ import React from 'react';
 import Button from '~/components/Atom/Button/Button';
 import ButtonRipple from '~/components/Atom/Button/ButtonRipple';
 import ButtonSank from '~/components/Atom/Button/ButtonSank';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Container, Grid } from '~/layouts/Comp/GridSystem';
 
 function ButtonPage() {
   return (
     <div>
       <h2 className="main-title pl-24">Button</h2>
-      <Grid>
+      <Container >
         <Col>
           <Button variant="outline" bg="var(--va )">
             Primary Button
@@ -34,7 +34,7 @@ function ButtonPage() {
           <Button bg="var(--text-warning)">Click me</Button>
           <p className="py-12"> Default Click</p>
         </Col>
-      </Grid>
+      </Contain>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import axios from 'axios';
 // const baseURL = process.env.BASE_URL;
-const baseURL = "https://636cc906ab4814f2b26e2b1f.mockapi.io/";
+const baseURL = 'https://636cc906ab4814f2b26e2b1f.mockapi.io/';
 const headers = { 'Content-Type': 'application/json' };
 class Axios {
   instance;

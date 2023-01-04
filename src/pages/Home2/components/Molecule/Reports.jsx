@@ -43,7 +43,7 @@ function Reports() {
       {list.map((item, index) => {
         const Icon = item.icon
         return (
-          <Col key={index}>
+          <Col sm={3} key={index}>
             <Paper elevation={0} r={10} bg={item.wrapColor}>
               <div className="d-flex p-24 flex-direction-column a-center">
                 <InsetColor color={item.color} bg={item.bg}>

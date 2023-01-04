@@ -1,6 +1,12 @@
-
-
-function Col({ children, lg = 6,className='',...props }) {
-  return <div  className={`col-sm-${lg} col-md-4 col-lg-3 ${className}`} {...props}>{children}</div>;
+function Col({ children, lg, md, sm = 12, className = '', ...props }) {
+  const renderClass =`col-sm-${sm} ${md ? 'col-md-' + md : ''}  ${lg ? 'col-lg-' + lg : ''} ${className}`.replace(/^\s+/, '')
+  console.log(renderClass.trim())
+  return (
+    <div className={renderClass.trim()} {...props}>
+      {children}
+    </div>
+  );
 }
 export default Col;
+
+// return <div  className={`col-lg-${lg}  col-md-${sm} col-sm-${sm} ${className}`} {...props}>{children}</div>;
