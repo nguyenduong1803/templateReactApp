@@ -7,7 +7,7 @@ function Footer({ footer }) {
       <Grid container='container-fluid '>
         {footer.map((item, index) => {
           return (
-            <Col key={index}>
+            <Col sm={3} key={index}>
               <h3>{item.title}</h3>
               <ul>
                 {' '}
