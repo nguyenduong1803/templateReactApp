@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const WrapButton = styled.div`
+export const WrapButton = styled.button`
   display: inline-flex;
+  overflow: hidden;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
