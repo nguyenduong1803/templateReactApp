@@ -7,6 +7,13 @@ function Col({ children, lg, md, sm = 12, className = '', ...props }) {
     </div>
   );
 }
+Col.prototype = {
+  children: PropTypes.node,
+  md: PropTypes.number,
+  sm: PropTypes.number,
+  lg: PropTypes.number,
+  className: PropTypes.string
+};
 export default Col;
 
 // return <div  className={`col-lg-${lg}  col-md-${sm} col-sm-${sm} ${className}`} {...props}>{children}</div>;

@@ -14,60 +14,59 @@ import Overview from '~/pages/GettingStarted/Overview';
 const componentRoute = [
   {
     index: true,
-    element: <Home2 />,
+    element: <Home2 />
   },
   {
     path: ':id',
-    element: <Home2 />,
+    element: <Home2 />
   },
   {
     path: 'accordion',
-    element: <Components />,
+    element: <Components />
   },
   {
     path: 'button',
-    element: <ButtonPage />,
+    element: <ButtonPage />
   },
   {
     path: 'drawer',
-    element: <DrawerPage />,
+    element: <DrawerPage />
   },
   {
     path: 'dropdown',
-    element: <DropdownPage />,
+    element: <DropdownPage />
   },
   {
     path: 'image',
-    element: <ImagePage />,
+    element: <ImagePage />
   },
   {
     element: <ModalPage />,
-    path: 'modal',
+    path: 'modal'
   },
   {
     element: 'Image',
-    path: '',
+    path: ''
   },
   {
     path: 'skeleton',
-    element: <SkeletonPage />,
+    element: <SkeletonPage />
   },
   {
     element: <TabsPage />,
-    path: 'tabs',
+    path: 'tabs'
   },
   {
     path: 'tippy',
-    element: <TippyPage />,
+    element: <TippyPage />
   },
   {
     path: 'input',
-    element: <InputPage />,
+    element: <InputPage />
   },
   {
     path: 'overview',
-    element: <Overview />,
-  },
-
+    element: <Overview />
+  }
 ];
 export default componentRoute;

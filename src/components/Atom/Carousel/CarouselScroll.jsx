@@ -15,7 +15,7 @@ const Gallery = styled.ul`
   }
 `;
 
-function Carosel({ children,...props}) {
+function Carosel({ children, ...props }) {
   const refGallery = useRef();
   useEffect(() => {
     const slider = refGallery?.current;
@@ -47,8 +47,8 @@ function Carosel({ children,...props}) {
     });
   });
   return (
-    <Gallery className="d-flex" ref={refGallery} {...props}>
-    {children}
+    <Gallery className='d-flex' ref={refGallery} {...props}>
+      {children}
     </Gallery>
   );
 }

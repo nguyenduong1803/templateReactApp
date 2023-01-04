@@ -11,19 +11,19 @@ import PositionItem from '../Comp/GridSystem/PositionItem';
 function LayoutSidebar() {
   return (
     <>
-      <Box className="bg-default">
-        <WrapSidebar className="vh-100 position-fixed t-0 p-12" w="300px">
+      <Box className='bg-default'>
+        <WrapSidebar className='vh-100 position-fixed t-0 p-12' w='300px'>
           <Sidebar />
         </WrapSidebar>
-        <Box className="space-sidebar">
-          <Grid container="container-fluid p-0" style={{ margin: '0 0 65px 0' }}>
+        <Box className='space-sidebar'>
+          <Grid container='container-fluid p-0' style={{ margin: '0 0 65px 0' }}>
             <Header />
           </Grid>
           <Outlet />
           <Footer footer={footer} />
         </Box>
-        <Box w="20rem" bg='#fff'>
-          <PositionItem className="vh-100 position-fixed t-0 p-12" w="300px">
+        <Box w='20rem' bg='#fff'>
+          <PositionItem className='vh-100 position-fixed t-0 p-12' w='300px'>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, quae ullam? Nam quod a illum provident,
             excepturi eveniet aliquam delectus repellat cumque optio quaerat fugit blanditiis quidem doloribus inventore
             similique.

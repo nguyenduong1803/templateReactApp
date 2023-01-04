@@ -9,20 +9,19 @@ function ModalPage() {
     <div>
       <Grid>
         <Col>
-    
           <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>
             <h2>hello</h2>
           </Modal>
         </Col>
         <Col>
-          <Modal Button={ButtonShow} h="240px" w="400px">
-            <div className="d-flex flex-direction-column h-100 gap-12">
-              <p className="flex-1">Bạn có muốn xóa sản phẩm</p>
-              <div className="align-self-end ">
-                <Button bg="var(--text-success)" className="mr-12">
+          <Modal Button={ButtonShow} h='240px' w='400px'>
+            <div className='d-flex flex-direction-column h-100 gap-12'>
+              <p className='flex-1'>Bạn có muốn xóa sản phẩm</p>
+              <div className='align-self-end '>
+                <Button bg='var(--text-success)' className='mr-12'>
                   Save Change
                 </Button>
-                <Button bg="var(--text-danger)">Cancel</Button>
+                <Button bg='var(--text-danger)'>Cancel</Button>
               </div>
             </div>
           </Modal>
@@ -32,7 +31,7 @@ function ModalPage() {
   );
 }
 const ButtonShow = ({ onShouldModal }) => (
-  <ClickAnimate >
+  <ClickAnimate>
     <Button onClick={() => onShouldModal(true)}>Show Modal </Button>
   </ClickAnimate>
 );

@@ -5,30 +5,44 @@ import { Col, Grid } from '~/layouts/Comp/GridSystem';
 function TippyPage() {
   return (
     <div>
-      <Grid container="container-fluid my-24">
+      <Grid container='container-fluid my-24'>
         <Col>
-          <Tippy title="Hover me">Content hover!!</Tippy>
+          <Tippy title='Hover me'>Content hover!!</Tippy>
         </Col>
         <Col>
-          <Tippy elevation={2} title="Hover me">Content hover!!</Tippy>
+          <Tippy elevation={2} title='Hover me'>
+            Content hover!!
+          </Tippy>
         </Col>
         <Col>
-          <Tippy  elevation={3}title="Hover me">Content hover!!</Tippy>
+          <Tippy elevation={3} title='Hover me'>
+            Content hover!!
+          </Tippy>
         </Col>
         <Col>
-          <Tippy  elevation={4}title="Hover me">Content hover!!</Tippy>
+          <Tippy elevation={4} title='Hover me'>
+            Content hover!!
+          </Tippy>
         </Col>
         <Col>
-          <Tippy  elevation={5}title="Hover me">Content hover!!</Tippy>
+          <Tippy elevation={5} title='Hover me'>
+            Content hover!!
+          </Tippy>
         </Col>
         <Col>
-          <Tippy  elevation={6}title="Hover me">Content hover!!</Tippy>
+          <Tippy elevation={6} title='Hover me'>
+            Content hover!!
+          </Tippy>
         </Col>
         <Col>
-          <Tippy  elevation={9}title="Hover me">Content hover!!</Tippy>
+          <Tippy elevation={9} title='Hover me'>
+            Content hover!!
+          </Tippy>
         </Col>
         <Col>
-          <Tippy  elevation={8}title="Hover me">Content hover!!</Tippy>
+          <Tippy elevation={8} title='Hover me'>
+            Content hover!!
+          </Tippy>
         </Col>
       </Grid>
     </div>

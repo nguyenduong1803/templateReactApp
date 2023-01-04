@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import CommonStyled from './commonStyled';
 
-function Stack({ children, gap, direction, bg, hover, justify, alignItems, w, h, m, p, wrap, radius,...props}) {
+function Stack({ children, gap, direction, bg, hover, justify, alignItems, w, h, m, p, wrap, radius, ...props }) {
   return (
     <Wrap
-      className="d-flex"
+      className='d-flex'
       gap={gap}
       direction={direction}
       justify={justify}

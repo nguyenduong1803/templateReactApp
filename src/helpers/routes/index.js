@@ -27,8 +27,8 @@ const routerSite = [
   //   ],
   // },
   {
-    path: "home",
-    element: <Home />,
+    path: 'home',
+    element: <Home />
   },
   {
     path: '/',
@@ -36,10 +36,10 @@ const routerSite = [
     children: [
       {
         path: 'docs',
-        children: componentRoute,
-      },
-    ],
-  },
+        children: componentRoute
+      }
+    ]
+  }
 ];
 
 // if login

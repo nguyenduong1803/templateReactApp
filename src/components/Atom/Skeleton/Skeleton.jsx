@@ -2,22 +2,22 @@ import styled from 'styled-components';
 
 export default function Skeleton() {
   return (
-    <Card className="card">
-      <Header className="header">
-        <Img className="img loadSkeleton"></Img>
-        <Details className="details">
-          <span className="name"></span>
-          <span className="about"></span>
+    <Card className='card'>
+      <Header className='header'>
+        <Img className='img loadSkeleton'></Img>
+        <Details className='details'>
+          <span className='name'></span>
+          <span className='about'></span>
         </Details>
       </Header>
-      <div className="content">
-        <Line className="line loadSkeleton"></Line>
-        <Line className="line loadSkeleton"></Line>
-        <Line className="line line-3 loadSkeleton"></Line>
+      <div className='content'>
+        <Line className='line loadSkeleton'></Line>
+        <Line className='line loadSkeleton'></Line>
+        <Line className='line line-3 loadSkeleton'></Line>
       </div>
-      <div className="d-flex">
-        <Btn className="btn btn-1 loadSkeleton"></Btn>
-        <Btn className="btn btn-2 loadSkeleton"></Btn>
+      <div className='d-flex'>
+        <Btn className='btn btn-1 loadSkeleton'></Btn>
+        <Btn className='btn btn-2 loadSkeleton'></Btn>
       </div>
     </Card>
   );
@@ -94,4 +94,3 @@ const Btn = styled.div`
     }
   }
 `;
-

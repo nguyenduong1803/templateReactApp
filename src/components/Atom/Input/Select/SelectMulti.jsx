@@ -24,7 +24,7 @@ export default function SelectMulti({ name, fakeData }) {
     <Wrap>
       {inputing && <Overlay onClick={() => setInputing(false)} />}
       <Border>
-        <WrapInput className="d-flex">
+        <WrapInput className='d-flex'>
           <Search>
             <SearchIcon />
           </Search>
@@ -34,7 +34,7 @@ export default function SelectMulti({ name, fakeData }) {
           <InputSearch
             onChange={handleSearch}
             value={keySearch}
-            type="text"
+            type='text'
             placeholder={name}
             onFocus={() => setInputing(true)}
           />
@@ -54,7 +54,7 @@ const ResultSearch = memo(({ selected, setSelected, result, search }) => {
   // computed result
   const Result = useMemo(() => {
     if (!result || search.trim() === '') return '';
-    else if (result.length === 0) return <h4 className="p-12">không tìm thấy</h4>;
+    else if (result.length === 0) return <h4 className='p-12'>không tìm thấy</h4>;
     else
       return result.map((item, index) => (
         <SearchOutputItem onClick={() => handleSelect(item)} key={`${item.name}${index}`}>
@@ -64,7 +64,7 @@ const ResultSearch = memo(({ selected, setSelected, result, search }) => {
   }, [result]);
   return (
     <WrapResult>
-      <ul className="p-0">{Result}</ul>
+      <ul className='p-0'>{Result}</ul>
     </WrapResult>
   );
 });
@@ -88,7 +88,7 @@ const SelectedItem = memo(({ selected, setSelected }) => {
 });
 SelectMulti.prototype = {
   fakeData: PropTypes.object.isRequired,
-  name: PropTypes.string,
+  name: PropTypes.string
 };
 
 const Wrap = styled.section`

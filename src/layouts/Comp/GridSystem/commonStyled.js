@@ -19,7 +19,7 @@ const setStyleComponent = ({ radius, ...props }) => {
     '@media (min-width: 48em)': props.md,
     '@media (min-width: 62em)': props.lg,
     '@media (min-width: 75em)': props.xl,
-    '@media (min-width: 87.5em)': props.xxl,
+    '@media (min-width: 87.5em)': props.xxl
   };
 };
 const CommonStyled = styled.div(setStyleComponent);

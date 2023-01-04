@@ -17,7 +17,7 @@ function Badge({
   return (
     <div className={`position-relative ${className}`} {...props}>
       <WrapBage
-        className="position-absolute text-center fz-14"
+        className='position-absolute text-center fz-14'
         h={h}
         w={w}
         color={color}

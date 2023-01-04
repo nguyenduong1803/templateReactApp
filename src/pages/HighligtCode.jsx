@@ -9,12 +9,12 @@ SyntaxHighlighter.registerLanguage('jsx', jsx);
 function HighligtCode({ codeString }) {
   const { handleCopyClick, isCopied } = useCopyClipboard();
   return (
-    <div className="position-relative">
-      <SyntaxHighlighter className="radius-8" language="jsx" style={coldarkDark}>
+    <div className='position-relative'>
+      <SyntaxHighlighter className='radius-8' language='jsx' style={coldarkDark}>
         {codeString}
       </SyntaxHighlighter>
       <CopyButton
-        className="position-absolute p-6 radius-6 t-12 r-12 cursor-pointer border-0"
+        className='position-absolute p-6 radius-6 t-12 r-12 cursor-pointer border-0'
         onClick={() => handleCopyClick(codeString)}
       >
         {isCopied ? 'Copied' : 'Copy'}
