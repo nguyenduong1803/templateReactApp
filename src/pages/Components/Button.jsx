@@ -34,7 +34,7 @@ function ButtonPage() {
           <Button bg="var(--text-warning)">Click me</Button>
           <p className="py-12"> Default Click</p>
         </Col>
-      </Contain>
+      </Container>
     </div>
   );
 }
