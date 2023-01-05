@@ -30,6 +30,8 @@ function ModalPage() {
   );
 }
 const ButtonShow = ({ onShouldModal }) => (
-    <Button ripple onClick={() => onShouldModal(true)}>Show Modal </Button>
+  <Button ripple onClick={() => onShouldModal(true)}>
+    Show Modal{' '}
+  </Button>
 );
 export default ModalPage;

@@ -25,7 +25,7 @@ Drawer.propTypes = {
 const DrawerContent = styled.aside`
   position: absolute;
   top: 0;
-  background-color: var(--white)fff;
+  background-color: var(--white);
   width: 400px;
   left: -440px;
   padding: 24px;

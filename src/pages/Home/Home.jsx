@@ -36,10 +36,11 @@ function Home() {
           </Paper>
         </Col>
         <Col lg={12}>
-            <Button ripple href='/about'>Button</Button>
+          <Button ripple href='/about'>
+            Button
+          </Button>
         </Col>
-        <Col lg={12}>
-        </Col>
+        <Col lg={12}></Col>
         <Col lg={12}>
           <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>
             <h2>hello</h2>
@@ -100,6 +101,8 @@ function Home() {
   );
 }
 const ButtonShow = ({ onShouldModal }) => (
-    <Button ripple onClick={() => onShouldModal(true)}>Show Modal</Button>
+  <Button ripple onClick={() => onShouldModal(true)}>
+    Show Modal
+  </Button>
 );
 export default Home;

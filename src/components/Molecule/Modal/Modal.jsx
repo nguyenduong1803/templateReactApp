@@ -30,7 +30,7 @@ export default function Modal({ children, w = '500px', h = '300px', modalStyle, 
 
 const Wrap = styled.section`
   background-color: rgba(168, 168, 168, 0.3);
-  z-index: 99;
+  z-index: 309;
 `;
 const ModalShow = styled.div`
   width: ${(props) => props.w};

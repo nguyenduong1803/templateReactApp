@@ -38,9 +38,12 @@ export const WrapButton = styled.button`
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
   }
   ${({ variant, bg }) =>
-    variant === 'outline' && `color: var(--${bg}); background-color:var(--white); border:1px solid var(--${bg}); box-shadow:none;`}
+    variant === 'outline' &&
+    `color: var(--${bg}); background-color:var(--white); border:1px solid var(--${bg}); box-shadow:none;`}
   ${({ variant, bg }) => variant === 'contained' && `color: var(--white); background-color:var(--${bg});`}
-  ${({ variant, bg }) => variant === 'text' && `box-shadow:none; border:0px;color: var(--${bg}); &:hover{box-shadow:none};  background-color:inherit;`}
+  ${({ variant, bg }) =>
+    variant === 'text' &&
+    `box-shadow:none; border:0px;color: var(--${bg}); &:hover{box-shadow:none};  background-color:inherit;`}
   & + & {
     margin-left: ${(props) => props.buttonAndButton};
   }
