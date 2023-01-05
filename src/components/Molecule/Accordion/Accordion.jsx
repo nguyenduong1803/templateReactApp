@@ -51,13 +51,14 @@ Accordion.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   height: PropTypes.string,
+  bg: PropTypes.string,
   hasOpen: PropTypes.bool,
-  hover: PropTypes.string,
+  hover: PropTypes.object,
   className: PropTypes.string,
-  cancel: PropTypes.bool
+  ripple: PropTypes.bool
 };
 Accordion.defaultProps = {
-  p: '6px',
+  p: '8px 12px 8px 24px',
   className: '',
   bg: 'var(--white)',
   rippleColor: '#fcfcfc'

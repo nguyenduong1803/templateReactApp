@@ -10,7 +10,7 @@ const list = [
   {
     id: 1,
     title: 'Choose Category',
-    bg: 'var(--white)fff',
+    bg: 'var(--white)',
     child: [
       {
         name: 'Samsung',
@@ -56,7 +56,7 @@ const list = [
   {
     id: 3,
     title: 'Accordion',
-    bg: 'var(--white)fff',
+    bg: 'var(--white)',
     child: [
       {
         name: 'Samsung',
@@ -79,7 +79,7 @@ const list = [
   {
     id: 4,
     title: 'Accordion 2',
-    bg: 'var(--white)fff',
+    bg: 'var(--white)',
     child: [
       {
         name: 'Samsung',
@@ -165,8 +165,6 @@ function Components() {
                     hasOpen={sidebar.open}
                     title={sidebar.title}
                     key={sidebar.id}
-                    h='40px'
-                    p='6px 12px 6px 24px'
                     hover={{ backgroundColor: 'var(--hover-color)', color: 'red' }}
                     ripple
                   >
