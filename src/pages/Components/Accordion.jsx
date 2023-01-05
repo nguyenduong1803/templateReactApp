@@ -31,7 +31,7 @@ const list = [
   {
     id: 2,
     title: 'Choose Phone',
-    bg: 'var(--white)fff',
+    bg: 'var(--white)',
     child: [
       {
         name: 'Samsung',
@@ -136,7 +136,6 @@ function Components() {
                 </Accordion>
               );
             })}
-          
           </Paper>
         </Col>
         <Col sm={3}>
@@ -184,7 +183,6 @@ function Components() {
 
           <HighligtCode codeString={ArrcourdionString} />
         </Col>
-      
       </Grid>
     </div>
   );

@@ -482,13 +482,11 @@
   background-color: rgba(194, 198, 201, 0.7);
   transition: 0.3s;
   cursor: pointer;
-
 }
 
 .scrollbar-default {
   overflow-y: auto;
   height: 100vh;
-  
 }
 .scrollbar-default::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(174, 174, 174, 0.3);
@@ -525,6 +523,19 @@
 /* ================================== cursor ==================================== */
 .cursor-pointer {
   cursor: pointer;
+}
+/* ================================== zIndex ==================================== */
+.zIndex-500 {
+  z-index: 500;
+}
+.zIndex-400 {
+  z-index: 400;
+}
+.zIndex-300 {
+  z-index: 300;
+}
+.zIndex-200 {
+  z-index: 200;
 }
 /* ================================== color ==================================== */
 .color-transparent {
