@@ -1,4 +1,4 @@
-import { Box, Col, Container, Grid, Section } from '../../layouts/Comp/GridSystem';
+import { Box, Col, Container, Grid, Section } from '../../layouts/Grid';
 import { Link } from 'react-router-dom';
 import Button from '~/components/Atom/Button/Button';
 import Modal from '~/components/Molecule/Modal/Modal';

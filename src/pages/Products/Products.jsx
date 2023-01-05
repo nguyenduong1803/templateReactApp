@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 import styled from 'styled-components';
-import Grid from '~/layouts/Comp/GridSystem/Grid';
-import { Col } from '~/layouts/Comp/GridSystem';
+import Grid from '~/layouts/Grid/Grid';
+import { Col } from '~/layouts/Grid';
 import Drawer from '~/components/Atom/Drawer/Drawer';
 import Skeleton from '~/components/Atom/Skeleton/Skeleton';
 import Tippy from '~/components/Atom/Tippy/Tippy';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Android, BugIcon, MacIcon, WindowIcon } from '~/assets/svg';
-import { Col } from '~/layouts/Comp/GridSystem';
+import { Col } from '~/layouts/Grid';
 import Paper from '~/layouts/Styled/Paper';
 import InsetColor from '~/layouts/Styled/Shapes/InsetColor';
 const list = [

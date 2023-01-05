@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Col, Grid } from '../GridSystem';
+import { Col, Grid } from '../../Grid';
 function Footer({ footer }) {
   return (
     <footer className='border-top mt-24 pt-24'>

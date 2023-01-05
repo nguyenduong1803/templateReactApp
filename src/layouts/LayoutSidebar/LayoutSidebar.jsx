@@ -6,8 +6,8 @@ import Footer from '../Comp/Footer/Footer';
 import Header from '../Comp/Header/Header';
 import Sidebar from './Sidebar';
 import { footer } from '~/helpers/config';
-import { Box, Grid } from '../Comp/GridSystem';
-import PositionItem from '../Comp/GridSystem/PositionItem';
+import { Box, Grid } from '../Grid';
+import Position from '../Grid/Position';
 function LayoutSidebar() {
   return (
     <>
@@ -23,11 +23,11 @@ function LayoutSidebar() {
           <Footer footer={footer} />
         </Box>
         <Box w='20rem' bg='var(--white)'>
-          <PositionItem className='vh-100 position-fixed t-0 p-12' w='300px'>
+          <Position className='vh-100 position-fixed t-0 p-12' w='300px'>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, quae ullam? Nam quod a illum provident,
             excepturi eveniet aliquam delectus repellat cumque optio quaerat fugit blanditiis quidem doloribus inventore
             similique.
-          </PositionItem>
+          </Position>
         </Box>
       </Box>
     </>

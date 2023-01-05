@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import PositionItem from '~/layouts/Comp/GridSystem/PositionItem';
+import Position from '~/layouts/Grid/Position';
 
 function Dropdown({ children, mt = '0.6rem', w, setShowDropdown, showDropdown, right, ...props }) {
   return (
     <div className='position-relative'>
       <div onClick={() => setShowDropdown(false)} className={showDropdown ? 'position-fixed full' : ''}></div>
-      <PositionItem
+      <Position
         right={right}
         w={w}
         zIndex={301}
@@ -16,7 +16,7 @@ function Dropdown({ children, mt = '0.6rem', w, setShowDropdown, showDropdown, r
         {...props}
       >
         {children}
-      </PositionItem>
+      </Position>
     </div>
   );
 }

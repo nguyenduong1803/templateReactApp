@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from '~/layouts/Comp/GridSystem';
+import { Col, Row } from '~/layouts/Grid';
 import Paper from '~/layouts/Styled/Paper';
 import CharPie from './components/Molecule/CharPie';
 import LinePie from './components/Molecule/LinePie';

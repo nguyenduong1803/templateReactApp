@@ -4,12 +4,12 @@ import { WrapButton } from './commonStyled';
 import Ripple from '../Ripple/Ripple';
 
 export default function Button(props) {
-  const { children, variant, className, ripple, buttonAndButton, bg, duration, ...passProps } = props;
+  const { children, variant, className, ripple, sideBySide, bg, duration, ...passProps } = props;
   return (
     <WrapButton
       variant={variant}
       bg={bg}
-      buttonAndButton={buttonAndButton}
+      sideBySide={sideBySide}
       className={`py-6 px-12 ${className} overflow-hidden`}
       {...passProps}
     >
@@ -21,15 +21,15 @@ export default function Button(props) {
 
 Button.propTypes = {
   bg: PropTypes.string,
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf(['contained', 'text', 'outline']),
   className: PropTypes.string,
-  buttonAndButton: PropTypes.string,
+  sideBySide: PropTypes.string,
   children: PropTypes.node.isRequired,
   duration: PropTypes.number
 };
 Button.defaultProps = {
   variant: 'contained',
   className: '',
-  buttonAndButton: '12px',
+  sideBySide: '12px',
   bg: 'primary'
 };

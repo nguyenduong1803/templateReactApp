@@ -1,6 +1,6 @@
 import React from 'react';
 import Tippy from '~/components/Atom/Tippy/Tippy';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Grid } from '~/layouts/Grid';
 
 function TippyPage() {
   return (

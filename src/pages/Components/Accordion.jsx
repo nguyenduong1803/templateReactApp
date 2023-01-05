@@ -1,8 +1,6 @@
 import React from 'react';
-import Button from '~/components/Atom/Button/Button';
-import Ripple from '~/components/Atom/Ripple/Ripple';
 import Accordion from '~/components/Molecule/Accordion/Accordion';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Grid } from '~/layouts/Grid';
 import { sidebars } from '~/layouts/LayoutSidebar/_mock';
 import Paper from '~/layouts/Styled/Paper';
 import HighligtCode from '../HighligtCode';
@@ -138,6 +136,7 @@ function Components() {
                 </Accordion>
               );
             })}
+          
           </Paper>
         </Col>
         <Col sm={3}>

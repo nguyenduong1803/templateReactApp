@@ -3,7 +3,7 @@ import InputPassword from '~/components/Atom/Input/InputPassword';
 import InputRange from '~/components/Atom/Input/InputRange';
 import InputText from '~/components/Atom/Input/InputText';
 import SelectMulti from '~/components/Atom/Input/Select/SelectMulti';
-import { Box, Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Box, Col, Grid } from '~/layouts/Grid';
 import Paper from '~/layouts/Styled/Paper';
 const fakeData = [
   { name: 'Ha noi' },

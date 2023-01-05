@@ -2,8 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '~/components/Atom/Button/Button';
 import ButtonSank from '~/components/Atom/Button/ButtonSank';
-import Ripple from '~/components/Atom/Ripple/Ripple';
-import { Col, Container } from '~/layouts/Comp/GridSystem';
+import { Col, Container,Box } from '~/layouts/Grid';
 
 function ButtonPage() {
   const hanldeClick = () => {
@@ -22,9 +21,13 @@ function ButtonPage() {
           </Button>
         </Col>
         <Col>
-          <Button ripple>
-            Ripple Effect
-          </Button>
+          <Button ripple>Ripple Effect</Button>
+        </Col>
+        <Col>
+        <Box >
+          ádfadf
+        </Box>
+          <ButtonSank>Ripple Effect</ButtonSank>
         </Col>
       </Container>
     </div>

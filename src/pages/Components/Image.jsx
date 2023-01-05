@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from '~/components/Atom/Image/Image';
 import OptimizeImage from '~/components/Atom/Image/OptimizeImage';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Grid } from '~/layouts/Grid';
 import Paper from '~/layouts/Styled/Paper';
 const listImage = [
   { path: 'https://freepik.cdnpk.net/img/coupon/adobe/EN_3.jpg', width: 300 },

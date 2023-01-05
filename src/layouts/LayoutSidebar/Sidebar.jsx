@@ -1,6 +1,6 @@
 import React from 'react';
 import Accordion from '~/components/Molecule/Accordion/Accordion';
-import { Box } from '../Comp/GridSystem';
+import { Box } from '../Grid';
 import { NavLinkActive } from '../Styled/LinkStyle';
 import { sidebars } from './_mock';
 

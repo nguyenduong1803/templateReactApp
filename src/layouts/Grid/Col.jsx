@@ -7,7 +7,7 @@ function Col({ children, lg, md, sm = 12, className = '', ...props }) {
     </div>
   );
 }
-Col.prototype = {
+Col.propTypes = {
   children: PropTypes.node,
   md: PropTypes.number,
   sm: PropTypes.number,

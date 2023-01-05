@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '~/components/Atom/Image/Image';
-import { Container, Box, Section, Stack } from '~/layouts/Comp/GridSystem';
+import { Container, Box, Section, Stack } from '~/layouts/Grid';
 import Paper from '~/layouts/Styled/Paper';
 
 function Overview() {

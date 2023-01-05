@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '~/components/Atom/Button/Button';
 import Modal from '~/components/Molecule/Modal/Modal';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Grid } from '~/layouts/Grid';
 
 function ModalPage() {
   return (

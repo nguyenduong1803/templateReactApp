@@ -7,7 +7,6 @@ import Badge from '~/components/Atom/Badge/Badge';
 import InputText from '~/components/Atom/Input/InputText';
 import Dropdown from '~/components/Molecule/Dropdown/Dropdown';
 import Paper from '~/layouts/Styled/Paper';
-import { Box } from '../GridSystem';
 
 export default function Header() {
   const [menuShow, setMenuShow] = useState(false);
@@ -72,7 +71,7 @@ export default function Header() {
           <Bar onClick={() => setMenuShow((prev) => !prev)} />
         </div>
       </Wrap>
-      <Box className='position-relative'></Box>
+      <div className='position-relative'></div>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Tabs from '~/components/Molecule/Tabs/Tabs';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Grid } from '~/layouts/Grid';
 
 const Curriculumn = () => {
   return <p>Curriculum</p>;

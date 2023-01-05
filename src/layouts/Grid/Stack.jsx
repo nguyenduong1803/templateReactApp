@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import CommonStyled from './commonStyled';
+import CommonStyled from './common';
 
 function Stack({ children, gap, direction, bg, hover, justify, alignItems, w, h, m, p, wrap, radius, ...props }) {
   return (
@@ -24,13 +24,14 @@ function Stack({ children, gap, direction, bg, hover, justify, alignItems, w, h,
     </Wrap>
   );
 }
-const Wrap = styled(CommonStyled)`
-  display: flex;
-  ${({ gap }) => gap && `gap: ${gap};`}
-  ${({ direction }) => direction && `flex-direction: ${direction};`}
-  ${({ justify }) => justify && `justify-content: ${justify};`}
-  ${({ alignItems }) => alignItems && `align-items: ${alignItems};`}
-  ${({ wrap }) => wrap && `flex-wrap: ${wrap};`}
-`;
+const Wrap = styled(CommonStyled)((props) => {
+  return {
+    display: props.display,
+    flexDirection: props.direction,
+    justifyContent: props.justify,
+    alignItems: props.alignItems,
+    gap: props.gap
+  };
+});
 
 export default Stack;
