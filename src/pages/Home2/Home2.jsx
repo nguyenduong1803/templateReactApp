@@ -1,4 +1,5 @@
 import React from 'react';
+import Loading from '~/components/Atom/Button/Loading';
 import { Col, Row } from '~/layouts/Grid';
 import Paper from '~/layouts/Styled/Paper';
 import CharPie from './components/Molecule/CharPie';
@@ -23,6 +24,7 @@ function Home2() {
           </Paper>
         </Col>
       </Row>
+      <Loading />
     </div>
   );
 }
