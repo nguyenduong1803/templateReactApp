@@ -25,7 +25,7 @@ function ImagePage() {
           </Paper>
         </Col>
         <Col sm={3}>
-          <Paper className='d-flex flex-direction-column h-100 j-between border radius-6 p-12'>
+          <Paper className='d-flex flex-direction-column h-100 j-between  radius-6 p-12'>
             <Image
               h='200px'
               objectFit='cover'
@@ -35,13 +35,13 @@ function ImagePage() {
           </Paper>
         </Col>
         <Col sm={3}>
-          <Paper className=' d-flex flex-direction-column j-between h-100 border radius-6 p-12'>
+          <Paper className=' d-flex flex-direction-column j-between h-100  radius-6 p-12'>
             <OptimizeImage listImage={listImage} src='' />
             <p> Optimize with desktop tablet and mobile</p>
           </Paper>
         </Col>
         <Col sm={3}>
-          <Paper className='d-flex flex-direction-column h-100 j-between border radius-6 p-12'>
+          <Paper className='d-flex flex-direction-column h-100 j-between  radius-6 p-12'>
             <Image
               h='200px'
               objectFit='cover'
