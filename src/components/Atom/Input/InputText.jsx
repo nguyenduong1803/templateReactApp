@@ -28,7 +28,7 @@ const Input = styled.input`
   border-radius: 4px;
   color: var(--text-color);
   &:-internal-autofill-selected {
-    background-color: #fff;
+    background-color: var(--white);
   }
   &:focus {
     border-color: var(--primary);
@@ -43,6 +43,6 @@ const Input = styled.input`
     display: inline-block;
     background-color: transparent;
     color: var(--primary);
-    background-color: #fff;
+    background-color: var(--white);
   }
 `;

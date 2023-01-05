@@ -7,11 +7,11 @@ function Badge({
   w = '1.8rem',
   h = '1.8rem',
   top = '-0.7rem',
-  color = '#fff;',
+  color = 'var(--white);',
   right = '-0.7rem',
   bottom,
   left,
-  bg = 'var(--text-danger)',
+  bg = 'var(--danger)',
   ...props
 }) {
   return (
@@ -36,7 +36,7 @@ function Badge({
 }
 
 const WrapBage = styled.div`
-  background-color: var(--text-danger);
+  background-color: var(--danger);
   ${({ right }) => right && `right: ${right};`}
   ${({ left }) => left && `left: ${left};`}
     ${({ top }) => top && `top: ${top};`}

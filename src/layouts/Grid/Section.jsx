@@ -1,7 +1,7 @@
 import React from 'react';
-import CommonStyled from './commonStyled';
+import CommonStyled, { commonProps } from './common';
 
-function Section({ h, w, p, m, row, bg, children, radius, className = '', sx, ...props }) {
+function Section({ h, w, p, m, row, bg, children, radius, className = '', sx, border, ...props }) {
   return (
     <CommonStyled
       w={w}
@@ -10,6 +10,7 @@ function Section({ h, w, p, m, row, bg, children, radius, className = '', sx, ..
       p={p}
       bg={bg}
       radius={radius}
+      border={border}
       className={`${className} ${row && 'row'}`}
       sx={sx}
       {...props}
@@ -18,5 +19,5 @@ function Section({ h, w, p, m, row, bg, children, radius, className = '', sx, ..
     </CommonStyled>
   );
 }
-
+Section.propTypes = commonProps;
 export default Section;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from '~/components/Atom/Button/Button';
 import Drawer from '~/components/Atom/Drawer/Drawer';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Grid } from '~/layouts/Grid';
 
 function DrawerPage() {
   const [drawerActive, setDrawerActive] = useState(false);

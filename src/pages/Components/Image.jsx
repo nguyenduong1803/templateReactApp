@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from '~/components/Atom/Image/Image';
 import OptimizeImage from '~/components/Atom/Image/OptimizeImage';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Grid } from '~/layouts/Grid';
 import Paper from '~/layouts/Styled/Paper';
 const listImage = [
   { path: 'https://freepik.cdnpk.net/img/coupon/adobe/EN_3.jpg', width: 300 },
@@ -16,16 +16,16 @@ const listImage = [
 ];
 function ImagePage() {
   return (
-    <div className=" my-24">
-      <Grid container="container-fluid">
+    <div className=' my-24'>
+      <Grid container='container-fluid'>
         <Col sm={3}>
-          <Paper className="border radius-6 p-12">
-            <Image src="" />
+          <Paper className='border radius-6 p-12'>
+            <Image src='' />
             <p>Default Image error</p>
           </Paper>
         </Col>
         <Col sm={3}>
-          <Paper className="d-flex flex-direction-column h-100 j-between border radius-6 p-12">
+          <Paper className='d-flex flex-direction-column h-100 j-between  radius-6 p-12'>
             <Image
               h='200px'
               objectFit='cover'
@@ -35,13 +35,13 @@ function ImagePage() {
           </Paper>
         </Col>
         <Col sm={3}>
-          <Paper className=" d-flex flex-direction-column j-between h-100 border radius-6 p-12">
-            <OptimizeImage listImage={listImage} src="" />
+          <Paper className=' d-flex flex-direction-column j-between h-100  radius-6 p-12'>
+            <OptimizeImage listImage={listImage} src='' />
             <p> Optimize with desktop tablet and mobile</p>
           </Paper>
         </Col>
         <Col sm={3}>
-          <Paper className="d-flex flex-direction-column h-100 j-between border radius-6 p-12">
+          <Paper className='d-flex flex-direction-column h-100 j-between  radius-6 p-12'>
             <Image
               h='200px'
               objectFit='cover'

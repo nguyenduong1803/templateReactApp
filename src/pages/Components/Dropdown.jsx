@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container } from '~/layouts/Comp/GridSystem';
+import { Box, Container } from '~/layouts/Grid';
 import Paper from '~/layouts/Styled/Paper';
 import HighligtCode from '../HighligtCode';
 

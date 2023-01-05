@@ -3,7 +3,7 @@ import InputPassword from '~/components/Atom/Input/InputPassword';
 import InputRange from '~/components/Atom/Input/InputRange';
 import InputText from '~/components/Atom/Input/InputText';
 import SelectMulti from '~/components/Atom/Input/Select/SelectMulti';
-import { Box, Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Box, Col, Grid } from '~/layouts/Grid';
 import Paper from '~/layouts/Styled/Paper';
 const fakeData = [
   { name: 'Ha noi' },
@@ -31,9 +31,9 @@ function InputPage() {
         <Col></Col>
         <Col lg={5} md={5}>
           <InputRange />
-          <InputRange color='var(--text-success)' />
-          <InputRange color='var(--text-danger)' />
-          <InputRange color='var(--text-warning)' />
+          <InputRange color='var(--success)' />
+          <InputRange color='var(--danger)' />
+          <InputRange color='var(--warning)' />
         </Col>
         <Col lg={6} md={6}>
           <InputText name='Nhập tên' />

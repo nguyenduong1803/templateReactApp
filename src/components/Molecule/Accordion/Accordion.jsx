@@ -2,20 +2,10 @@ import { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { ChevronDown } from '~/assets/svg';
-import ClickAnimate from '../../Atom/CickAnimate/ClickAnimate';
+import Ripple from '~/components/Atom/Ripple/Ripple';
 
-export default function Accordion({
-  title,
-  Icon,
-  hasOpen = false,
-  children,
-  p = '6px',
-  hover,
-  className = '',
-  bg = '#fff',
-  cancel = false,
-  ...props
-}) {
+export default function Accordion(props) {
+  const { title, Icon, hasOpen, children, p, hover, className, bg, rippleColor, ripple, ...passProps } = props;
   const [open, setOpen] = useState(false);
   const refContent = useRef();
   useEffect(() => {
@@ -23,30 +13,29 @@ export default function Accordion({
   }, [hasOpen]);
   return (
     <>
-      <ClickAnimate cancel={cancel} rippleColor='#ccc'>
-        <ButtonAccordion
-          onClick={() => setOpen(!open)}
-          p={p}
-          bg={bg}
-          hover={hover}
-          className={`d-flex j-between a-center cursor-pointer ${className}`}
-          {...props}
-        >
-          {Icon && (
-            <div className='d-flex gap-12 a-center'>
-              <Icon
-                width='1.9rem'
-                fill='#4e4e4e'
-                className='position-relative'
-                style={{ top: '-1px', pointerEvents: 'none' }}
-              />
-              {title}
-            </div>
-          )}
-          {!Icon && title}
-          <DropIcon style={open ? { transform: `scale(0.8) rotate(180deg) ` } : {}} />
-        </ButtonAccordion>
-      </ClickAnimate>
+      <ButtonAccordion
+        onClick={() => setOpen(!open)}
+        p={p}
+        bg={bg}
+        hover={hover}
+        className={`d-flex j-between a-center cursor-pointer position-relative overflow-hidden ${className}`}
+        {...passProps}
+      >
+        {Icon && (
+          <div className='d-flex gap-12 a-center'>
+            <Icon
+              width='1.9rem'
+              fill='#4e4e4e'
+              className='position-relative'
+              style={{ top: '-1px', pointerEvents: 'none' }}
+            />
+            {title}
+          </div>
+        )}
+        {!Icon && title}
+        {ripple && <Ripple color={rippleColor} duration={1200} />}
+        <DropIcon style={open ? { transform: `scale(0.8) rotate(180deg) ` } : {}} />
+      </ButtonAccordion>
       <ContentAccordion
         ref={refContent}
         className={open && 'active'}
@@ -62,12 +51,18 @@ Accordion.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   height: PropTypes.string,
+  bg: PropTypes.string,
   hasOpen: PropTypes.bool,
-  hover: PropTypes.string,
+  hover: PropTypes.object,
   className: PropTypes.string,
-  cancel: PropTypes.bool
+  ripple: PropTypes.bool
 };
-
+Accordion.defaultProps = {
+  p: '8px 12px 8px 24px',
+  className: '',
+  bg: 'var(--white)',
+  rippleColor: '#fcfcfc'
+};
 const ButtonAccordion = styled.div(({ hover, ...props }) => ({
   backgroundColor: props.bg,
   padding: props.p,

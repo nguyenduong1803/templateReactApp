@@ -1,8 +1,7 @@
 import React from 'react';
 import Button from '~/components/Atom/Button/Button';
-import ClickAnimate from '~/components/Atom/CickAnimate/ClickAnimate';
 import Modal from '~/components/Molecule/Modal/Modal';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Grid } from '~/layouts/Grid';
 
 function ModalPage() {
   return (
@@ -18,10 +17,10 @@ function ModalPage() {
             <div className='d-flex flex-direction-column h-100 gap-12'>
               <p className='flex-1'>Bạn có muốn xóa sản phẩm</p>
               <div className='align-self-end '>
-                <Button bg='var(--text-success)' className='mr-12'>
+                <Button bg='var(--success)' className='mr-12'>
                   Save Change
                 </Button>
-                <Button bg='var(--text-danger)'>Cancel</Button>
+                <Button bg='var(--danger)'>Cancel</Button>
               </div>
             </div>
           </Modal>
@@ -31,8 +30,6 @@ function ModalPage() {
   );
 }
 const ButtonShow = ({ onShouldModal }) => (
-  <ClickAnimate>
-    <Button onClick={() => onShouldModal(true)}>Show Modal </Button>
-  </ClickAnimate>
+    <Button ripple onClick={() => onShouldModal(true)}>Show Modal </Button>
 );
 export default ModalPage;

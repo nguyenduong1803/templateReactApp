@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const WrapButton = styled.button`
   display: inline-flex;
-  overflow: hidden;
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
@@ -20,6 +19,7 @@ export const WrapButton = styled.button`
   text-decoration: none;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   font-weight: 500;
+  font-size: 1.5rem;
   line-height: 1.75;
   letter-spacing: 0.02857em;
   text-transform: uppercase;
@@ -38,9 +38,9 @@ export const WrapButton = styled.button`
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
   }
   ${({ variant, bg }) =>
-    variant === 'outline' && `color: ${bg}; background-color:#fff; border:1px solid ${bg}; box-shadow:none;`}
-  ${({ variant, bg }) => variant === 'contained' && `color: #fff; background-color:${bg};`}
-  ${({ variant, bg }) => variant === 'text' && `box-shadow:none; border:0px;color: ${bg}; &:hover{box-shadow:none};`}
+    variant === 'outline' && `color: var(--${bg}); background-color:var(--white); border:1px solid var(--${bg}); box-shadow:none;`}
+  ${({ variant, bg }) => variant === 'contained' && `color: var(--white); background-color:var(--${bg});`}
+  ${({ variant, bg }) => variant === 'text' && `box-shadow:none; border:0px;color: var(--${bg}); &:hover{box-shadow:none};  background-color:inherit;`}
   & + & {
     margin-left: ${(props) => props.buttonAndButton};
   }

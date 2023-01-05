@@ -1,8 +1,6 @@
 import React from 'react';
-import Button from '~/components/Atom/Button/Button';
-import Ripple from '~/components/Atom/Ripple/Ripple';
 import Accordion from '~/components/Molecule/Accordion/Accordion';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Grid } from '~/layouts/Grid';
 import { sidebars } from '~/layouts/LayoutSidebar/_mock';
 import Paper from '~/layouts/Styled/Paper';
 import HighligtCode from '../HighligtCode';
@@ -10,7 +8,7 @@ const list = [
   {
     id: 1,
     title: 'Choose Category',
-    bg: '#ffffff',
+    bg: 'var(--white)',
     child: [
       {
         name: 'Samsung',
@@ -33,7 +31,7 @@ const list = [
   {
     id: 2,
     title: 'Choose Phone',
-    bg: '#ffffff',
+    bg: 'var(--white)fff',
     child: [
       {
         name: 'Samsung',
@@ -56,7 +54,7 @@ const list = [
   {
     id: 3,
     title: 'Accordion',
-    bg: '#ffffff',
+    bg: 'var(--white)',
     child: [
       {
         name: 'Samsung',
@@ -79,7 +77,7 @@ const list = [
   {
     id: 4,
     title: 'Accordion 2',
-    bg: '#ffffff',
+    bg: 'var(--white)',
     child: [
       {
         name: 'Samsung',
@@ -114,7 +112,7 @@ function Components() {
           <Paper r={4} elevation={8}>
             {list.map((item) => {
               return (
-                <Accordion key={item.id} title={item.title} bg={item.bg}>
+                <Accordion ripple rippleColor='#ccc' key={item.id} title={item.title} bg={item.bg}>
                   {item.child.map((child) => (
                     <li className='hover-default p-6' key={child.id}>
                       {child.name}
@@ -138,6 +136,7 @@ function Components() {
                 </Accordion>
               );
             })}
+          
           </Paper>
         </Col>
         <Col sm={3}>
@@ -165,10 +164,8 @@ function Components() {
                     hasOpen={sidebar.open}
                     title={sidebar.title}
                     key={sidebar.id}
-                    h='40px'
-                    p='6px 12px 6px 24px'
                     hover={{ backgroundColor: 'var(--hover-color)', color: 'red' }}
-                    cancel
+                    ripple
                   >
                     {sidebar.element.map((item) => (
                       <li className=' line-height-36 hover-default' key={item.id}>
@@ -187,6 +184,7 @@ function Components() {
 
           <HighligtCode codeString={ArrcourdionString} />
         </Col>
+      
       </Grid>
     </div>
   );
@@ -198,16 +196,16 @@ const ArrcourdionString = `
     hasOpen={sidebar.open}
     title={sidebar.title}
     key={sidebar.id}
-    h="40px"
-    p="6px 12px 6px 24px"
-    className="hover-default"
-    cancel
+    h='40px'
+    p='6px 12px 6px 24px'
+    hover={{ backgroundColor: 'var(--hover-color)', color: 'red' }}
+    ripple
     >
-    {sidebar.element.map((item) => (
-      <li className=" line-height-36 hover-default" key={item.id}>
-        <p>{item.element}</p>
-      </li>
-    ))} 
+      {sidebar.element.map((item) => (
+        <li className=' line-height-36 hover-default' key={item.id}>
+          <p>{item.element}</p>
+        </li>
+      ))}
 </Accordion>
 `;
 export default Components;

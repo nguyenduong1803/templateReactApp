@@ -1,6 +1,6 @@
 import React from 'react';
 import Skeleton from '~/components/Atom/Skeleton/Skeleton';
-import { Col, Grid } from '~/layouts/Comp/GridSystem';
+import { Col, Grid } from '~/layouts/Grid';
 
 function SkeletonPage() {
   return (
