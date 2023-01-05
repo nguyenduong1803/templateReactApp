@@ -1,7 +1,6 @@
 import { Box, Col, Container, Grid, Section } from '../../layouts/Comp/GridSystem';
 import { Link } from 'react-router-dom';
 import Button from '~/components/Atom/Button/Button';
-import ClickAnimate from '~/components/Atom/CickAnimate/ClickAnimate';
 import Modal from '~/components/Molecule/Modal/Modal';
 import Accordion from '~/components/Molecule/Accordion/Accordion';
 import ScrollToTop from '~/components/Atom/ScrollToTop/ScrollToTop';
@@ -37,9 +36,7 @@ function Home() {
           </Paper>
         </Col>
         <Col lg={12}>
-          <ClickAnimate>
-            <Button href='/about'>Button</Button>
-          </ClickAnimate>
+            <Button ripple href='/about'>Button</Button>
         </Col>
         <Col lg={12}>
         </Col>
@@ -47,9 +44,6 @@ function Home() {
           <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>
             <h2>hello</h2>
           </Modal>
-          <ClickAnimate>
-            <div style={{ background: '#0f51e0' }}>Caklhsdfkjahsdfouasdhfoauihfa</div>
-          </ClickAnimate>
         </Col>
         <Col lg={12}>
           <Accordion title='click me'>
@@ -106,8 +100,6 @@ function Home() {
   );
 }
 const ButtonShow = ({ onShouldModal }) => (
-  <ClickAnimate>
-    <Button onClick={() => onShouldModal(true)}>Show Modal</Button>
-  </ClickAnimate>
+    <Button ripple onClick={() => onShouldModal(true)}>Show Modal</Button>
 );
 export default Home;

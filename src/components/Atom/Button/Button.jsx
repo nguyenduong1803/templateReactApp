@@ -14,7 +14,7 @@ export default function Button(props) {
       {...passProps}
     >
       {children}
-      {ripple && <Ripple color={variant === 'contained' ? 'white' : bg} />}
+      {ripple && <Ripple varColor={variant === 'contained' ? 'white' : bg} />}
     </WrapButton>
   );
 }

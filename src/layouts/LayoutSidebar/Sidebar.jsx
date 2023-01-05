@@ -49,7 +49,7 @@ function Sidebar() {
               key={sidebar.id}
               p='6px 12px 6px 24px'
               className='hover-default'
-              cancel
+              ripple
             >
               {sidebar.element.map((item) => (
                 <li className='line-height-24 hover-default radius-4 m-3 pl-6' key={item.id}>

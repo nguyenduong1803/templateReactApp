@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from '~/components/Atom/Button/Button';
-import ClickAnimate from '~/components/Atom/CickAnimate/ClickAnimate';
 import Modal from '~/components/Molecule/Modal/Modal';
 import { Col, Grid } from '~/layouts/Comp/GridSystem';
 
@@ -31,8 +30,6 @@ function ModalPage() {
   );
 }
 const ButtonShow = ({ onShouldModal }) => (
-  <ClickAnimate>
-    <Button onClick={() => onShouldModal(true)}>Show Modal </Button>
-  </ClickAnimate>
+    <Button ripple onClick={() => onShouldModal(true)}>Show Modal </Button>
 );
 export default ModalPage;

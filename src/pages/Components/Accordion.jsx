@@ -114,7 +114,7 @@ function Components() {
           <Paper r={4} elevation={8}>
             {list.map((item) => {
               return (
-                <Accordion key={item.id} title={item.title} bg={item.bg}>
+                <Accordion ripple rippleColor='#ccc' key={item.id} title={item.title} bg={item.bg}>
                   {item.child.map((child) => (
                     <li className='hover-default p-6' key={child.id}>
                       {child.name}
@@ -168,7 +168,7 @@ function Components() {
                     h='40px'
                     p='6px 12px 6px 24px'
                     hover={{ backgroundColor: 'var(--hover-color)', color: 'red' }}
-                    cancel
+                    ripple
                   >
                     {sidebar.element.map((item) => (
                       <li className=' line-height-36 hover-default' key={item.id}>
@@ -187,12 +187,7 @@ function Components() {
 
           <HighligtCode codeString={ArrcourdionString} />
         </Col>
-        <Col>
-        <Button>
-          Click Ripple 
-          <Ripple color='rgba(255, 255, 255, 0.5)'/>
-        </Button>
-        </Col>
+      
       </Grid>
     </div>
   );
@@ -204,16 +199,16 @@ const ArrcourdionString = `
     hasOpen={sidebar.open}
     title={sidebar.title}
     key={sidebar.id}
-    h="40px"
-    p="6px 12px 6px 24px"
-    className="hover-default"
-    cancel
+    h='40px'
+    p='6px 12px 6px 24px'
+    hover={{ backgroundColor: 'var(--hover-color)', color: 'red' }}
+    ripple
     >
-    {sidebar.element.map((item) => (
-      <li className=" line-height-36 hover-default" key={item.id}>
-        <p>{item.element}</p>
-      </li>
-    ))} 
+      {sidebar.element.map((item) => (
+        <li className=' line-height-36 hover-default' key={item.id}>
+          <p>{item.element}</p>
+        </li>
+      ))}
 </Accordion>
 `;
 export default Components;

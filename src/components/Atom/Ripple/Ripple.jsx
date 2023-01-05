@@ -19,7 +19,7 @@ const useDebouncedRippleCleanUp = (rippleCount, duration, cleanUpFunction) => {
 };
 
 const Ripple = (props) => {
-  const { duration, color } = props;
+  const { duration, color, varColor } = props;
   const [rippleArray, setRippleArray] = useState([]);
 
   useDebouncedRippleCleanUp(rippleArray.length, duration, () => {
@@ -41,7 +41,7 @@ const Ripple = (props) => {
   };
 
   return (
-    <RippleContainer duration={duration} color={color} onMouseDown={addRipple}>
+    <RippleContainer duration={duration} color={color} varColor={varColor} onMouseDown={addRipple}>
       {rippleArray.length > 0 &&
         rippleArray.map((ripple, index) => {
           return (
@@ -62,7 +62,8 @@ const Ripple = (props) => {
 
 Ripple.propTypes = {
   duration: PropTypes.number,
-  color: PropTypes.string
+  color: PropTypes.string,
+  varColor: PropTypes.string
 };
 
 Ripple.defaultProps = {
@@ -80,7 +81,7 @@ const RippleContainer = styled.div`
     border-radius: 100%;
     position: absolute;
     opacity: 0.4;
-    background-color: ${(props) => `var(--${props.color})`};
+    background-color: ${(props) => (props.varColor ? `var(--${props.varColor})` : props.color)};
     animation-name: ripple;
     animation-duration: ${(props) => props.duration}ms;
     pointer-events: none;

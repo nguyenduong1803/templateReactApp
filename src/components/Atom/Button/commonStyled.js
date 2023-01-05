@@ -19,6 +19,7 @@ export const WrapButton = styled.button`
   text-decoration: none;
   font-family: Roboto, Helvetica, Arial, sans-serif;
   font-weight: 500;
+  font-size: 1.5rem;
   line-height: 1.75;
   letter-spacing: 0.02857em;
   text-transform: uppercase;
