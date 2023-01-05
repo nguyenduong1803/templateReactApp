@@ -5,9 +5,9 @@
   --white: #fff;
   --grayBlur: #f0f4fa;
   --text-color: #454545;
-  --text-danger: #dc3545;
-  --text-success: #0f9d58;
-  --text-warning: #ffc107;
+  --danger: #dc3545;
+  --success: #0f9d58;
+  --warning: #ffc107;
   --paper-color: rgba(0, 0, 0, 0.6);
   --border-color: #ccc;
   --border-color-light: #eee;
@@ -56,5 +56,5 @@ h6 {
 }
 /* style higlight code */
 pre span {
-  color: #fff;
+  color: var(--white);
 }

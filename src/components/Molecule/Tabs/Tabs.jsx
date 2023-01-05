@@ -23,7 +23,7 @@ const TabItemAccount = styled.div`
   border: 1px solid var(--border-color-light);
   &.active {
     border-top-color: #385bce !important;
-    background-color: #fff;
+    background-color: var(--white);
     color: #273044 !important;
   }
 `;

@@ -11,7 +11,6 @@ import Paper from '~/layouts/Styled/Paper';
 import Badge from '~/components/Atom/Badge/Badge';
 import DropDown from '~/components/Molecule/Dropdown/Dropdown';
 import { useState } from 'react';
-import ButtonRipple from '~/components/Atom/Button/ButtonSank';
 const fakeData = [
   { name: 'Ha noi' },
   { name: 'Hai Duong' },
@@ -43,7 +42,6 @@ function Home() {
           </ClickAnimate>
         </Col>
         <Col lg={12}>
-          <ButtonRipple>Click ripple</ButtonRipple>
         </Col>
         <Col lg={12}>
           <Modal Button={ButtonShow} modalStyle={{ width: '500px' }}>

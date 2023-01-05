@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 function Col({ children, lg, md, sm = 12, className = '', ...props }) {
-  const responsive=`col-sm-${sm} ${md ? 'col-md-' + md : ''}  ${lg ? 'col-lg-' + lg : ''}`.trim()
+  const responsive = `col-sm-${sm} ${md ? 'col-md-' + md : ''}  ${lg ? 'col-lg-' + lg : ''}`.trim();
   return (
     <div className={`${responsive} ${className}`} {...props}>
       {children}

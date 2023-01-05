@@ -14,7 +14,7 @@ const Wrap = styled.div`
 const Tip = styled(Paper)`
   visibility: hidden;
   opacity: 0;
-  background-color: #fff;
+  background-color: var(--white);
   transition: 0.4s;
   z-index: 100;
 `;

@@ -328,10 +328,10 @@
   color: var(--text-color);
 }
 .text-danger {
-  color: var(--text-danger);
+  color: var(--danger);
 }
 .text-success {
-  color: var(--text-success);
+  color: var(--success);
 }
 .text-waring {
   color: var(--text-waring);

@@ -13,7 +13,7 @@ const Wrap = styled.button`
   -webkit-appearance: none;
   appearance: none;
   background-color: #ff0081;
-  color: #fff;
+  color: var(--white);
   border-radius: 4px;
   border: none;
   cursor: pointer;

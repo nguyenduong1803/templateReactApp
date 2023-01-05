@@ -42,7 +42,7 @@ const Input = styled.input`
         -webkit-appearance: none;
         height: 20px;
         cursor: ew-resize;
-        background: #fff;
+        background: var(--white);
         box-shadow: -340px 0 0 330px ${(props) => props.color}, inset 0 0 0 20px ${(props) => props.color};
         border-radius: 50%;
         transition: box-shadow 0.2s ease-in-out;
@@ -50,7 +50,7 @@ const Input = styled.input`
         // top: 1px;
       }
       &:active::-webkit-slider-thumb {
-        background: #fff;
+        background: var(--white);
         box-shadow: -340px 0 0 330px ${(props) => props.color}, inset 0 0 0 3px ${(props) => props.color};
       }
     }

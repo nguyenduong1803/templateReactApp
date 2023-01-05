@@ -22,7 +22,7 @@ function LayoutSidebar() {
           <Outlet />
           <Footer footer={footer} />
         </Box>
-        <Box w='20rem' bg='#fff'>
+        <Box w='20rem' bg='var(--white)'>
           <PositionItem className='vh-100 position-fixed t-0 p-12' w='300px'>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, quae ullam? Nam quod a illum provident,
             excepturi eveniet aliquam delectus repellat cumque optio quaerat fugit blanditiis quidem doloribus inventore
@@ -34,7 +34,7 @@ function LayoutSidebar() {
   );
 }
 const WrapSidebar = styled(Box)`
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0 2px 0 rgb(90 97 105 / 11%), 0 4px 8px rgb(90 97 105 / 12%), 0 10px 10px rgb(90 97 105 / 6%),
     0 7px 70px rgb(90 97 105 / 10%);
   z-index: 200;

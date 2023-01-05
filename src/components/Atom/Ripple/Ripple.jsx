@@ -66,8 +66,8 @@ Ripple.propTypes = {
 };
 
 Ripple.defaultProps = {
-  duration: 850,
-  color: '#fff'
+  duration: 1000,
+  color: 'white'
 };
 const RippleContainer = styled.div`
   position: absolute;
@@ -79,21 +79,17 @@ const RippleContainer = styled.div`
     transform: scale(0);
     border-radius: 100%;
     position: absolute;
-    opacity: 0.3;
-    background-color: ${(props) => props.color};
+    opacity: 0.4;
+    background-color: ${(props) => `var(--${props.color})`};
     animation-name: ripple;
     animation-duration: ${(props) => props.duration}ms;
     pointer-events: none;
   }
 
   @keyframes ripple {
-    from {
-      transform: scale(0);
-      opacity: 0.5;
-    }
     to {
-      transform: scale(3);
       opacity: 0;
+      transform: scale(2);
     }
   }
 `;

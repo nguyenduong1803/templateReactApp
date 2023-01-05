@@ -31,9 +31,9 @@ function InputPage() {
         <Col></Col>
         <Col lg={5} md={5}>
           <InputRange />
-          <InputRange color='var(--text-success)' />
-          <InputRange color='var(--text-danger)' />
-          <InputRange color='var(--text-warning)' />
+          <InputRange color='var(--success)' />
+          <InputRange color='var(--danger)' />
+          <InputRange color='var(--warning)' />
         </Col>
         <Col lg={6} md={6}>
           <InputText name='Nhập tên' />

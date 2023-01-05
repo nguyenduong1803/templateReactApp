@@ -186,7 +186,7 @@ const SearchOutputItem = styled.li`
   color: #486581;
   :hover {
     background-color: #617d98;
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
   }
 `;

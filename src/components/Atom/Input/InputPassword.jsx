@@ -47,7 +47,7 @@ const Input = styled.input`
     display: inline-block;
     background-color: transparent;
     color: var(--primary);
-    background-color: #fff;
+    background-color: var(--white);
   }
 `;
 const Eye = styled.div`

@@ -18,10 +18,10 @@ function ModalPage() {
             <div className='d-flex flex-direction-column h-100 gap-12'>
               <p className='flex-1'>Bạn có muốn xóa sản phẩm</p>
               <div className='align-self-end '>
-                <Button bg='var(--text-success)' className='mr-12'>
+                <Button bg='var(--success)' className='mr-12'>
                   Save Change
                 </Button>
-                <Button bg='var(--text-danger)'>Cancel</Button>
+                <Button bg='var(--danger)'>Cancel</Button>
               </div>
             </div>
           </Modal>

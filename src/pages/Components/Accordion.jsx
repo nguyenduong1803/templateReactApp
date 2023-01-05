@@ -10,7 +10,7 @@ const list = [
   {
     id: 1,
     title: 'Choose Category',
-    bg: '#ffffff',
+    bg: 'var(--white)fff',
     child: [
       {
         name: 'Samsung',
@@ -33,7 +33,7 @@ const list = [
   {
     id: 2,
     title: 'Choose Phone',
-    bg: '#ffffff',
+    bg: 'var(--white)fff',
     child: [
       {
         name: 'Samsung',
@@ -56,7 +56,7 @@ const list = [
   {
     id: 3,
     title: 'Accordion',
-    bg: '#ffffff',
+    bg: 'var(--white)fff',
     child: [
       {
         name: 'Samsung',
@@ -79,7 +79,7 @@ const list = [
   {
     id: 4,
     title: 'Accordion 2',
-    bg: '#ffffff',
+    bg: 'var(--white)fff',
     child: [
       {
         name: 'Samsung',
@@ -186,6 +186,12 @@ function Components() {
           <h3 className='fz-24 fw-500'>Source Code</h3>
 
           <HighligtCode codeString={ArrcourdionString} />
+        </Col>
+        <Col>
+        <Button>
+          Click Ripple 
+          <Ripple color='rgba(255, 255, 255, 0.5)'/>
+        </Button>
         </Col>
       </Grid>
     </div>

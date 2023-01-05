@@ -36,7 +36,7 @@ const ModalShow = styled.div`
   width: ${(props) => props.w};
   height: ${(props) => props.h};
   max-width: calc(100% - (24px));
-  background-color: #fff;
+  background-color: var(--white);
   overflow: auto;
   padding: 12px;
 `;

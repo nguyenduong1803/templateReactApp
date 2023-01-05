@@ -12,7 +12,7 @@ export default function Accordion({
   p = '6px',
   hover,
   className = '',
-  bg = '#fff',
+  bg = 'var(--white)',
   cancel = false,
   ...props
 }) {
