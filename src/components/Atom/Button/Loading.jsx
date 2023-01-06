@@ -1,19 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
-function Loading() {
+function Loading({ w = '40px', stroke = '4px', color = '#ccc' }) {
   return (
-    <Wrap class='position-relative'>
-      <div class='loader'>
-        <Svg class='circular-loader' viewBox='25 25 50 50'>
-          <Circle class='loader-path' cx='50' cy='50' r='20' fill='none' stroke='#71756f' stroke-width='10' />
-        </Svg>
-      </div>
+    <Wrap w={w} className='position-absolute center'>
+      <Svg className='circular-loader' viewBox='25 25 50 50'>
+        <Circle
+          strokeWidth={stroke}
+          className='loader-path'
+          cx='50'
+          cy='50'
+          r='20'
+          fill='none'
+          stroke='#71756f'
+          stroke-width='10'
+          color={color}
+        />
+      </Svg>
     </Wrap>
   );
 }
 
 const Wrap = styled.div`
-  width: 200px;
+  transition: 0.3s;
+  height: 100%;
+  width: ${({ w }) => w};
 `;
 const Circle = styled.circle`
   stroke-dasharray: 150, 200;
@@ -21,6 +31,7 @@ const Circle = styled.circle`
   -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
   animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
   stroke-linecap: round;
+  stroke-width: ${({ strokeWidth }) => strokeWidth};
   &:before {
     content: '';
     display: block;
@@ -56,32 +67,32 @@ const Circle = styled.circle`
   }
   @-webkit-keyframes color {
     0% {
-      stroke: #70c542;
+      stroke: ${({ color }) => color};
     }
     40% {
-      stroke: #70c542;
+      stroke: ${({ color }) => color};
     }
     66% {
-      stroke: #70c542;
+      stroke: ${({ color }) => color};
     }
     80%,
     90% {
-      stroke: #70c542;
+      stroke: ${({ color }) => color};
     }
   }
   @keyframes color {
     0% {
-      stroke: #70c542;
+      stroke: ${({ color }) => color};
     }
     40% {
-      stroke: #70c542;
+      stroke: ${({ color }) => color};
     }
     66% {
-      stroke: #70c542;
+      stroke: ${({ color }) => color};
     }
     80%,
     90% {
-      stroke: #70c542;
+      stroke: ${({ color }) => color};
     }
   }
 `;
