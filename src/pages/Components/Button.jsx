@@ -1,27 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Button from '~/components/Atom/Button/Button';
 import ButtonSank from '~/components/Atom/Button/ButtonSank';
 import { Col, Container, Box } from '~/layouts/Grid';
 
 function ButtonPage() {
+  const [active, setActive] = useState(false);
+
   const hanldeClick = () => {
     console.log('click');
+    setActive(true);
   };
   return (
     <div>
       <h2 className='main-title pl-24'>Button</h2>
       <Container>
         <Col>
-          <Button variant='outline' bg='success' ripple onClick={hanldeClick}>
+          <Button loading={active} variant='outline' bg='success' ripple onClick={hanldeClick}>
             Primary
           </Button>
-          <Button variant='text' bg='danger' ripple onClick={hanldeClick}>
+          <Button variant='text' bg='danger' ripple onClick={() => setActive(false)}>
             Danger
           </Button>
         </Col>
         <Col>
-          <Button ripple>Ripple Effect</Button>
+          <Button loading={active} onClick={hanldeClick} ripple>
+            Ripple Effect
+          </Button>
         </Col>
         <Col>
           <Box>ádfadf</Box>

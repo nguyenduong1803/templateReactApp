@@ -37,6 +37,7 @@ export const WrapButton = styled.button`
   &:hover {
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px;
   }
+
   ${({ variant, bg }) =>
     variant === 'outline' &&
     `color: var(--${bg}); background-color:var(--white); border:1px solid var(--${bg}); box-shadow:none;`}
@@ -44,6 +45,13 @@ export const WrapButton = styled.button`
   ${({ variant, bg }) =>
     variant === 'text' &&
     `box-shadow:none; border:0px;color: var(--${bg}); &:hover{box-shadow:none};  background-color:inherit;`}
+&.loading {
+    box-shadow: none;
+    background-color: rgba(100, 100, 100, 0.6);
+    color: rgba(100, 100, 100, 0.6);
+    pointer-events: none;
+    ${({ variant }) => variant === 'outline' && 'border: 1px solid rgba(130, 130, 130, 0.8);'}
+  }
   & + & {
     margin-left: ${(props) => props.buttonAndButton};
   }
