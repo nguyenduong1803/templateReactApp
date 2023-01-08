@@ -10,6 +10,7 @@ function Paper({
   h,
   overflow = 'hidden',
   r = 4,
+  w,
   p,
   m,
   className = '',
@@ -36,6 +37,7 @@ function Paper({
       h={h}
       p={p}
       m={m}
+      w={w}
       overflow={overflow}
       boxShadow={papers[Number(elevation)]}
       minHeight={minHeight}
@@ -62,6 +64,7 @@ const WrapPaper = styled.section`
   ${({ h }) => h && ` height: ${h};`}
   ${({ p }) => p && ` padding: ${p};`}
   ${({ m }) => m && ` margin: ${m};`}
+  ${({ w }) => w && ` width: ${w};`}
   ${({ boxShadow }) => boxShadow && `box-shadow: ${boxShadow};`}
   ${({ overflow }) => overflow && `overflow: ${overflow};`}
   color: var(--paper-color);

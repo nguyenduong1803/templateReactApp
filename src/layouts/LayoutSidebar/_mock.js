@@ -16,31 +16,11 @@ export const sidebars = [
     icon: BookIcon,
     title: 'Getting Started',
     element: [
-      {
-        id: '',
-        element: 'Introduction',
-        path: ''
-      },
-      {
-        id: 'overview',
-        element: 'Overview',
-        path: ''
-      },
-      {
-        id: 'b',
-        element: 'Download',
-        path: ''
-      },
-      {
-        id: 'c',
-        element: 'Contents',
-        path: ''
-      },
-      {
-        id: 'd',
-        element: 'Browsers & devices',
-        path: ''
-      }
+      { id: '', element: 'Introduction', path: '' },
+      { id: 'overview', element: 'Overview', path: '' },
+      { id: 'b', element: 'Download', path: '' },
+      { id: 'c', element: 'Contents', path: '' },
+      { id: 'd', element: 'Browsers & devices', path: '' }
     ]
   },
   {
