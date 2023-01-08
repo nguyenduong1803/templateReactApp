@@ -15,6 +15,7 @@
   --hover-color: #eaebed;
   --width-sidebar: 300px;
   --overlay-color: rgba(149, 149, 149, 0.3);
+  --section-space: 32px;
 }
 
 html {
@@ -24,7 +25,7 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   margin: 0;

@@ -1,10 +1,11 @@
 import { useRoutes } from 'react-router-dom';
+import { lazy } from 'react';
 // import { DefaultLayout } from '~/layouts';
 // import About from '~/pages/About/About';
-import Home from '~/pages/Home/Home';
 // import Product from '~/pages/Products/Products';
 import componentRoute from './componentRoute';
 import LayoutSidebar from '~/layouts/LayoutSidebar/LayoutSidebar';
+const Home = lazy(() => import('~/pages/Home/Home'));
 
 const routerSite = [
   // {

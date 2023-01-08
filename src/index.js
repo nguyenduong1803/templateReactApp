@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import GlobalStyle from '~/styles';
 import { RouterSite } from '~/helpers/routes';
@@ -9,9 +9,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStyle>
-      <Router>
-        <RouterSite />
-      </Router>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Router>
+          <RouterSite />
+        </Router>
+      </Suspense>
     </GlobalStyle>
   </React.StrictMode>
 );

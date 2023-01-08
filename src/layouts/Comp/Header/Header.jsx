@@ -5,6 +5,7 @@ import { BarIcon, NotifyIcon, SearchSvg } from '~/assets/svg';
 import Avatar from '~/components/Atom/Avatar/Avatar';
 import Badge from '~/components/Atom/Badge/Badge';
 import InputText from '~/components/Atom/Input/InputText';
+import Ripple from '~/components/Atom/Ripple/Ripple';
 import Dropdown from '~/components/Molecule/Dropdown/Dropdown';
 import Paper from '~/layouts/Styled/Paper';
 
@@ -36,9 +37,12 @@ export default function Header() {
           >
             <div className='login d-flex a-center gap-24 '>
               <img src='https://minimal-kit-react.vercel.app/assets/icons/ic_flag_en.svg' alt='' />
-              <div>
+              <div className='hover-circle'>
                 <Badge className='cursor-pointer' onClick={() => setShowNotify(true)} number={2}>
-                  <NotifyIcon />
+                  <div className='overflow-hidden'>
+                    <NotifyIcon />
+                    <Ripple />
+                  </div>
                 </Badge>
                 <Dropdown showDropdown={showNotify} setShowDropdown={setShowNotify} right='50%' w='22rem'>
                   <Paper elevation={10} className='p-12'>
@@ -55,7 +59,7 @@ export default function Header() {
                   </Paper>
                 </Dropdown>
               </div>
-              <div>
+              <div className='cursor-pointer'>
                 <Avatar onClick={() => setShowDropdown(true)} />
                 <Dropdown showDropdown={showDropdown} setShowDropdown={setShowDropdown} right='50%' w='22rem'>
                   <Paper elevation={10} className='p-12'>

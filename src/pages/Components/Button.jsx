@@ -13,25 +13,28 @@ function ButtonPage() {
   };
   return (
     <div>
-      <h2 className='main-title pl-24'>Button</h2>
-      <Container>
-        <Col>
-          <Button loading={active} variant='outline' bg='success' ripple onClick={hanldeClick}>
-            Primary
-          </Button>
-          <Button variant='text' bg='danger' ripple onClick={() => setActive(false)}>
-            Danger
-          </Button>
-        </Col>
-        <Col>
-          <Button loading={active} onClick={hanldeClick} ripple>
-            Ripple Effect
-          </Button>
-        </Col>
-        <Col>
-          <Box>ádfadf</Box>
-          <ButtonSank>Ripple Effect</ButtonSank>
-        </Col>
+      <Container size='fluid'>
+        <h1>Button</h1>
+        <p>Buttons allow users to take actions, and make choices, with a single tap.</p>
+        <div className='row'>
+          <Col sm={2} md={3} lg={4}>
+            <Button loading={active} variant='outline' bg='success' ripple onClick={hanldeClick}>
+              Primary
+            </Button>
+            <Button variant='text' bg='danger' ripple onClick={() => setActive(false)}>
+              Danger
+            </Button>
+          </Col>
+          <Col>
+            <Button loading={active} onClick={hanldeClick} ripple>
+              Ripple Effect
+            </Button>
+          </Col>
+          <Col>
+            <Box>ádfadf</Box>
+            <ButtonSank>Ripple Effect</ButtonSank>
+          </Col>
+        </div>
       </Container>
     </div>
   );

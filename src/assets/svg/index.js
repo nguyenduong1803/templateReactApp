@@ -17,3 +17,7 @@ export { default as EditIcon } from './EditIcon';
 export { default as TemplateIcon } from './TemplateIcon';
 export { default as ScienceIcon } from './ScienceIcon';
 export { default as Logo2 } from './Logo2.svg';
+export { default as CodeIcon } from './CodeIcon';
+export { default as CodeSanbox } from './CodeSanbox';
+export { default as CopyIcon } from './CopyIcon';
+export { default as ThreeDot } from './ThreeDot';

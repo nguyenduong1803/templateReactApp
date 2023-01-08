@@ -4,26 +4,26 @@
 .container-fluid {
   width: 100%;
   display: block;
-  max-width: calc(100% - (2.4rem));
+  max-width: calc(100% - (4.8rem));
   margin: 0 auto;
 }
 .container-xxl {
   width: 100%;
   display: block;
-  max-width: calc(100% - (2.4rem));
+  max-width: calc(100% - (4.8rem));
   margin: 0 auto;
 }
 .container-xl {
   width: 100%;
   display: block;
-  max-width: calc(100% - (2.4rem));
+  max-width: calc(100% - (4.8rem));
   margin: 0 auto;
 }
 .container {
   width: 100%;
   display: block;
   margin: 0 auto;
-  max-width: calc(100% - (2.4rem));
+  max-width: calc(100% - (4.8rem));
 }
 .row {
   display: flex;
@@ -77,10 +77,10 @@
 /* Small screen /  xs: 576px*/
 @media (max-width: 35.9375em) {
   .container-fluid {
-    max-width: calc(100% - (1.5em));
+    max-width: calc(100% - (1.2em));
   }
   .container {
-    max-width: calc(100% - (1.5em));
+    max-width: calc(100% - (1.2em));
   }
   .row {
     margin-right: -0.4rem;
@@ -118,7 +118,7 @@
     max-width: 33.75em;
   }
   .container-fluid {
-    width: calc(100% - 3.2rem);
+    max-width: calc(100% - (3.2rem));
   }
   .row {
     margin-right: -0.8rem;
@@ -227,7 +227,18 @@
     margin-right: -0.8rem;
     margin-left: -0.8rem;
   }
-
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -318,7 +329,7 @@
     max-width: 60em;
   }
   .container-fluid {
-    width: calc(100% - (4.8rem));
+    max-width: calc(100% - (4.8rem));
   }
   .container-xl {
     max-width: 60em;
@@ -330,7 +341,30 @@
     margin-right: -1.2rem;
     margin-left: -1.2rem;
   }
-
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,
