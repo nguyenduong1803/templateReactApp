@@ -1,7 +1,8 @@
 import React from 'react';
-import Loading from '~/components/Atom/Button/Loading';
+// import Loading from '~/components/Atom/Button/Loading';
 import { Col, Row } from '~/layouts/Grid';
 import Paper from '~/layouts/Styled/Paper';
+import Loading from '../Loading';
 import CharPie from './components/Molecule/CharPie';
 import LinePie from './components/Molecule/LinePie';
 import Reports from './components/Molecule/Reports';

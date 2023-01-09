@@ -4,12 +4,13 @@ import GlobalStyle from '~/styles';
 import { RouterSite } from '~/helpers/routes';
 import { BrowserRouter as Router } from 'react-router-dom';
 import reportWebVitals from '~/reportWebVitals';
+import Loading from './pages/Loading';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <GlobalStyle>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loading />}>
         <Router>
           <RouterSite />
         </Router>
