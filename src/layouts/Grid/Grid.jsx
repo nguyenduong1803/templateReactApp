@@ -1,6 +1,6 @@
-function Grid({ children, container = 'container', className = '', ...props }) {
+function Grid({ children, size = 'container', className = '', ...props }) {
   return (
-    <div className={`${container} ${className}`} {...props}>
+    <div className={`${size === 'container' ? 'container' : 'container-' + size} ${className}`} {...props}>
       <div className='row'>{children}</div>
     </div>
   );

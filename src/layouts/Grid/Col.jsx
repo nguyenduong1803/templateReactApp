@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 function Col({ children, lg, md, sm = 12, className = '', ...props }) {
-  const responsive = `col-sm-${sm} ${md ? 'col-md-' + md : ''}  ${lg ? 'col-lg-' + lg : ''}`.trim();
+  const responsive = `col-sm-${sm}${md || md === 0 ? ` col-md-${md} ` : ''}${lg || lg === 0 ? ` col-lg-${lg} ` : ''}`;
   return (
-    <div className={`${responsive} ${className}`} {...props}>
+    <div className={`${responsive}${className}`} {...props}>
       {children}
     </div>
   );
