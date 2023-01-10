@@ -32,7 +32,7 @@ const WrapComponent = styled.div`
 `;
 function Tabs({ listTab }) {
   const [active, setActive] = useState(0);
-  const Component = listTab[active].component;
+  const component = listTab[active].component;
 
   return (
     <>
@@ -46,8 +46,7 @@ function Tabs({ listTab }) {
         })}
       </WrapTabs>
       <WrapComponent>
-        {' '}
-        <Component />{' '}
+        {component}
       </WrapComponent>
     </>
   );

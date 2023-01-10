@@ -1,27 +1,35 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import styled from 'styled-components';
 //
 import Footer from '../Comp/Footer/Footer';
 import Header from '../Comp/Header/Header';
 import Sidebar from './Sidebar';
 import { footer } from '~/helpers/config';
-import { Box, Grid } from '../Grid';
+import { Box, Col, Grid } from '../Grid';
 import Position from '../Grid/Position';
+import Paper from '../Styled/Paper';
+import Addendum from './Addendum';
 function LayoutSidebar() {
   return (
     <>
-      <Box className='bg-default'>
-        <WrapSidebar className='vh-100 position-fixed t-0 p-12' w='300px'>
+      <div className='bg-default'>
+        <Paper elevation={8} className='vh-100 position-fixed t-0 p-12 zIndex-200' w='300px'>
           <Sidebar />
-        </WrapSidebar>
-        <Box className='space-sidebar'>
-          <Grid container='container-fluid p-0' style={{ margin: '0 0 65px 0' }}>
+        </Paper>
+        <div className='space-sidebar'>
+          <Grid size='fluid' style={{ margin: '0 0 65px 0' }}>
             <Header />
           </Grid>
-          <Outlet />
+          <Grid size='fluid'>
+            <Col lg={9} sm={12}>
+              <Outlet />
+            </Col>
+            <Col lg={3} md={0}>
+              <Addendum />
+            </Col>
+          </Grid>
           <Footer footer={footer} />
-        </Box>
+        </div>
         <Box w='20rem' bg='var(--white)'>
           <Position className='vh-100 position-fixed t-0 p-12' w='300px'>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, quae ullam? Nam quod a illum provident,
@@ -29,14 +37,8 @@ function LayoutSidebar() {
             similique.
           </Position>
         </Box>
-      </Box>
+      </div>
     </>
   );
 }
-const WrapSidebar = styled(Box)`
-  background-color: var(--white);
-  box-shadow: 0 2px 0 rgb(90 97 105 / 11%), 0 4px 8px rgb(90 97 105 / 12%), 0 10px 10px rgb(90 97 105 / 6%),
-    0 7px 70px rgb(90 97 105 / 10%);
-  z-index: 200;
-`;
 export default LayoutSidebar;

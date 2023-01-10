@@ -453,6 +453,9 @@
 .line-height-36 {
   line-height: 3.6rem;
 }
+.line-height-32 {
+  line-height: 3.2rem;
+}
 .line-height-48 {
   line-height: 4.8rem;
 }
@@ -558,6 +561,9 @@
 }
 .zIndex-200 {
   z-index: 200;
+}
+.zIndex-100 {
+  z-index: 100;
 }
 /* ================================== color ==================================== */
 .color-transparent {

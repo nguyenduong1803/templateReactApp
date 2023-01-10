@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 
 function Container({ children, size, className, ...props }) {
-  const newContainer = size === 'container' ? 'container' : 'container-' + size;
   return (
-    <div className={`${newContainer} ${className}`} {...props}>
+    <div className={`${size === 'container' ? 'container' : 'container-' + size} ${className}`} {...props}>
       {children}
     </div>
   );
