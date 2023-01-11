@@ -101,10 +101,9 @@ function Components() {
           })}
         </Paper>
       </BaseComponent>
-     <div className='section-space'>
-      
-       <TabDescription/>
-       </div >
+      <div className='section-space'>
+        <TabDescription />
+      </div>
     </div>
   );
 }

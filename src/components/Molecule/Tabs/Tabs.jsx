@@ -45,9 +45,7 @@ function Tabs({ listTab }) {
           );
         })}
       </WrapTabs>
-      <WrapComponent>
-        {component}
-      </WrapComponent>
+      <WrapComponent>{component}</WrapComponent>
     </>
   );
 }
