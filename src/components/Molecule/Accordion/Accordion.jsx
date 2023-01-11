@@ -26,8 +26,8 @@ export default function Accordion(props) {
             <Icon
               width='1.9rem'
               fill='#4e4e4e'
-              className='position-relative'
-              style={{ top: '-1px', pointerEvents: 'none' }}
+              className='position-relative pointer-events-none'
+              style={{ top: '-1px' }}
             />
             {title}
           </div>

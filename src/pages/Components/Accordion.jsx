@@ -10,6 +10,8 @@ import TabDescription from './Organism/TabDescription';
 import { list, mockData, renderString } from './_mock';
 
 function Components() {
+  console.log("rerender")
+  
   const [open, setOpen] = useState(false);
   return (
     <div>
@@ -102,7 +104,7 @@ function Components() {
         </Paper>
       </BaseComponent>
       <div className='section-space'>
-        <TabDescription />
+        1 <TabDescription />
       </div>
     </div>
   );
