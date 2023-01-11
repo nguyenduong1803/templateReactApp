@@ -2,20 +2,21 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-function Paper({
-  children,
-  elevation = 1,
-  bg = 'var(--white)',
-  minHeight = 'auto',
-  h,
-  overflow = 'hidden',
-  r = 4,
-  w,
-  p,
-  m,
-  className = '',
-  ...props
-}) {
+function Paper(props) {
+  const {
+    children,
+    elevation = 1,
+    bg = 'var(--white)',
+    minHeight = 'auto',
+    h,
+    overflow = 'hidden',
+    r = 4,
+    w,
+    p,
+    m,
+    className = '',
+    ...passProps
+  } = props;
   const papers = [
     /*0*/ 'unset',
     /*1*/ 'rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;',
@@ -42,7 +43,7 @@ function Paper({
       boxShadow={papers[Number(elevation)]}
       minHeight={minHeight}
       className={className}
-      {...props}
+      {...passProps}
     >
       {children}
     </WrapPaper>
@@ -57,6 +58,13 @@ Paper.propTypes = {
   h: PropTypes.string,
   r: PropTypes.number
 };
+Paper.defaultProps = {
+  bg: 'var(--white)',
+  minHeight: 'auto',
+  overflow: 'hidden',
+  r: 4,
+  className: ''
+};
 const WrapPaper = styled.section`
   background-color: ${(props) => props.bg};
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -67,7 +75,6 @@ const WrapPaper = styled.section`
   ${({ w }) => w && ` width: ${w};`}
   ${({ boxShadow }) => boxShadow && `box-shadow: ${boxShadow};`}
   ${({ overflow }) => overflow && `overflow: ${overflow};`}
-  color: var(--paper-color);
   overflow: ${(props) => props.overflow};
 `;
 export default Paper;

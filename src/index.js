@@ -1,21 +1,13 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import GlobalStyle from '~/styles';
-import { RouterSite } from '~/routes';
-import { BrowserRouter as Router } from 'react-router-dom';
 import reportWebVitals from '~/reportWebVitals';
-import Loading from './pages/Loading';
+import App from './app';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GlobalStyle>
-      <Suspense fallback={<Loading />}>
-        <Router>
-          <RouterSite />
-        </Router>
-      </Suspense>
-    </GlobalStyle>
+   <App/>
   </React.StrictMode>
 );
 reportWebVitals();

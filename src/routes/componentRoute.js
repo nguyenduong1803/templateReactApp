@@ -1,17 +1,19 @@
 import { lazy } from 'react';
+import Loadable from './Loadable';
 
-const ButtonPage = lazy(() => import('~/pages/Components/Button'));
-const Components = lazy(() => import('~/pages/Components/Accordion'));
-const DrawerPage = lazy(() => import('~/pages/Components/Drawer'));
-const ImagePage = lazy(() => import('~/pages/Components/Image'));
-const InputPage = lazy(() => import('~/pages/Components/Input'));
-const ModalPage = lazy(() => import('~/pages/Components/Modal'));
-const SkeletonPage = lazy(() => import('~/pages/Components/Skeleton'));
-const TabsPage = lazy(() => import('~/pages/Components/Tabs'));
-const TippyPage = lazy(() => import('~/pages/Components/Tippy'));
-const Home2 = lazy(() => import('~/pages/Home2/Home2'));
-const DropdownPage = lazy(() => import('~/pages/Components/Dropdown'));
-const Overview = lazy(() => import('~/pages/GettingStarted/Overview'));
+const ButtonPage = Loadable(lazy(() => import('~/pages/Components/Button')));
+const Components = Loadable(lazy(() => import('~/pages/Components/Accordion')));
+const DrawerPage = Loadable(lazy(() => import('~/pages/Components/Drawer')));
+const ImagePage = Loadable(lazy(() => import('~/pages/Components/Image')));
+const InputPage = Loadable(lazy(() => import('~/pages/Components/Input')));
+const ModalPage = Loadable(lazy(() => import('~/pages/Components/Modal')));
+const SkeletonPage = Loadable(lazy(() => import('~/pages/Components/Skeleton')));
+const TabsPage = Loadable(lazy(() => import('~/pages/Components/Tabs')));
+const TippyPage = Loadable(lazy(() => import('~/pages/Components/Tippy')));
+const Home2 = Loadable(lazy(() => import('~/pages/Home2/Home2')));
+const DropdownPage = Loadable(lazy(() => import('~/pages/Components/Dropdown')));
+const Overview = Loadable(lazy(() => import('~/pages/GettingStarted/Overview')));
+
 const componentRoute = [
   {
     index: true,

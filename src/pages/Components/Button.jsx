@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Button from '~/components/Atom/Button/Button';
 import ButtonSank from '~/components/Atom/Button/ButtonSank';
+import LazyLoadingScreen from '~/components/Atom/LazyLoadingScreen';
 import { Col, Container, Box } from '~/layouts/Grid';
 
 function ButtonPage() {
